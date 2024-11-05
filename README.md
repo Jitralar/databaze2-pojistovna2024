@@ -84,3 +84,13 @@ Oproti modelu v BDAS1, přibyli tabulky Secret - pro informace a ukládání dat
     Každý Zaměstnanec může zřizovat jednu nebo více Pojistek
 //todo: Fotodokumentace + Secret
 
+### Relační model dat:
+
+![Relational_1_page-0001](https://github.com/user-attachments/assets/3a9c8f99-9649-4085-bd10-ab911d4f3c2a)
+
+Vytořeno pomocí Oracle SQL Developer Data Modeler 
+
+
+
+
+
