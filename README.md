@@ -26,6 +26,17 @@ Celý proces, jakkoliv je dočasný, musí přes to podléhat nařízení o ohra
 - Datum ukončení smlouvy nesmí být před uzavřením smlouvy
 - Hodnota platba_mesicne nesmí přesahovat 100% pojištěné hodnoty
 
+### Uživatelské role:
+Databáze počítá že v rámci pojišťovny je nespočetné množství pozic, nicméně pro práci v aplikaci se počítá pouze s 5 rolemy. Jak se role přidávají jednotlivím zaměstnancům, záleží na daném postopu pojišťovny a teoreticky lze být časem modifikováno.
+
+| Id role | Název role | Základní popis funkcí |
+| ------------- | ------------- | ------------- |
+| 1  | Neregistrovaný uživatel (klient)  | Může vyplnit základní údaje o sobě a tím si vytvořit účet v aplikaci  |
+| 2  | Registrovaný uživatel (klient)  | Má přiděleného zaměstnance, který se o něj "stará". Může prohlížet své pojistky.  |
+| 3  | Zaměstnanec  | Spravuje obsah pojistek. Může si přepínat mezi svými klienty a spravuje jodnotlivé pojistky.  |
+| 4  | Analytik  | Může sledovat anonymizované statistiky a výstupy ze systému.  |
+| 5  | Supervisor  | Má práva všech rolí (2 - 5). Přiděluje jednotlivé zaměstnance ke klientům. |
+
 ### CRUD analýza:
 //todo
 
