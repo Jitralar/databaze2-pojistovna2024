@@ -102,6 +102,189 @@ Oproti modelu v BDAS1, přibyli tabulky Secret - pro informace a ukládání dat
 Vytořeno pomocí Oracle SQL Developer Data Modeler 
 
 
+# Tabulky v databázi:
+
+
+### `adresa`
+| Column                 | Type           | Constraints | Comment                                  |
+|------------------------|----------------|-------------|------------------------------------------|
+| `id_adresa`            | NUMBER         | NOT NULL    | Primary key, unique ID of the address    |
+| `ulice`                | VARCHAR2(32)   | NOT NULL    | Street name                              |
+| `cislo_orientacni`     | VARCHAR2(32)   |             | Orientation number                       |
+| `cislo_popisne`        | VARCHAR2(32)   | NOT NULL    | Descriptive number                       |
+| `mesto`                | VARCHAR2(32)   | NOT NULL    | City                                     |
+| `psc`                  | CHAR(5)        | NOT NULL    | Postal code                              |
+| `patro`                | NUMBER         |             | Floor                                    |
+| `kraj_id_kraj`         | NUMBER         |             | Foreign key to `kraj` table              |
+
+### `banka`
+| Column                 | Type           | Constraints | Comment                                  |
+|------------------------|----------------|-------------|------------------------------------------|
+| `id_banka`             | NUMBER         | NOT NULL    | Primary key, unique ID of the bank       |
+| `nazev`                | VARCHAR2(32)   | NOT NULL    | Bank name                                |
+| `adresa_id_adresa`     | NUMBER         | NOT NULL    | Foreign key to `adresa` table            |
+| `kontakt_id_kontakt`   | NUMBER         |             | Foreign key to `kontakt` table           |
+| `telefon`              | CHAR(9)        |             | Bank contact phone number                |
+| `klient_id_klient`     | NUMBER         |             | Foreign key to `klient` table            |
+
+### `fotodokumentace`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_fotodokumentace`           | NUMBER         | NOT NULL    | Primary key, unique ID of the photo      |
+| `fotografie`                   | BLOB           | NOT NULL    | Photo file                               |
+| `pojistka_poj_id_pojisteni`    | NUMBER         | NOT NULL    | Foreign key to `pojistka` table          |
+
+### `kategorie_majetek`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_kategorie_majetku`         | NUMBER         | NOT NULL    | Primary key, unique ID of the category   |
+| `nazev_kategorie`              | VARCHAR2(255)  | NOT NULL    | Category name                            |
+
+### `klient`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_klient`                    | NUMBER         | NOT NULL    | Primary key, unique ID of the client     |
+| `jmeno`                        | VARCHAR2(32)   | NOT NULL    | Client's first name                      |
+| `druhe_jmeno`                  | VARCHAR2(32)   |             | Client's middle name                     |
+| `prijmeni`                     | VARCHAR2(32)   | NOT NULL    | Client's last name                       |
+| `datum_narozeni`               | DATE           | NOT NULL    | Client's birth date                      |
+| `prijem`                       | NUMBER         | NOT NULL    | Client's income                          |
+| `adresa_id_adresa`             | NUMBER         |             | Foreign key to `adresa` table            |
+| `kontakt_id_kontakt`           | NUMBER         |             | Foreign key to `kontakt` table           |
+| `banka_id_banka`               | NUMBER         |             | Foreign key to `banka` table             |
+| `id_kontakt`                   | NUMBER         |             | Duplicate foreign key to `kontakt`       |
+
+### `kontakt`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_kontakt`                   | NUMBER         | NOT NULL    | Primary key, unique ID of the contact    |
+| `telefon`                      | CHAR(9)        |             | Landline phone number                    |
+| `mobil`                        | CHAR(9)        |             | Mobile phone number                      |
+| `email`                        | VARCHAR2(64)   |             | Contact email address                    |
+
+### `kraj`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_kraj`                      | NUMBER         | NOT NULL    | Primary key, unique ID of the region     |
+| `nazev_kraje`                  | VARCHAR2(255)  | NOT NULL    | Region name                              |
+| `krajske_mesto`                | VARCHAR2(255)  | NOT NULL    | Capital city of the region               |
+
+### `majetkove_pojisteni`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_poj_pojisteni`             | NUMBER         | NOT NULL    | Primary key, unique ID of insurance      |
+| `maj_id_majetek`               | NUMBER         | NOT NULL    | Property ID covered by insurance         |
+| `maj_popis`                    | VARCHAR2(255)  | NOT NULL    | Description of insured property          |
+| `maj_vyrobeno_v_roce`          | DATE           |             | Year property was manufactured           |
+| `kategorie_majetek_id_kat_majetku` | NUMBER     |             | Foreign key to `kategorie_majetek`       |
+
+### `pobocka`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_pobocka`                   | NUMBER         | NOT NULL    | Primary key, unique ID of branch         |
+| `pocet_zamestnancu`            | NUMBER         |             | Number of employees                      |
+| `nazev`                        | VARCHAR2(32)   | NOT NULL    | Branch name                              |
+| `adresa_id_adresa`             | NUMBER         |             | Foreign key to `adresa` table            |
+
+### `pohledavka`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_pov_povinosti`             | NUMBER         | NOT NULL    | Obligation ID                            |
+| `poh_id_pohledavka`            | NUMBER         | NOT NULL    | Primary key, unique ID of claim          |
+| `poh_popis`                    | VARCHAR2(255)  |             | Claim description                        |
+
+### `pojistka`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `poj_id_pojisteni`             | NUMBER         | NOT NULL    | Primary key, unique ID of policy         |
+| `poj_datum_sjednani`           | DATE           | NOT NULL    | Policy agreement date                    |
+| `poj_poznamka`                 | VARCHAR2(255)  |             | Policy note                              |
+| `poj_pojisteno_do_hodnoty`     | VARCHAR2(4000) |             | Insured amount                           |
+| `poj_cena_mesicne`             | VARCHAR2(4000) |             | Monthly premium                          |
+| `povinosti_id_pov_povinosti`   | NUMBER         | NOT NULL    | Foreign key to `povinosti` table         |
+| `poj_id_arc`                   | CHAR(1)        | NOT NULL    | Arc discriminator for policy type        |
+
+### `pojistka_klient`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `poj_id_pojisteni`             | NUMBER         | NOT NULL    | Foreign key to `pojistka` table          |
+| `kli_id_klient`                | NUMBER         | NOT NULL    | Foreign key to `klient` table            |
+| `id_st_poj_kli`                | NUMBER         | NOT NULL    | Link ID between `pojistka` and `klient`  |
+
+### `povinosti`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `pov_id_povinosti`             | NUMBER         | NOT NULL    | Primary key, unique ID of obligation     |
+| `pov_datum_vytvoreni`          | DATE           | NOT NULL    | Date of obligation creation              |
+| `pov_datum_zplatnosti`         | DATE           |             | Due date                                 |
+| `pov_id_arc`                   | CHAR(1)        | NOT NULL    | Arc discriminator for obligation type    |
+
+### `pozice`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_pozice`                    | NUMBER         | NOT NULL    | Primary key, unique ID of position       |
+| `nazev`                        | VARCHAR2(32)   | NOT NULL    | Position name                            |
+| `popis`                        | VARCHAR2(255)  |             | Position description                     |
+| `plat`                         | NUMBER         | NOT NULL    | Salary                                   |
+
+### `pripojisteni`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_poj_pojisteni`             | NUMBER         | NOT NULL    | Foreign key to `pojistka` table          |
+| `pri_id_pripojisteni`          | NUMBER         | NOT NULL    | Primary key, unique ID of add-on policy  |
+| `pri_druh`                     | VARCHAR2(255)  |             | Type of add-on policy                    |
+| `pri_plati_pouze_ve_statech`   | VARCHAR2(255)  |             | Only valid in certain states             |
+| `pri_cena_pripojisteni`        | VARCHAR2(4000) | NOT NULL    | Add-on policy premium                    |
+
+### `secret`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_secret`                    | NUMBER         | NOT NULL    | Primary key, unique ID of secret entry   |
+| `token`                        | VARCHAR2(255)  | NOT NULL    | Encrypted 2FA token                      |
+| `kontakt_id_kontakt`           | NUMBER         | NOT NULL    | Foreign key to `kontakt` table           |
+
+### `urazove_pojisteni`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_poj_pojisteni`             | NUMBER         | NOT NULL    | Foreign key to `pojistka` table          |
+| `ura_id_uraz`                  | NUMBER         | NOT NULL    | Unique ID of injury                      |
+| `ura_druh_urazu`               | VARCHAR2(255)  |             | Type of injury                           |
+| `ura_datum_narozeni`           | DATE           |             | Birth date of the insured person         |
+| `ura_alergie`                  | VARCHAR2(255)  |             | Known allergies                          |
+
+### `zamestnanec`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_zam`                       | NUMBER         | NOT NULL    | Primary key, unique ID of employee       |
+| `jmeno`                        | VARCHAR2(32)   | NOT NULL    | First name                               |
+| `druhe_jmeno`                  | VARCHAR2(32)   |             | Middle name                              |
+| `prijmeni`                     | VARCHAR2(32)   | NOT NULL    | Last name                                |
+| `adresa_id_adresa`             | NUMBER         |             | Foreign key to `adresa` table            |
+| `pozice_id_pozice`             | NUMBER         | NOT NULL    | Foreign key to `pozice` table            |
+| `kontakt_id_kontakt`           | NUMBER         |             | Foreign key to `kontakt` table           |
+
+### `zamestnanec_pobocka`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `zam_id_zam`                   | NUMBER         | NOT NULL    | Foreign key to `zamestnanec` table       |
+| `pob_id_pobocka`               | NUMBER         | NOT NULL    | Foreign key to `pobocka` table           |
+| `id_st_zam_pob`                | NUMBER         | NOT NULL    | Unique link ID                           |
+
+### `zamestnanec_pojistka`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `zam_id_zam`                   | NUMBER         | NOT NULL    | Foreign key to `zamestnanec` table       |
+| `poj_id_pojisteni`             | NUMBER         | NOT NULL    | Foreign key to `pojistka` table          |
+| `id_st_zam_poj`                | NUMBER         | NOT NULL    | Unique link ID                           |
+
+### `zavazek`
+| Column                         | Type           | Constraints | Comment                                  |
+|--------------------------------|----------------|-------------|------------------------------------------|
+| `id_pov_povinosti`             | NUMBER         | NOT NULL    | Foreign key to `povinosti` table         |
+| `zav_id_zavazek`               | NUMBER         | NOT NULL    | Primary key, unique ID of obligation     |
+| `zav_popis`                    | VARCHAR2(255)  | NOT NULL    | Description of obligation                |
+
+
 
 
 
