@@ -29,7 +29,7 @@ Celý proces, jakkoliv je dočasný, musí přes to podléhat nařízení o ohra
 ### Uživatelské role:
 Databáze počítá že v rámci pojišťovny je nespočetné množství pozic, nicméně pro práci v aplikaci se počítá pouze s 5 rolemy. Jak se role přidávají jednotlivím zaměstnancům, záleží na daném postopu pojišťovny a teoreticky lze být časem modifikováno.
 
-| Id role | Název role | Základní popis funkcí |
+| Id | Název role | Základní popis funkcí |
 | ------------- | ------------- | ------------- |
 | 1  | Neregistrovaný uživatel (klient)  | Může vyplnit základní údaje o sobě a tím si vytvořit účet v aplikaci  |
 | 2  | Registrovaný uživatel (klient)  | Má přiděleného zaměstnance, který se o něj "stará". Může prohlížet své pojistky.  |
