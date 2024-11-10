@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jirco\\Documents\\GitHub\\zaznamnik_porad\\Aplikace_GUI-pojistovna\\",
+  "WorkspaceRootPath": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\zaznamnik_porad\\aplikace_gui-pojistovna\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:custombutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,11 +30,37 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:30:43.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomButton.cs",
+              "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\CustomButton.cs",
+              "RelativeDocumentMoniker": "CustomButton.cs",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\CustomButton.cs",
+              "RelativeToolTip": "CustomButton.cs",
+              "ViewState": "AQIAAAAAAAAAMzMzMzMrwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:30:34.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [N\u00E1vrh]",
-              "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\zaznamnik_porad\\Aplikace_GUI-pojistovna\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\zaznamnik_porad\\Aplikace_GUI-pojistovna\\Form1.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.cs [N\u00E1vrh]",
               "RelativeToolTip": "Form1.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T14:24:47.209Z",
