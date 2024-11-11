@@ -254,6 +254,7 @@ Vytořeno pomocí Oracle SQL Developer Data Modeler
 | `id_secret`                    | NUMBER         | NOT NULL    | Primary key, unique ID of secret entry   |
 | `token`                        | VARCHAR2(255)  | NOT NULL    | Encrypted 2FA token                      |
 | `kontakt_id_kontakt`           | NUMBER         | NOT NULL    | Foreign key to `kontakt` table           |
+| `password`                     | VARCHAR2(4000) | NOT NULL    | Password for user, hashed                |
 
 ### `urazove_pojisteni`
 | Column                         | Type           | Constraints | Comment                                  |
