@@ -7,6 +7,18 @@ vytvořil ![Michal Jelínek](https://github.com/jelinekmi/) a ![Jiří Král](ht
 
 založeno na schématu, vytvořeno během předmětu BDAS1, jehož autorem je ![Jiří Král](https://github.com/jitralar/) 
 ____
+## Obsah:
+- ![Popis Projektu](https://github.com/Jitralar/databaze2-pojistovna2024#popis-projektu)
+- ![Scénář](https://github.com/Jitralar/databaze2-pojistovna2024#sc%C3%A9n%C3%A1%C5%99)
+- ![Procedurální pravidla](https://github.com/Jitralar/databaze2-pojistovna2024#procedur%C3%A1ln%C3%A1-pravidla)
+- ![Uživatelské role](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#u%C5%BEivatelsk%C3%A9-role)
+- ![CRUD analýza](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#u%C5%BEivatelsk%C3%A9-role)
+- ![Analýza smyček](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#anal%C3%BDza-smy%C4%8Dek-v-datab%C3%A1zi)
+- ![Integritní omezení](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#integritn%C3%AD-omezen%C3%AD)
+- ![ERD diagram](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#erd-entitn%C4%9B-vztahov%C3%BD-model)
+- ![Relační model dat](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#rela%C4%8Dn%C3%AD-model-dat)
+- ![Tabulky v databázi](https://github.com/Jitralar/databaze2-pojistovna2024?tab=readme-ov-file#tabulky-v-datab%C3%A1zi)
+___
 ### Popis projektu:
 Středně velká pojišťovna z České republiky si přeje po mnoha letech provizorií přejít na nový informační systém. S ohledem na několika na sobě nezávislých důvodů si pojišťovna nemůže dovolit přejít na zcela nové in-house řešení, kvůli tomu vzniká toto technologické demo, aby si pojišťovna dokázala určit, které procesy lze zachovat, které odstranit a jakým stylem bude muset předělat postupy, smlouvy a jiné dokumenty. Systém proto bude v některých částech používat kombinaci nových a starých standardů zákazníka a počítat s tím, že během následujících 5 letech bude nahrazen finálním řešením, které plně nahradí jak toto technologické demo, tak hlavně dosavadní procesy v pojišťovně.
 
