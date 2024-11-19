@@ -1,0 +1,34 @@
+ 
+ name: CI
+
+ on: [push, pull_request]
+
+ jobs:
+   build:
+     runs-on: ubuntu-latest
+
+     steps:
+     - uses: actions/checkout@v2
+
+     - name: Set up .NET
+       uses: actions/setup-dotnet@v1
+       with:
+         dotnet-version: '6.0.x'
+
+     - name: Build with dotnet
+       run: dotnet build --configuration Release
+
+     - name: Run tests
+       run: dotnet test --no-build --verbosity normal
+
+     - name: Publish
+       env:
+         DATABASE_USER: ${{ secrets.DATABASE_USER }}
+         DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
+         DATABASE_PORT: ${{ secrets.DATABASE_PORT }}
+         DATABASE_HOST: ${{ secrets.DATABASE_HOST }}
+         DATABASE_SID: ${{ secrets.DATABASE_SID }}
+         
+       run: |
+         
+ 
