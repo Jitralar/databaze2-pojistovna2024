@@ -31,17 +31,17 @@
             panel1 = new Panel();
             urText = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
-            textBox1 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox13 = new TextBox();
-            textBox15 = new TextBox();
-            textBox17 = new TextBox();
+            newButton13 = new NewButton();
             textBox21 = new TextBox();
+            textBox17 = new TextBox();
+            textBox15 = new TextBox();
+            textBox13 = new TextBox();
+            textBox7 = new TextBox();
+            textBox6 = new TextBox();
+            textBox1 = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
-            newButton13 = new NewButton();
             textBox4 = new TextBox();
             label1 = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
@@ -127,50 +127,33 @@
             tableLayoutPanel1.Size = new Size(900, 453);
             tableLayoutPanel1.TabIndex = 1;
             // 
-            // textBox1
+            // newButton13
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(3, 59);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Jméno";
-            textBox1.Size = new Size(219, 27);
-            textBox1.TabIndex = 2;
+            newButton13.BackColor = Color.MediumSlateBlue;
+            newButton13.BackgroundColor = Color.MediumSlateBlue;
+            newButton13.BorderColor = Color.PaleVioletRed;
+            newButton13.BorderRadius = 0;
+            newButton13.BorderSize = 0;
+            newButton13.Dock = DockStyle.Fill;
+            newButton13.FlatAppearance.BorderSize = 0;
+            newButton13.FlatStyle = FlatStyle.Flat;
+            newButton13.ForeColor = Color.White;
+            newButton13.Location = new Point(678, 339);
+            newButton13.Name = "newButton13";
+            newButton13.Size = new Size(219, 50);
+            newButton13.TabIndex = 37;
+            newButton13.Text = "Registrovat se";
+            newButton13.TextColor = Color.White;
+            newButton13.UseVisualStyleBackColor = false;
             // 
-            // textBox6
+            // textBox21
             // 
-            textBox6.Dock = DockStyle.Fill;
-            textBox6.Location = new Point(228, 59);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "Prostřední jméno";
-            textBox6.Size = new Size(219, 27);
-            textBox6.TabIndex = 7;
-            // 
-            // textBox7
-            // 
-            textBox7.Dock = DockStyle.Fill;
-            textBox7.Location = new Point(453, 59);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = "Příjmení";
-            textBox7.Size = new Size(219, 27);
-            textBox7.TabIndex = 8;
-            // 
-            // textBox13
-            // 
-            textBox13.Dock = DockStyle.Fill;
-            textBox13.Location = new Point(3, 171);
-            textBox13.Name = "textBox13";
-            textBox13.PlaceholderText = "Ulice";
-            textBox13.Size = new Size(219, 27);
-            textBox13.TabIndex = 14;
-            // 
-            // textBox15
-            // 
-            textBox15.Dock = DockStyle.Fill;
-            textBox15.Location = new Point(453, 171);
-            textBox15.Name = "textBox15";
-            textBox15.PlaceholderText = "PSČ";
-            textBox15.Size = new Size(219, 27);
-            textBox15.TabIndex = 16;
+            textBox21.Dock = DockStyle.Fill;
+            textBox21.Location = new Point(3, 283);
+            textBox21.Name = "textBox21";
+            textBox21.PlaceholderText = "Email (uživatelské jméno)";
+            textBox21.Size = new Size(219, 27);
+            textBox21.TabIndex = 22;
             // 
             // textBox17
             // 
@@ -181,14 +164,50 @@
             textBox17.Size = new Size(219, 27);
             textBox17.TabIndex = 18;
             // 
-            // textBox21
+            // textBox15
             // 
-            textBox21.Dock = DockStyle.Fill;
-            textBox21.Location = new Point(3, 283);
-            textBox21.Name = "textBox21";
-            textBox21.PlaceholderText = "Email (uživatelské jméno)";
-            textBox21.Size = new Size(219, 27);
-            textBox21.TabIndex = 22;
+            textBox15.Dock = DockStyle.Fill;
+            textBox15.Location = new Point(453, 171);
+            textBox15.Name = "textBox15";
+            textBox15.PlaceholderText = "PSČ";
+            textBox15.Size = new Size(219, 27);
+            textBox15.TabIndex = 16;
+            // 
+            // textBox13
+            // 
+            textBox13.Dock = DockStyle.Fill;
+            textBox13.Location = new Point(3, 171);
+            textBox13.Name = "textBox13";
+            textBox13.PlaceholderText = "Ulice";
+            textBox13.Size = new Size(219, 27);
+            textBox13.TabIndex = 14;
+            // 
+            // textBox7
+            // 
+            textBox7.Dock = DockStyle.Fill;
+            textBox7.Location = new Point(453, 59);
+            textBox7.Name = "textBox7";
+            textBox7.PlaceholderText = "Příjmení";
+            textBox7.Size = new Size(219, 27);
+            textBox7.TabIndex = 8;
+            // 
+            // textBox6
+            // 
+            textBox6.Dock = DockStyle.Fill;
+            textBox6.Location = new Point(228, 59);
+            textBox6.Name = "textBox6";
+            textBox6.PlaceholderText = "Prostřední jméno";
+            textBox6.Size = new Size(219, 27);
+            textBox6.TabIndex = 7;
+            // 
+            // textBox1
+            // 
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Location = new Point(3, 59);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Jméno";
+            textBox1.Size = new Size(219, 27);
+            textBox1.TabIndex = 2;
             // 
             // tableLayoutPanel2
             // 
@@ -221,25 +240,6 @@
             textBox3.PlaceholderText = "číslo orientační";
             textBox3.Size = new Size(104, 27);
             textBox3.TabIndex = 1;
-            // 
-            // newButton13
-            // 
-            newButton13.BackColor = Color.MediumSlateBlue;
-            newButton13.BackgroundColor = Color.MediumSlateBlue;
-            newButton13.BorderColor = Color.PaleVioletRed;
-            newButton13.BorderRadius = 0;
-            newButton13.BorderSize = 0;
-            newButton13.Dock = DockStyle.Fill;
-            newButton13.FlatAppearance.BorderSize = 0;
-            newButton13.FlatStyle = FlatStyle.Flat;
-            newButton13.ForeColor = Color.White;
-            newButton13.Location = new Point(678, 339);
-            newButton13.Name = "newButton13";
-            newButton13.Size = new Size(219, 50);
-            newButton13.TabIndex = 37;
-            newButton13.Text = "Registrovat se";
-            newButton13.TextColor = Color.White;
-            newButton13.UseVisualStyleBackColor = false;
             // 
             // textBox4
             // 

@@ -13,5 +13,11 @@ namespace Aplikace_GUI_pojistovna
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+
+
+
+
+
+
     }
 }

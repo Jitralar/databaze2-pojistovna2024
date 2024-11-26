@@ -7,6 +7,12 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MainForms\Role2-main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MainForms\Role3-main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MainForms\UserRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>

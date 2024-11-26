@@ -1,4 +1,6 @@
-﻿namespace Aplikace_GUI_pojistovna
+﻿using Aplikace_GUI_pojistovna.MainForms;
+
+namespace Aplikace_GUI_pojistovna
 {
     partial class Form1
     {
@@ -30,10 +32,11 @@
         {
             sidePanel = new Panel();
             panel2 = new Panel();
+            login1 = new SideForms.Login();
             label1 = new Label();
             panel1 = new Panel();
-            mainPanel = new Panel();
             f1HOME = new NewButton();
+            mainPanel = new Panel();
             sidePanel.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -48,17 +51,26 @@
             sidePanel.ForeColor = SystemColors.Control;
             sidePanel.Location = new Point(0, 0);
             sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(212, 523);
+            sidePanel.Size = new Size(212, 609);
             sidePanel.TabIndex = 0;
             // 
             // panel2
             // 
+            panel2.Controls.Add(login1);
             panel2.Controls.Add(label1);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 70);
             panel2.Name = "panel2";
-            panel2.Size = new Size(212, 453);
+            panel2.Size = new Size(212, 539);
             panel2.TabIndex = 1;
+            // 
+            // login1
+            // 
+            login1.BackColor = SystemColors.ControlDarkDark;
+            login1.Location = new Point(0, 0);
+            login1.Name = "login1";
+            login1.Size = new Size(212, 539);
+            login1.TabIndex = 1;
             // 
             // label1
             // 
@@ -77,14 +89,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(212, 70);
             panel1.TabIndex = 0;
-            // 
-            // mainPanel
-            // 
-            mainPanel.Dock = DockStyle.Fill;
-            mainPanel.Location = new Point(212, 0);
-            mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(900, 523);
-            mainPanel.TabIndex = 1;
             // 
             // f1HOME
             // 
@@ -105,11 +109,19 @@
             f1HOME.TextColor = Color.White;
             f1HOME.UseVisualStyleBackColor = false;
             // 
+            // mainPanel
+            // 
+            mainPanel.Dock = DockStyle.Fill;
+            mainPanel.Location = new Point(212, 0);
+            mainPanel.Name = "mainPanel";
+            mainPanel.Size = new Size(1129, 609);
+            mainPanel.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1112, 523);
+            ClientSize = new Size(1341, 609);
             Controls.Add(mainPanel);
             Controls.Add(sidePanel);
             Name = "Form1";
@@ -129,5 +141,15 @@
         private Label label1;
         private Panel mainPanel;
         private NewButton f1HOME;
+        private SideForms.Login login1;
+
+        
+
+
+
+
     }
+
+
+
 }
