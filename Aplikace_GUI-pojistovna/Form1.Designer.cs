@@ -31,7 +31,9 @@
             sidePanel = new Panel();
             panel2 = new Panel();
             panel1 = new Panel();
+            label1 = new Label();
             sidePanel.SuspendLayout();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // sidePanel
@@ -48,6 +50,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(label1);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 70);
             panel2.Name = "panel2";
@@ -62,6 +65,15 @@
             panel1.Size = new Size(212, 70);
             panel1.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 112);
+            label1.Name = "label1";
+            label1.Size = new Size(178, 20);
+            label1.TabIndex = 0;
+            label1.Text = "zde bude nahrazny obsah";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -71,6 +83,8 @@
             Name = "Form1";
             Text = "Form1";
             sidePanel.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -79,5 +93,6 @@
         private Panel sidePanel;
         private Panel panel1;
         private Panel panel2;
+        private Label label1;
     }
 }

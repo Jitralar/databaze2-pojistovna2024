@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "6wIsJmMGmcf/gON+6Deb4TfEHrWVjXY0koXfu+1ZCj+1eaOCi9xrbd8V3uI2tSvwUImPZTm/luZNRGuSmnw8zw==",
+  "dgSpecHash": "L8EE8WK7wbegGhkh0fiqKb6153F9u+z053E/CvAuf4E9pvq3R+VxIpMD3oP3YJ6ouhdJrjxggqGoyRVli/Nmug==",
   "success": true,
   "projectFilePath": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\jirco\\.nuget\\packages\\oracle.manageddataaccess\\23.6.1\\oracle.manageddataaccess.23.6.1.nupkg.sha512",
+    "C:\\Users\\jirco\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "C:\\Users\\jirco\\.nuget\\packages\\system.formats.asn1\\8.0.1\\system.formats.asn1.8.0.1.nupkg.sha512",
+    "C:\\Users\\jirco\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\jirco\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
+    "C:\\Users\\jirco\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Balíček Oracle.ManagedDataAccess 23.6.1 se místo cílové architektury projektu net8.0-windows7.0 obnovil pomocí .NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1. Balíček nemusí být plně kompatibilní s vaším projektem.",
+      "libraryId": "Oracle.ManagedDataAccess",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }
