@@ -48,6 +48,8 @@ Databáze počítá že v rámci pojišťovny je nespočetné množství pozic, 
 | 3  | Zaměstnanec  | Spravuje obsah pojistek. Může si přepínat mezi svými klienty a spravuje jodnotlivé pojistky.  |
 | 4  | Analytik  | Může sledovat anonymizované statistiky a výstupy ze systému.  |
 | 5  | Supervisor  | Má práva všech rolí (2 - 5). Přiděluje jednotlivé zaměstnance ke klientům. |
+| 6  | Admin  | Může modifikovat obsah všech tabulek (včetně číselníků), může sledovat logy v aplikaci a má funkce Analytika |
+
 
 ### CRUD analýza:
 //todo
