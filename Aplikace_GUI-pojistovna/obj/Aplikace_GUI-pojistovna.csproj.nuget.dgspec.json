@@ -49,16 +49,6 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Oracle.ManagedDataAccess": {
-              "target": "Package",
-              "version": "[23.6.1, )"
-            },
-            "Oracle.ManagedDataAccess.Core": {
-              "target": "Package",
-              "version": "[23.6.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -7,5 +7,23 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SideForms\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SideForms\Role2-registrovanyUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SideForms\Role3-zamestnanec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SideForms\Role4-analytik.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SideForms\Role5-supervisor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SideForms\Role6-admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
