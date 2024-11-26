@@ -13,7 +13,7 @@
     <Compile Update="SideForms\Role2-registrovanyUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="SideForms\Role3-zamestnanec.cs">
+    <Compile Update="SideForms\role3-zamestnanec.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SideForms\Role4-analytik.cs">

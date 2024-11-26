@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Aplikace_GUI_pojistovna.SideForms
 {
-    public partial class Role3_zamestnanec : UserControl
+    public partial class role3_zamestnanec : UserControl
     {
-        public Role3_zamestnanec()
+        public role3_zamestnanec()
         {
             InitializeComponent();
         }
