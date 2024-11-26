@@ -43,6 +43,9 @@
             tableLayoutPanel6 = new TableLayoutPanel();
             r3logout = new NewButton();
             r3profil = new NewButton();
+            r3klienti = new NewButton();
+            r3pojistky = new NewButton();
+            r3newpojistka = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -225,8 +228,11 @@
             // 
             tableLayoutPanel5.ColumnCount = 1;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle());
+            tableLayoutPanel5.Controls.Add(r3newpojistka, 0, 2);
+            tableLayoutPanel5.Controls.Add(r3pojistky, 0, 1);
             tableLayoutPanel5.Controls.Add(tableLayoutPanel6, 0, 7);
             tableLayoutPanel5.Controls.Add(r3label, 0, 6);
+            tableLayoutPanel5.Controls.Add(r3klienti, 0, 0);
             tableLayoutPanel5.Dock = DockStyle.Fill;
             tableLayoutPanel5.Location = new Point(0, 0);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -292,6 +298,63 @@
             r3profil.TextColor = Color.Black;
             r3profil.UseVisualStyleBackColor = false;
             // 
+            // r3klienti
+            // 
+            r3klienti.BackColor = Color.MediumSlateBlue;
+            r3klienti.BackgroundColor = Color.MediumSlateBlue;
+            r3klienti.BorderColor = Color.PaleVioletRed;
+            r3klienti.BorderRadius = 0;
+            r3klienti.BorderSize = 0;
+            r3klienti.Dock = DockStyle.Fill;
+            r3klienti.FlatAppearance.BorderSize = 0;
+            r3klienti.FlatStyle = FlatStyle.Flat;
+            r3klienti.ForeColor = Color.White;
+            r3klienti.Location = new Point(3, 3);
+            r3klienti.Name = "r3klienti";
+            r3klienti.Size = new Size(206, 50);
+            r3klienti.TabIndex = 5;
+            r3klienti.Text = "Klienti";
+            r3klienti.TextColor = Color.White;
+            r3klienti.UseVisualStyleBackColor = false;
+            // 
+            // r3pojistky
+            // 
+            r3pojistky.BackColor = Color.MediumSlateBlue;
+            r3pojistky.BackgroundColor = Color.MediumSlateBlue;
+            r3pojistky.BorderColor = Color.PaleVioletRed;
+            r3pojistky.BorderRadius = 0;
+            r3pojistky.BorderSize = 0;
+            r3pojistky.Dock = DockStyle.Fill;
+            r3pojistky.FlatAppearance.BorderSize = 0;
+            r3pojistky.FlatStyle = FlatStyle.Flat;
+            r3pojistky.ForeColor = Color.White;
+            r3pojistky.Location = new Point(3, 59);
+            r3pojistky.Name = "r3pojistky";
+            r3pojistky.Size = new Size(206, 50);
+            r3pojistky.TabIndex = 6;
+            r3pojistky.Text = "Pojistky";
+            r3pojistky.TextColor = Color.White;
+            r3pojistky.UseVisualStyleBackColor = false;
+            // 
+            // r3newpojistka
+            // 
+            r3newpojistka.BackColor = Color.MediumSlateBlue;
+            r3newpojistka.BackgroundColor = Color.MediumSlateBlue;
+            r3newpojistka.BorderColor = Color.PaleVioletRed;
+            r3newpojistka.BorderRadius = 0;
+            r3newpojistka.BorderSize = 0;
+            r3newpojistka.Dock = DockStyle.Fill;
+            r3newpojistka.FlatAppearance.BorderSize = 0;
+            r3newpojistka.FlatStyle = FlatStyle.Flat;
+            r3newpojistka.ForeColor = Color.White;
+            r3newpojistka.Location = new Point(3, 115);
+            r3newpojistka.Name = "r3newpojistka";
+            r3newpojistka.Size = new Size(206, 50);
+            r3newpojistka.TabIndex = 7;
+            r3newpojistka.Text = "Vytvořit novou pojistku";
+            r3newpojistka.TextColor = Color.White;
+            r3newpojistka.UseVisualStyleBackColor = false;
+            // 
             // role3_zamestnanec
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -327,5 +390,8 @@
         private TableLayoutPanel tableLayoutPanel6;
         private NewButton r3logout;
         private NewButton r3profil;
+        private NewButton r3pojistky;
+        private NewButton r3klienti;
+        private NewButton r3newpojistka;
     }
 }
