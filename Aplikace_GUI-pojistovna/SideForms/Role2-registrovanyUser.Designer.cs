@@ -30,18 +30,21 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             r2mojePojistky = new NewButton();
-            newButton2 = new NewButton();
             tableLayoutPanel2 = new TableLayoutPanel();
+            r2logout = new NewButton();
+            r2profil = new NewButton();
+            r2label = new Label();
             tableLayoutPanel1.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
-            tableLayoutPanel1.Controls.Add(newButton2, 0, 1);
             tableLayoutPanel1.Controls.Add(r2mojePojistky, 0, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 7);
+            tableLayoutPanel1.Controls.Add(r2label, 0, 6);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -76,36 +79,65 @@
             r2mojePojistky.TextColor = Color.White;
             r2mojePojistky.UseVisualStyleBackColor = false;
             // 
-            // newButton2
-            // 
-            newButton2.BackColor = Color.LightYellow;
-            newButton2.BackgroundColor = Color.LightYellow;
-            newButton2.BorderColor = Color.PaleVioletRed;
-            newButton2.BorderRadius = 0;
-            newButton2.BorderSize = 0;
-            newButton2.Dock = DockStyle.Fill;
-            newButton2.FlatAppearance.BorderSize = 0;
-            newButton2.FlatStyle = FlatStyle.Flat;
-            newButton2.ForeColor = Color.Black;
-            newButton2.Location = new Point(3, 59);
-            newButton2.Name = "newButton2";
-            newButton2.Size = new Size(206, 50);
-            newButton2.TabIndex = 2;
-            newButton2.Text = "newButton2";
-            newButton2.TextColor = Color.Black;
-            newButton2.UseVisualStyleBackColor = false;
-            // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Controls.Add(r2logout, 1, 0);
+            tableLayoutPanel2.Controls.Add(r2profil, 0, 0);
             tableLayoutPanel2.Location = new Point(3, 395);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.Size = new Size(206, 55);
             tableLayoutPanel2.TabIndex = 3;
+            // 
+            // r2logout
+            // 
+            r2logout.BackColor = Color.IndianRed;
+            r2logout.BackgroundColor = Color.IndianRed;
+            r2logout.BorderColor = Color.PaleVioletRed;
+            r2logout.BorderRadius = 0;
+            r2logout.BorderSize = 0;
+            r2logout.FlatAppearance.BorderSize = 0;
+            r2logout.FlatStyle = FlatStyle.Flat;
+            r2logout.ForeColor = Color.White;
+            r2logout.Location = new Point(106, 3);
+            r2logout.Name = "r2logout";
+            r2logout.Size = new Size(97, 49);
+            r2logout.TabIndex = 0;
+            r2logout.Text = "logout";
+            r2logout.TextColor = Color.White;
+            r2logout.UseVisualStyleBackColor = false;
+            // 
+            // r2profil
+            // 
+            r2profil.BackColor = Color.LemonChiffon;
+            r2profil.BackgroundColor = Color.LemonChiffon;
+            r2profil.BorderColor = Color.PaleVioletRed;
+            r2profil.BorderRadius = 0;
+            r2profil.BorderSize = 0;
+            r2profil.FlatAppearance.BorderSize = 0;
+            r2profil.FlatStyle = FlatStyle.Flat;
+            r2profil.ForeColor = Color.Black;
+            r2profil.Location = new Point(3, 3);
+            r2profil.Name = "r2profil";
+            r2profil.Size = new Size(97, 49);
+            r2profil.TabIndex = 1;
+            r2profil.Text = "profil";
+            r2profil.TextColor = Color.Black;
+            r2profil.UseVisualStyleBackColor = false;
+            // 
+            // r2label
+            // 
+            r2label.AutoSize = true;
+            r2label.Location = new Point(3, 336);
+            r2label.Name = "r2label";
+            r2label.Padding = new Padding(3);
+            r2label.Size = new Size(164, 46);
+            r2label.TabIndex = 4;
+            r2label.Text = "Přihlášen jako uživatel:\r\n*jmeno*";
             // 
             // Role1_registrovanyUser
             // 
@@ -116,6 +148,8 @@
             Name = "Role1_registrovanyUser";
             Size = new Size(212, 453);
             tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            tableLayoutPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -123,7 +157,9 @@
 
         private TableLayoutPanel tableLayoutPanel1;
         private NewButton r2mojePojistky;
-        private NewButton newButton2;
         private TableLayoutPanel tableLayoutPanel2;
+        private NewButton r2logout;
+        private NewButton r2profil;
+        private Label r2label;
     }
 }
