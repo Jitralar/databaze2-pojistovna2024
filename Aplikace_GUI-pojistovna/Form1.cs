@@ -1,4 +1,5 @@
 using Aplikace_GUI_pojistovna.MainForms;
+using Aplikace_GUI_pojistovna.SideForms;
 
 namespace Aplikace_GUI_pojistovna
 {
@@ -35,6 +36,13 @@ namespace Aplikace_GUI_pojistovna
             // more to be addded, even if you never use them
             // idk it could be someday usefull...
             //----------------------------------------------------------------
+
+            List<UserControl> sideControlList = new List<UserControl>()
+            { new Login(), new Role1_registrovanyUser(), new role3_zamestnanec(), new Role4_analytik(), new Role5_supervisor(), new Role6_admin()};
+            navigationControl = new NavigationControl(sidePanel, sideControlList);
+            navigationControl.Display(0);
+
+            //WARNING: role1_registrovanyUser.cs je vedena jako role1, ale vzhledem k tomu, ze se to nepropsalo a nechci riskovat nefunkènost a hrabani se v tom, tak jsem to nechal takto
 
         }
 
