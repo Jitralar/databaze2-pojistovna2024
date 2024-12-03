@@ -104,14 +104,14 @@ namespace Aplikace_GUI_pojistovna
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(212, 0);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(1129, 609);
+            mainPanel.Size = new Size(827, 609);
             mainPanel.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1341, 609);
+            ClientSize = new Size(1039, 609);
             Controls.Add(mainPanel);
             Controls.Add(sidePanel);
             Name = "Form1";
