@@ -32,7 +32,6 @@ namespace Aplikace_GUI_pojistovna
         {
             sidePanel = new Panel();
             panel2 = new Panel();
-            login1 = new SideForms.Login();
             label1 = new Label();
             panel1 = new Panel();
             f1HOME = new NewButton();
@@ -56,21 +55,12 @@ namespace Aplikace_GUI_pojistovna
             // 
             // panel2
             // 
-            panel2.Controls.Add(login1);
             panel2.Controls.Add(label1);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 70);
             panel2.Name = "panel2";
             panel2.Size = new Size(212, 539);
             panel2.TabIndex = 1;
-            // 
-            // login1
-            // 
-            login1.BackColor = SystemColors.ControlDarkDark;
-            login1.Location = new Point(0, 0);
-            login1.Name = "login1";
-            login1.Size = new Size(212, 539);
-            login1.TabIndex = 1;
             // 
             // label1
             // 
@@ -141,13 +131,6 @@ namespace Aplikace_GUI_pojistovna
         private Label label1;
         private Panel mainPanel;
         private NewButton f1HOME;
-        private SideForms.Login login1;
-
-        
-
-
-
-
     }
 
 
