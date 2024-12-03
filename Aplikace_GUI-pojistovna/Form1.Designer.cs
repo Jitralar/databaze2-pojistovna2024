@@ -50,7 +50,7 @@ namespace Aplikace_GUI_pojistovna
             sidePanel.ForeColor = SystemColors.Control;
             sidePanel.Location = new Point(0, 0);
             sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(212, 609);
+            sidePanel.Size = new Size(212, 523);
             sidePanel.TabIndex = 0;
             // 
             // panel2
@@ -59,7 +59,7 @@ namespace Aplikace_GUI_pojistovna
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 70);
             panel2.Name = "panel2";
-            panel2.Size = new Size(212, 539);
+            panel2.Size = new Size(212, 453);
             panel2.TabIndex = 1;
             // 
             // label1
@@ -104,14 +104,14 @@ namespace Aplikace_GUI_pojistovna
             mainPanel.Dock = DockStyle.Fill;
             mainPanel.Location = new Point(212, 0);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(827, 609);
+            mainPanel.Size = new Size(900, 523);
             mainPanel.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1039, 609);
+            ClientSize = new Size(1112, 523);
             Controls.Add(mainPanel);
             Controls.Add(sidePanel);
             Name = "Form1";

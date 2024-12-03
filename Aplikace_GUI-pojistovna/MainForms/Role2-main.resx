@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Připravili jsme pro Vás podrobný a přehledný manuál k systému OASIS, který Vám umožní snadno a rychle zobrazit veškeré informace o Vašich pojištěních. V tomto návodu naleznete krok za krokem vysvětleno, jak se přihlásit, orientovat v systému, spravovat Vaše smlouvy a využívat všechny dostupné funkce.</value>
+  </data>
+  <data name="r2AktualitaTEXT.Text" xml:space="preserve">
+    <value>V dnešní digitální době je důležité chránit své osobní údaje a finanční prostředky před kybernetickými hrozbami. Doporučujeme proto pravidelně aktualizovat své heslo, používat silné kombinace obsahující velká i malá písmena, číslice a speciální znaky. Nikdy nesdělujte citlivé informace, jako jsou přihlašovací údaje nebo PIN kódy, prostřednictvím e-mailu, telefonu nebo zpráv. Ověřujte si legitimitu webových stránek, na kterých zadáváte své údaje – adresy by měly začínat „https://“. Kromě toho doporučujeme pravidelně kontrolovat své účty a být obezřetní při otevírání nevyžádaných e-mailů či odkazů. 
+
+Bezpečnost na internetu začíná u Vás – buďte o krok napřed před kybernetickými podvodníky. Vaše bezpečí je pro nás prioritou.</value>
+  </data>
 </root>
