@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Aplikace_GUI-pojistovna",
+    "\\Aplikace_GUI-pojistovna\\MainForms"
   ],
+  "SelectedNode": "\\Aplikace_GUI-pojistovna\\MainForms\\Role2-main.cs",
   "PreviewInSolutionExplorer": false
 }
