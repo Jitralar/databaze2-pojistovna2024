@@ -13,6 +13,15 @@
     <Compile Update="MainForms\Role3-main.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="MainForms\Role4-main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MainForms\Role5-main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MainForms\Role6-main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MainForms\UserRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -32,6 +41,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="SideForms\Role6-admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\UzivatelVypisPojistek.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
