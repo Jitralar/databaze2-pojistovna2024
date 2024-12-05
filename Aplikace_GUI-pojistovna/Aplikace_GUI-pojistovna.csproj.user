@@ -22,6 +22,9 @@
     <Compile Update="MainForms\Role6-main.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="MainForms\UserProfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="MainForms\UserRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -43,7 +46,40 @@
     <Compile Update="SideForms\Role6-admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="SpecificForms\PridelitKlientaZamestnanci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\StatistikyKlientu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\StatistikyPobocek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\StatistikyPojistek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\StatistikyZamestnancu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\UpravitObsahTabulky.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="SpecificForms\UzivatelVypisPojistek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\VypisKlienty.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\VypisPojistky.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\VypisZamestnance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\VytvoritPojistku.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SpecificForms\ZobrazitLog.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
