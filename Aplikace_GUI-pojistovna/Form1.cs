@@ -67,6 +67,114 @@ namespace Aplikace_GUI_pojistovna
 
         }
 
+        public void ShowUserProfile()
+        {
+            // Pøedpokládáme, že UserProfil je na indexu 7 v seznamu mainControlList
+            // používá se k zobrazení Panelu profilu uživatele
+            // Zavolá se pøi kliknutí na tlaèítko r2profil, r3profil, r4profil, r5profil, r6profil
+
+            //nutne predelavat pro daneho uzivatele, vsichni sdily stejny form
+
+            navigationControl.Display(7);
+        }
+
+        public void ShowUzivatelVypisPojistky()
+        {
+            // Pøedpokládáme, že UzivatelVypisPojistky je na indexu 14 v seznamu mainControlList
+            // používá se k zobrazení Panelu výpisu pojištìk uživatele
+            // Zavolá se pøi kliknutí na tlaèítko r2mojePojistky
+            navigationControl.Display(14);
+        }
+
+        public void ShowVypisKlienty()
+        {
+            // Pøedpokládáme, že VypisKlienty je na indexu 15 v seznamu mainControlList
+            // používá se k zobrazení Panelu výpisu klientù
+            // Zavolá se pøi kliknutí na tlaèítko r3klienti
+            navigationControl.Display(15);
+        }
+
+        public void ShowVypisPojistky()
+        {
+            // Pøedpokládáme, že VypisPojistky je na indexu 16 v seznamu mainControlList
+            // používá se k zobrazení Panelu výpisu pojištìk
+            // Zavolá se pøi kliknutí na tlaèítko r3pojistky
+            navigationControl.Display(16);
+        }
+
+        public void ShowVytvoritPojistku()
+        {
+            // Pøedpokládáme, že VytvoritPojistku je na indexu 18 v seznamu mainControlList
+            // používá se k zobrazení Panelu vytvoøení pojištìní
+            // Zavolá se pøi kliknutí na tlaèítko r3newpojistka
+            navigationControl.Display(18);
+        }
+
+        public void ShowStatistikyKlientu()
+        {
+            // Pøedpokládáme, že StatistikyKlientu je na indexu 9 v seznamu mainControlList
+            // používá se k zobrazení Panelu statistiky klientù
+            // Zavolá se pøi kliknutí na tlaèítko r4statsklienti, r5statsklienti
+            navigationControl.Display(9);
+        }
+
+        public void ShowStatistikyZamestnancu()
+        {
+            // Pøedpokládáme, že StatistikyZamestnancu je na indexu 12 v seznamu mainControlList
+            // používá se k zobrazení Panelu statistiky zamìstnancù
+            // Zavolá se pøi kliknutí na tlaèítko r4statszamestnanci, r5statszamestnanci
+            navigationControl.Display(12);
+        }
+
+        public void ShowStatistikyPojistek()
+        {
+            // Pøedpokládáme, že StatistikyPojistek je na indexu 11 v seznamu mainControlList
+            // používá se k zobrazení Panelu statistiky pojištìk
+            // Zavolá se pøi kliknutí na tlaèítko r4statspojistky
+            navigationControl.Display(11);
+        }
+
+        public void ShowStatistikyPobocek()
+        {
+            // Pøedpokládáme, že StatistikyPobocek je na indexu 10 v seznamu mainControlList
+            // používá se k zobrazení Panelu statistiky poboèek
+            // Zavolá se pøi kliknutí na tlaèítko r4statistikypobocek
+            navigationControl.Display(10);
+        }
+
+        public void ShowVypisZamestnance()
+        {
+            // Pøedpokládáme, že VypisZamestnance je na indexu 17 v seznamu mainControlList
+            // používá se k zobrazení Panelu výpisu zamìstnancù
+            // Zavolá se pøi kliknutí na tlaèítko r5zamestnanci
+            navigationControl.Display(17);
+        }
+
+        public void ShowPridelitKlientaZamestnanci()
+        {
+            // Pøedpokládáme, že PridelitKlientaZamestnanci je na indexu 8 v seznamu mainControlList
+            // používá se k zobrazení Panelu pøidìlení klienta zamìstnanci
+            // Zavolá se pøi kliknutí na tlaèítko r5delegate
+            navigationControl.Display(8);
+        }
+
+        public void ShowUpravitObsahTabulek()
+        {
+            // Pøedpokládáme, že UpravitObsahTabulky je na indexu 13 v seznamu mainControlList
+            // používá se k zobrazení Panelu úpravy obsahu tabulky
+            // Zavolá se pøi kliknutí na tlaèítko r6modeifyTabulky
+            navigationControl.Display(13);
+        }
+
+        public void ShowLog()
+        {
+            // Pøedpokládáme, že ZobrazitLog je na indexu 19 v seznamu mainControlList
+            // používá se k zobrazení Panelu logu
+            // Zavolá se pøi kliknutí na tlaèítko r6log
+            navigationControl.Display(19);
+        }
+
+
     }
 
 }

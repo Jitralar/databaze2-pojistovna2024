@@ -40,12 +40,12 @@
             newButton2 = new NewButton();
             r3label = new Label();
             tableLayoutPanel5 = new TableLayoutPanel();
+            r3newpojistka = new NewButton();
+            r3pojistky = new NewButton();
             tableLayoutPanel6 = new TableLayoutPanel();
             r3logout = new NewButton();
             r3profil = new NewButton();
             r3klienti = new NewButton();
-            r3pojistky = new NewButton();
-            r3newpojistka = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -248,6 +248,46 @@
             tableLayoutPanel5.Size = new Size(212, 453);
             tableLayoutPanel5.TabIndex = 3;
             // 
+            // r3newpojistka
+            // 
+            r3newpojistka.BackColor = Color.MediumSlateBlue;
+            r3newpojistka.BackgroundColor = Color.MediumSlateBlue;
+            r3newpojistka.BorderColor = Color.PaleVioletRed;
+            r3newpojistka.BorderRadius = 0;
+            r3newpojistka.BorderSize = 0;
+            r3newpojistka.Dock = DockStyle.Fill;
+            r3newpojistka.FlatAppearance.BorderSize = 0;
+            r3newpojistka.FlatStyle = FlatStyle.Flat;
+            r3newpojistka.ForeColor = Color.White;
+            r3newpojistka.Location = new Point(3, 115);
+            r3newpojistka.Name = "r3newpojistka";
+            r3newpojistka.Size = new Size(206, 50);
+            r3newpojistka.TabIndex = 7;
+            r3newpojistka.Text = "Vytvořit novou pojistku";
+            r3newpojistka.TextColor = Color.White;
+            r3newpojistka.UseVisualStyleBackColor = false;
+            r3newpojistka.Click += r3newpojistka_Click;
+            // 
+            // r3pojistky
+            // 
+            r3pojistky.BackColor = Color.MediumSlateBlue;
+            r3pojistky.BackgroundColor = Color.MediumSlateBlue;
+            r3pojistky.BorderColor = Color.PaleVioletRed;
+            r3pojistky.BorderRadius = 0;
+            r3pojistky.BorderSize = 0;
+            r3pojistky.Dock = DockStyle.Fill;
+            r3pojistky.FlatAppearance.BorderSize = 0;
+            r3pojistky.FlatStyle = FlatStyle.Flat;
+            r3pojistky.ForeColor = Color.White;
+            r3pojistky.Location = new Point(3, 59);
+            r3pojistky.Name = "r3pojistky";
+            r3pojistky.Size = new Size(206, 50);
+            r3pojistky.TabIndex = 6;
+            r3pojistky.Text = "Pojistky";
+            r3pojistky.TextColor = Color.White;
+            r3pojistky.UseVisualStyleBackColor = false;
+            r3pojistky.Click += r3pojistky_Click;
+            // 
             // tableLayoutPanel6
             // 
             tableLayoutPanel6.ColumnCount = 2;
@@ -297,6 +337,7 @@
             r3profil.Text = "profil";
             r3profil.TextColor = Color.Black;
             r3profil.UseVisualStyleBackColor = false;
+            r3profil.Click += r3profil_Click;
             // 
             // r3klienti
             // 
@@ -316,44 +357,7 @@
             r3klienti.Text = "Klienti";
             r3klienti.TextColor = Color.White;
             r3klienti.UseVisualStyleBackColor = false;
-            // 
-            // r3pojistky
-            // 
-            r3pojistky.BackColor = Color.MediumSlateBlue;
-            r3pojistky.BackgroundColor = Color.MediumSlateBlue;
-            r3pojistky.BorderColor = Color.PaleVioletRed;
-            r3pojistky.BorderRadius = 0;
-            r3pojistky.BorderSize = 0;
-            r3pojistky.Dock = DockStyle.Fill;
-            r3pojistky.FlatAppearance.BorderSize = 0;
-            r3pojistky.FlatStyle = FlatStyle.Flat;
-            r3pojistky.ForeColor = Color.White;
-            r3pojistky.Location = new Point(3, 59);
-            r3pojistky.Name = "r3pojistky";
-            r3pojistky.Size = new Size(206, 50);
-            r3pojistky.TabIndex = 6;
-            r3pojistky.Text = "Pojistky";
-            r3pojistky.TextColor = Color.White;
-            r3pojistky.UseVisualStyleBackColor = false;
-            // 
-            // r3newpojistka
-            // 
-            r3newpojistka.BackColor = Color.MediumSlateBlue;
-            r3newpojistka.BackgroundColor = Color.MediumSlateBlue;
-            r3newpojistka.BorderColor = Color.PaleVioletRed;
-            r3newpojistka.BorderRadius = 0;
-            r3newpojistka.BorderSize = 0;
-            r3newpojistka.Dock = DockStyle.Fill;
-            r3newpojistka.FlatAppearance.BorderSize = 0;
-            r3newpojistka.FlatStyle = FlatStyle.Flat;
-            r3newpojistka.ForeColor = Color.White;
-            r3newpojistka.Location = new Point(3, 115);
-            r3newpojistka.Name = "r3newpojistka";
-            r3newpojistka.Size = new Size(206, 50);
-            r3newpojistka.TabIndex = 7;
-            r3newpojistka.Text = "Vytvořit novou pojistku";
-            r3newpojistka.TextColor = Color.White;
-            r3newpojistka.UseVisualStyleBackColor = false;
+            r3klienti.Click += r3klienti_Click;
             // 
             // role3_zamestnanec
             // 

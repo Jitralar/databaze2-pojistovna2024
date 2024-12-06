@@ -16,5 +16,45 @@ namespace Aplikace_GUI_pojistovna.SideForms
         {
             InitializeComponent();
         }
+
+        private void r3profil_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení UserProfil
+                mainForm.ShowUserProfile();
+            }
+        }
+
+        private void r3klienti_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení VypisKlienty
+                mainForm.ShowVypisKlienty();
+            }
+        }
+
+        private void r3pojistky_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení VypisPojistky
+                mainForm.ShowVypisPojistky();
+            }
+        }
+
+        private void r3newpojistka_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení VytoritPojistku
+                mainForm.ShowVytvoritPojistku();
+            }
+        }
     }
 }

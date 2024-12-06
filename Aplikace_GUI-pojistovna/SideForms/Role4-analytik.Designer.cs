@@ -30,13 +30,13 @@
         {
             r4label = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
+            r4statistikypobocek = new NewButton();
+            r4statspojistky = new NewButton();
+            r4statszamestnanci = new NewButton();
             tableLayoutPanel2 = new TableLayoutPanel();
             r4logout = new NewButton();
             r4profil = new NewButton();
             r4statsklienti = new NewButton();
-            r4statszamestnanci = new NewButton();
-            r4statspojistky = new NewButton();
-            r4statistikypobocek = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -76,6 +76,66 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(212, 453);
             tableLayoutPanel1.TabIndex = 2;
+            // 
+            // r4statistikypobocek
+            // 
+            r4statistikypobocek.BackColor = Color.MediumSlateBlue;
+            r4statistikypobocek.BackgroundColor = Color.MediumSlateBlue;
+            r4statistikypobocek.BorderColor = Color.PaleVioletRed;
+            r4statistikypobocek.BorderRadius = 0;
+            r4statistikypobocek.BorderSize = 0;
+            r4statistikypobocek.Dock = DockStyle.Fill;
+            r4statistikypobocek.FlatAppearance.BorderSize = 0;
+            r4statistikypobocek.FlatStyle = FlatStyle.Flat;
+            r4statistikypobocek.ForeColor = Color.White;
+            r4statistikypobocek.Location = new Point(3, 171);
+            r4statistikypobocek.Name = "r4statistikypobocek";
+            r4statistikypobocek.Size = new Size(206, 50);
+            r4statistikypobocek.TabIndex = 8;
+            r4statistikypobocek.Text = "Statistiky Poboček";
+            r4statistikypobocek.TextColor = Color.White;
+            r4statistikypobocek.UseVisualStyleBackColor = false;
+            r4statistikypobocek.Click += r4statistikypobocek_Click;
+            // 
+            // r4statspojistky
+            // 
+            r4statspojistky.BackColor = Color.MediumSlateBlue;
+            r4statspojistky.BackgroundColor = Color.MediumSlateBlue;
+            r4statspojistky.BorderColor = Color.PaleVioletRed;
+            r4statspojistky.BorderRadius = 0;
+            r4statspojistky.BorderSize = 0;
+            r4statspojistky.Dock = DockStyle.Fill;
+            r4statspojistky.FlatAppearance.BorderSize = 0;
+            r4statspojistky.FlatStyle = FlatStyle.Flat;
+            r4statspojistky.ForeColor = Color.White;
+            r4statspojistky.Location = new Point(3, 115);
+            r4statspojistky.Name = "r4statspojistky";
+            r4statspojistky.Size = new Size(206, 50);
+            r4statspojistky.TabIndex = 7;
+            r4statspojistky.Text = "Statistiky Pojistek";
+            r4statspojistky.TextColor = Color.White;
+            r4statspojistky.UseVisualStyleBackColor = false;
+            r4statspojistky.Click += r4statspojistky_Click;
+            // 
+            // r4statszamestnanci
+            // 
+            r4statszamestnanci.BackColor = Color.MediumSlateBlue;
+            r4statszamestnanci.BackgroundColor = Color.MediumSlateBlue;
+            r4statszamestnanci.BorderColor = Color.PaleVioletRed;
+            r4statszamestnanci.BorderRadius = 0;
+            r4statszamestnanci.BorderSize = 0;
+            r4statszamestnanci.Dock = DockStyle.Fill;
+            r4statszamestnanci.FlatAppearance.BorderSize = 0;
+            r4statszamestnanci.FlatStyle = FlatStyle.Flat;
+            r4statszamestnanci.ForeColor = Color.White;
+            r4statszamestnanci.Location = new Point(3, 59);
+            r4statszamestnanci.Name = "r4statszamestnanci";
+            r4statszamestnanci.Size = new Size(206, 50);
+            r4statszamestnanci.TabIndex = 6;
+            r4statszamestnanci.Text = "Statistiky Zaměstnanců";
+            r4statszamestnanci.TextColor = Color.White;
+            r4statszamestnanci.UseVisualStyleBackColor = false;
+            r4statszamestnanci.Click += r4statszamestnanci_Click;
             // 
             // tableLayoutPanel2
             // 
@@ -126,6 +186,7 @@
             r4profil.Text = "profil";
             r4profil.TextColor = Color.Black;
             r4profil.UseVisualStyleBackColor = false;
+            r4profil.Click += r4profil_Click;
             // 
             // r4statsklienti
             // 
@@ -145,63 +206,7 @@
             r4statsklienti.Text = "Statistiky Klientů";
             r4statsklienti.TextColor = Color.White;
             r4statsklienti.UseVisualStyleBackColor = false;
-            // 
-            // r4statszamestnanci
-            // 
-            r4statszamestnanci.BackColor = Color.MediumSlateBlue;
-            r4statszamestnanci.BackgroundColor = Color.MediumSlateBlue;
-            r4statszamestnanci.BorderColor = Color.PaleVioletRed;
-            r4statszamestnanci.BorderRadius = 0;
-            r4statszamestnanci.BorderSize = 0;
-            r4statszamestnanci.Dock = DockStyle.Fill;
-            r4statszamestnanci.FlatAppearance.BorderSize = 0;
-            r4statszamestnanci.FlatStyle = FlatStyle.Flat;
-            r4statszamestnanci.ForeColor = Color.White;
-            r4statszamestnanci.Location = new Point(3, 59);
-            r4statszamestnanci.Name = "r4statszamestnanci";
-            r4statszamestnanci.Size = new Size(206, 50);
-            r4statszamestnanci.TabIndex = 6;
-            r4statszamestnanci.Text = "Statistiky Zaměstnanců";
-            r4statszamestnanci.TextColor = Color.White;
-            r4statszamestnanci.UseVisualStyleBackColor = false;
-            // 
-            // r4statspojistky
-            // 
-            r4statspojistky.BackColor = Color.MediumSlateBlue;
-            r4statspojistky.BackgroundColor = Color.MediumSlateBlue;
-            r4statspojistky.BorderColor = Color.PaleVioletRed;
-            r4statspojistky.BorderRadius = 0;
-            r4statspojistky.BorderSize = 0;
-            r4statspojistky.Dock = DockStyle.Fill;
-            r4statspojistky.FlatAppearance.BorderSize = 0;
-            r4statspojistky.FlatStyle = FlatStyle.Flat;
-            r4statspojistky.ForeColor = Color.White;
-            r4statspojistky.Location = new Point(3, 115);
-            r4statspojistky.Name = "r4statspojistky";
-            r4statspojistky.Size = new Size(206, 50);
-            r4statspojistky.TabIndex = 7;
-            r4statspojistky.Text = "Statistiky Pojistek";
-            r4statspojistky.TextColor = Color.White;
-            r4statspojistky.UseVisualStyleBackColor = false;
-            // 
-            // r4statistikypobocek
-            // 
-            r4statistikypobocek.BackColor = Color.MediumSlateBlue;
-            r4statistikypobocek.BackgroundColor = Color.MediumSlateBlue;
-            r4statistikypobocek.BorderColor = Color.PaleVioletRed;
-            r4statistikypobocek.BorderRadius = 0;
-            r4statistikypobocek.BorderSize = 0;
-            r4statistikypobocek.Dock = DockStyle.Fill;
-            r4statistikypobocek.FlatAppearance.BorderSize = 0;
-            r4statistikypobocek.FlatStyle = FlatStyle.Flat;
-            r4statistikypobocek.ForeColor = Color.White;
-            r4statistikypobocek.Location = new Point(3, 171);
-            r4statistikypobocek.Name = "r4statistikypobocek";
-            r4statistikypobocek.Size = new Size(206, 50);
-            r4statistikypobocek.TabIndex = 8;
-            r4statistikypobocek.Text = "Statistiky Poboček";
-            r4statistikypobocek.TextColor = Color.White;
-            r4statistikypobocek.UseVisualStyleBackColor = false;
+            r4statsklienti.Click += r4statsklienti_Click;
             // 
             // Role4_analytik
             // 

@@ -27,13 +27,23 @@ namespace Aplikace_GUI_pojistovna.SideForms
 
         private void r2profil_Click(object sender, EventArgs e)
         {
-            //FIXME
-            //popsano ve Form1.cs tam se snazim nahradit panel mainPanel za usercontrol UserProfil
-            //navigationControl.Display(7);
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení UserProfil
+                mainForm.ShowUserProfile();
+            }
 
+        }
 
-
-
+        private void r2mojePojistky_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení VypisPojistky
+                mainForm.ShowUzivatelVypisPojistky();
+            }
 
         }
     }

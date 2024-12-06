@@ -16,5 +16,75 @@ namespace Aplikace_GUI_pojistovna.SideForms
         {
             InitializeComponent();
         }
+
+        private void r6profil_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení UserProfil
+                mainForm.ShowUserProfile();
+            }
+        }
+
+        private void r6modeifyTabulky_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení ModifyTabulky
+                mainForm.ShowUpravitObsahTabulek();
+            }
+        }
+
+        private void r6log_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení Log
+                mainForm.ShowLog();
+            }
+        }
+
+        private void r6statsklient_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení StatistikyKlientu
+                mainForm.ShowStatistikyKlientu();
+            }
+        }
+
+        private void r6statszamestnancu_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení StatistikyZamestnancu
+                mainForm.ShowStatistikyZamestnancu();
+            }
+        }
+
+        private void r6statspojistek_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení StatistikyPojistek
+                mainForm.ShowStatistikyPojistek();
+            }
+        }
+
+        private void r6statspobocek_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Zavolej metodu pro zobrazení StatistikyPobocek
+                mainForm.ShowStatistikyPobocek();
+            }
+        }
     }
 }

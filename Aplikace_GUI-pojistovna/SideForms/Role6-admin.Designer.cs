@@ -30,15 +30,15 @@
         {
             r6label = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
+            r6statspobocek = new NewButton();
+            r6statspojistek = new NewButton();
+            r6statszamestnancu = new NewButton();
+            r6log = new NewButton();
             tableLayoutPanel2 = new TableLayoutPanel();
             r6logout = new NewButton();
             r6profil = new NewButton();
             r6modeifyTabulky = new NewButton();
-            r6log = new NewButton();
             r6statsklient = new NewButton();
-            r6statszamestnancu = new NewButton();
-            r6statspojistek = new NewButton();
-            r6statspobocek = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -79,6 +79,86 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 12.499999F));
             tableLayoutPanel1.Size = new Size(212, 453);
             tableLayoutPanel1.TabIndex = 2;
+            // 
+            // r6statspobocek
+            // 
+            r6statspobocek.BackColor = Color.MediumSlateBlue;
+            r6statspobocek.BackgroundColor = Color.MediumSlateBlue;
+            r6statspobocek.BorderColor = Color.PaleVioletRed;
+            r6statspobocek.BorderRadius = 0;
+            r6statspobocek.BorderSize = 0;
+            r6statspobocek.Dock = DockStyle.Fill;
+            r6statspobocek.FlatAppearance.BorderSize = 0;
+            r6statspobocek.FlatStyle = FlatStyle.Flat;
+            r6statspobocek.ForeColor = Color.White;
+            r6statspobocek.Location = new Point(3, 283);
+            r6statspobocek.Name = "r6statspobocek";
+            r6statspobocek.Size = new Size(206, 50);
+            r6statspobocek.TabIndex = 10;
+            r6statspobocek.Text = "Statistiky Poboček";
+            r6statspobocek.TextColor = Color.White;
+            r6statspobocek.UseVisualStyleBackColor = false;
+            r6statspobocek.Click += r6statspobocek_Click;
+            // 
+            // r6statspojistek
+            // 
+            r6statspojistek.BackColor = Color.MediumSlateBlue;
+            r6statspojistek.BackgroundColor = Color.MediumSlateBlue;
+            r6statspojistek.BorderColor = Color.PaleVioletRed;
+            r6statspojistek.BorderRadius = 0;
+            r6statspojistek.BorderSize = 0;
+            r6statspojistek.Dock = DockStyle.Fill;
+            r6statspojistek.FlatAppearance.BorderSize = 0;
+            r6statspojistek.FlatStyle = FlatStyle.Flat;
+            r6statspojistek.ForeColor = Color.White;
+            r6statspojistek.Location = new Point(3, 227);
+            r6statspojistek.Name = "r6statspojistek";
+            r6statspojistek.Size = new Size(206, 50);
+            r6statspojistek.TabIndex = 9;
+            r6statspojistek.Text = "Statistiky Pojistek";
+            r6statspojistek.TextColor = Color.White;
+            r6statspojistek.UseVisualStyleBackColor = false;
+            r6statspojistek.Click += r6statspojistek_Click;
+            // 
+            // r6statszamestnancu
+            // 
+            r6statszamestnancu.BackColor = Color.MediumSlateBlue;
+            r6statszamestnancu.BackgroundColor = Color.MediumSlateBlue;
+            r6statszamestnancu.BorderColor = Color.PaleVioletRed;
+            r6statszamestnancu.BorderRadius = 0;
+            r6statszamestnancu.BorderSize = 0;
+            r6statszamestnancu.Dock = DockStyle.Fill;
+            r6statszamestnancu.FlatAppearance.BorderSize = 0;
+            r6statszamestnancu.FlatStyle = FlatStyle.Flat;
+            r6statszamestnancu.ForeColor = Color.White;
+            r6statszamestnancu.Location = new Point(3, 171);
+            r6statszamestnancu.Name = "r6statszamestnancu";
+            r6statszamestnancu.Size = new Size(206, 50);
+            r6statszamestnancu.TabIndex = 8;
+            r6statszamestnancu.Text = "Statistiky Zaměstnanců";
+            r6statszamestnancu.TextColor = Color.White;
+            r6statszamestnancu.UseVisualStyleBackColor = false;
+            r6statszamestnancu.Click += r6statszamestnancu_Click;
+            // 
+            // r6log
+            // 
+            r6log.BackColor = Color.MediumAquamarine;
+            r6log.BackgroundColor = Color.MediumAquamarine;
+            r6log.BorderColor = Color.PaleVioletRed;
+            r6log.BorderRadius = 0;
+            r6log.BorderSize = 0;
+            r6log.Dock = DockStyle.Fill;
+            r6log.FlatAppearance.BorderSize = 0;
+            r6log.FlatStyle = FlatStyle.Flat;
+            r6log.ForeColor = Color.White;
+            r6log.Location = new Point(3, 59);
+            r6log.Name = "r6log";
+            r6log.Size = new Size(206, 50);
+            r6log.TabIndex = 6;
+            r6log.Text = "Zobrazit log úprav";
+            r6log.TextColor = Color.White;
+            r6log.UseVisualStyleBackColor = false;
+            r6log.Click += r6log_Click;
             // 
             // tableLayoutPanel2
             // 
@@ -129,6 +209,7 @@
             r6profil.Text = "profil";
             r6profil.TextColor = Color.Black;
             r6profil.UseVisualStyleBackColor = false;
+            r6profil.Click += r6profil_Click;
             // 
             // r6modeifyTabulky
             // 
@@ -148,25 +229,7 @@
             r6modeifyTabulky.Text = "Upravit obsah tabulky";
             r6modeifyTabulky.TextColor = Color.White;
             r6modeifyTabulky.UseVisualStyleBackColor = false;
-            // 
-            // r6log
-            // 
-            r6log.BackColor = Color.MediumAquamarine;
-            r6log.BackgroundColor = Color.MediumAquamarine;
-            r6log.BorderColor = Color.PaleVioletRed;
-            r6log.BorderRadius = 0;
-            r6log.BorderSize = 0;
-            r6log.Dock = DockStyle.Fill;
-            r6log.FlatAppearance.BorderSize = 0;
-            r6log.FlatStyle = FlatStyle.Flat;
-            r6log.ForeColor = Color.White;
-            r6log.Location = new Point(3, 59);
-            r6log.Name = "r6log";
-            r6log.Size = new Size(206, 50);
-            r6log.TabIndex = 6;
-            r6log.Text = "Zobrazit log úprav";
-            r6log.TextColor = Color.White;
-            r6log.UseVisualStyleBackColor = false;
+            r6modeifyTabulky.Click += r6modeifyTabulky_Click;
             // 
             // r6statsklient
             // 
@@ -186,63 +249,7 @@
             r6statsklient.Text = "Statistiky Klientů";
             r6statsklient.TextColor = Color.White;
             r6statsklient.UseVisualStyleBackColor = false;
-            // 
-            // r6statszamestnancu
-            // 
-            r6statszamestnancu.BackColor = Color.MediumSlateBlue;
-            r6statszamestnancu.BackgroundColor = Color.MediumSlateBlue;
-            r6statszamestnancu.BorderColor = Color.PaleVioletRed;
-            r6statszamestnancu.BorderRadius = 0;
-            r6statszamestnancu.BorderSize = 0;
-            r6statszamestnancu.Dock = DockStyle.Fill;
-            r6statszamestnancu.FlatAppearance.BorderSize = 0;
-            r6statszamestnancu.FlatStyle = FlatStyle.Flat;
-            r6statszamestnancu.ForeColor = Color.White;
-            r6statszamestnancu.Location = new Point(3, 171);
-            r6statszamestnancu.Name = "r6statszamestnancu";
-            r6statszamestnancu.Size = new Size(206, 50);
-            r6statszamestnancu.TabIndex = 8;
-            r6statszamestnancu.Text = "Statistiky Zaměstnanců";
-            r6statszamestnancu.TextColor = Color.White;
-            r6statszamestnancu.UseVisualStyleBackColor = false;
-            // 
-            // r6statspojistek
-            // 
-            r6statspojistek.BackColor = Color.MediumSlateBlue;
-            r6statspojistek.BackgroundColor = Color.MediumSlateBlue;
-            r6statspojistek.BorderColor = Color.PaleVioletRed;
-            r6statspojistek.BorderRadius = 0;
-            r6statspojistek.BorderSize = 0;
-            r6statspojistek.Dock = DockStyle.Fill;
-            r6statspojistek.FlatAppearance.BorderSize = 0;
-            r6statspojistek.FlatStyle = FlatStyle.Flat;
-            r6statspojistek.ForeColor = Color.White;
-            r6statspojistek.Location = new Point(3, 227);
-            r6statspojistek.Name = "r6statspojistek";
-            r6statspojistek.Size = new Size(206, 50);
-            r6statspojistek.TabIndex = 9;
-            r6statspojistek.Text = "Statistiky Pojistek";
-            r6statspojistek.TextColor = Color.White;
-            r6statspojistek.UseVisualStyleBackColor = false;
-            // 
-            // r6statspobocek
-            // 
-            r6statspobocek.BackColor = Color.MediumSlateBlue;
-            r6statspobocek.BackgroundColor = Color.MediumSlateBlue;
-            r6statspobocek.BorderColor = Color.PaleVioletRed;
-            r6statspobocek.BorderRadius = 0;
-            r6statspobocek.BorderSize = 0;
-            r6statspobocek.Dock = DockStyle.Fill;
-            r6statspobocek.FlatAppearance.BorderSize = 0;
-            r6statspobocek.FlatStyle = FlatStyle.Flat;
-            r6statspobocek.ForeColor = Color.White;
-            r6statspobocek.Location = new Point(3, 283);
-            r6statspobocek.Name = "r6statspobocek";
-            r6statspobocek.Size = new Size(206, 50);
-            r6statspobocek.TabIndex = 10;
-            r6statspobocek.Text = "Statistiky Poboček";
-            r6statspobocek.TextColor = Color.White;
-            r6statspobocek.UseVisualStyleBackColor = false;
+            r6statsklient.Click += r6statsklient_Click;
             // 
             // Role6_admin
             // 

@@ -78,6 +78,7 @@
             r2mojePojistky.Text = "Moje pojistky";
             r2mojePojistky.TextColor = Color.White;
             r2mojePojistky.UseVisualStyleBackColor = false;
+            r2mojePojistky.Click += r2mojePojistky_Click;
             // 
             // tableLayoutPanel2
             // 
