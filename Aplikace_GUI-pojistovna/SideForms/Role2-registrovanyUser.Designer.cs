@@ -128,6 +128,7 @@
             r2profil.Text = "profil";
             r2profil.TextColor = Color.Black;
             r2profil.UseVisualStyleBackColor = false;
+            r2profil.Click += r2profil_Click;
             // 
             // r2label
             // 
