@@ -6,7 +6,8 @@ namespace Aplikace_GUI_pojistovna
 {
     public partial class Form1 : Form
     {
-        NavigationControl navigationControl;
+        NavigationControl navigationControl1;
+        NavigationControl navigationControl2;
 
         public Form1()
         {
@@ -26,7 +27,7 @@ namespace Aplikace_GUI_pojistovna
             }; //FIXME: add další jak budu pøidávat
 
 
-            navigationControl = new NavigationControl(mainPanel, mainControlList);
+            navigationControl1 = new NavigationControl(mainPanel, mainControlList);
 
             //-----------------Display the first user control-----------------
 
@@ -51,7 +52,7 @@ namespace Aplikace_GUI_pojistovna
             //19 - zobrazitLog.cs
 
 
-            navigationControl.Display(3); // = disply na main panelu ve Form1.cs
+            navigationControl1.Display(3); // = disply na main panelu ve Form1.cs
 
 
             // more to be addded, even if you never use them
@@ -60,8 +61,8 @@ namespace Aplikace_GUI_pojistovna
 
             List<UserControl> sideControlList = new List<UserControl>()
             { new Login(), new Role1_registrovanyUser(), new role3_zamestnanec(), new Role4_analytik(), new Role5_supervisor(), new Role6_admin()};
-            navigationControl = new NavigationControl(sidePanel, sideControlList);
-            navigationControl.Display(0);
+            navigationControl2 = new NavigationControl(sidePanel, sideControlList);
+            navigationControl2.Display(0);
 
             //WARNING: role1_registrovanyUser.cs je vedena jako role1, ale vzhledem k tomu, ze se to nepropsalo a nechci riskovat nefunkènost a hrabani se v tom, tak jsem to nechal takto
 
@@ -79,7 +80,7 @@ namespace Aplikace_GUI_pojistovna
 
             //nutne predelavat pro daneho uzivatele, vsichni sdily stejny form
 
-            navigationControl.Display(7);
+            navigationControl1.Display(7);
         }
 
         public void ShowUzivatelVypisPojistky()
@@ -87,7 +88,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že UzivatelVypisPojistky je na indexu 14 v seznamu mainControlList
             // používá se k zobrazení Panelu výpisu pojištìk uživatele
             // Zavolá se pøi kliknutí na tlaèítko r2mojePojistky
-            navigationControl.Display(14);
+            navigationControl1.Display(14);
         }
 
         public void ShowVypisKlienty()
@@ -95,7 +96,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že VypisKlienty je na indexu 15 v seznamu mainControlList
             // používá se k zobrazení Panelu výpisu klientù
             // Zavolá se pøi kliknutí na tlaèítko r3klienti
-            navigationControl.Display(15);
+            navigationControl1.Display(15);
         }
 
         public void ShowVypisPojistky()
@@ -103,7 +104,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že VypisPojistky je na indexu 16 v seznamu mainControlList
             // používá se k zobrazení Panelu výpisu pojištìk
             // Zavolá se pøi kliknutí na tlaèítko r3pojistky
-            navigationControl.Display(16);
+            navigationControl1.Display(16);
         }
 
         public void ShowVytvoritPojistku()
@@ -111,7 +112,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že VytvoritPojistku je na indexu 18 v seznamu mainControlList
             // používá se k zobrazení Panelu vytvoøení pojištìní
             // Zavolá se pøi kliknutí na tlaèítko r3newpojistka
-            navigationControl.Display(18);
+            navigationControl1.Display(18);
         }
 
         public void ShowStatistikyKlientu()
@@ -119,7 +120,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že StatistikyKlientu je na indexu 9 v seznamu mainControlList
             // používá se k zobrazení Panelu statistiky klientù
             // Zavolá se pøi kliknutí na tlaèítko r4statsklienti, r5statsklienti
-            navigationControl.Display(9);
+            navigationControl1.Display(9);
         }
 
         public void ShowStatistikyZamestnancu()
@@ -127,7 +128,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že StatistikyZamestnancu je na indexu 12 v seznamu mainControlList
             // používá se k zobrazení Panelu statistiky zamìstnancù
             // Zavolá se pøi kliknutí na tlaèítko r4statszamestnanci, r5statszamestnanci
-            navigationControl.Display(12);
+            navigationControl1.Display(12);
         }
 
         public void ShowStatistikyPojistek()
@@ -135,7 +136,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že StatistikyPojistek je na indexu 11 v seznamu mainControlList
             // používá se k zobrazení Panelu statistiky pojištìk
             // Zavolá se pøi kliknutí na tlaèítko r4statspojistky
-            navigationControl.Display(11);
+            navigationControl1.Display(11);
         }
 
         public void ShowStatistikyPobocek()
@@ -143,7 +144,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že StatistikyPobocek je na indexu 10 v seznamu mainControlList
             // používá se k zobrazení Panelu statistiky poboèek
             // Zavolá se pøi kliknutí na tlaèítko r4statistikypobocek
-            navigationControl.Display(10);
+            navigationControl1.Display(10);
         }
 
         public void ShowVypisZamestnance()
@@ -151,7 +152,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že VypisZamestnance je na indexu 17 v seznamu mainControlList
             // používá se k zobrazení Panelu výpisu zamìstnancù
             // Zavolá se pøi kliknutí na tlaèítko r5zamestnanci
-            navigationControl.Display(17);
+            navigationControl1.Display(17);
         }
 
         public void ShowPridelitKlientaZamestnanci()
@@ -159,7 +160,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že PridelitKlientaZamestnanci je na indexu 8 v seznamu mainControlList
             // používá se k zobrazení Panelu pøidìlení klienta zamìstnanci
             // Zavolá se pøi kliknutí na tlaèítko r5delegate
-            navigationControl.Display(8);
+            navigationControl1.Display(8);
         }
 
         public void ShowUpravitObsahTabulek()
@@ -167,7 +168,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že UpravitObsahTabulky je na indexu 13 v seznamu mainControlList
             // používá se k zobrazení Panelu úpravy obsahu tabulky
             // Zavolá se pøi kliknutí na tlaèítko r6modeifyTabulky
-            navigationControl.Display(13);
+            navigationControl1.Display(13);
         }
 
         public void ShowLog()
@@ -175,7 +176,7 @@ namespace Aplikace_GUI_pojistovna
             // Pøedpokládáme, že ZobrazitLog je na indexu 19 v seznamu mainControlList
             // používá se k zobrazení Panelu logu
             // Zavolá se pøi kliknutí na tlaèítko r6log
-            navigationControl.Display(19);
+            navigationControl1.Display(19);
         }
 
         public void EmulaceRole(int role)
@@ -183,11 +184,15 @@ namespace Aplikace_GUI_pojistovna
             // Emulace role uživatele
             // Zavolá se pøi kliknutí na tlaèítko newButtonEMULACE_r2, newButtonEMULACE_r3, newButtonEMULACE_r4, newButtonEMULACE_r5
             if (role > 6) {
-                navigationControl.Display(6);
+                navigationControl2.Display(6);
                 MessageBox.Show("Role " + role + " je vìtší než poèet permisí a nebyla optimalizována ve FORM1", "Není optimalizováno", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else
+            {
+            navigationControl2.Display(role);
+
+            }
                  
-            navigationControl.Display(role);
         }
 
 

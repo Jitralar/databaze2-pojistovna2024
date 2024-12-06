@@ -32,29 +32,29 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             urText = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
+            label3 = new Label();
+            tableLayoutPanel5 = new TableLayoutPanel();
+            newButton5 = new NewButton();
+            label4 = new Label();
+            newButtonEMULACE_r5 = new NewButton();
+            newButtonEMULACE_r4 = new NewButton();
+            newButtonEMULACE_r3 = new NewButton();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            newButtonEMULACE_r2 = new NewButton();
+            label8 = new Label();
             tableLayoutPanel3 = new TableLayoutPanel();
             newButton3 = new NewButton();
             panel1 = new Panel();
             tableLayoutPanel4 = new TableLayoutPanel();
             label2 = new Label();
-            label3 = new Label();
-            tableLayoutPanel5 = new TableLayoutPanel();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            newButtonEMULACE_r2 = new NewButton();
-            newButtonEMULACE_r3 = new NewButton();
-            newButtonEMULACE_r4 = new NewButton();
-            newButtonEMULACE_r5 = new NewButton();
-            label4 = new Label();
-            newButton5 = new NewButton();
-            label8 = new Label();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
+            tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             panel1.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
-            tableLayoutPanel5.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -102,6 +102,190 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
             tableLayoutPanel2.Size = new Size(309, 465);
             tableLayoutPanel2.TabIndex = 2;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Dock = DockStyle.Fill;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label3.Location = new Point(3, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(303, 46);
+            label3.TabIndex = 0;
+            label3.Text = "EMULACE ROLÍ";
+            label3.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // tableLayoutPanel5
+            // 
+            tableLayoutPanel5.ColumnCount = 2;
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tableLayoutPanel5.Controls.Add(newButton5, 1, 5);
+            tableLayoutPanel5.Controls.Add(label4, 0, 0);
+            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r5, 1, 3);
+            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r4, 1, 2);
+            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r3, 1, 1);
+            tableLayoutPanel5.Controls.Add(label5, 0, 1);
+            tableLayoutPanel5.Controls.Add(label6, 0, 2);
+            tableLayoutPanel5.Controls.Add(label7, 0, 3);
+            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r2, 1, 0);
+            tableLayoutPanel5.Controls.Add(label8, 0, 5);
+            tableLayoutPanel5.Dock = DockStyle.Fill;
+            tableLayoutPanel5.Location = new Point(3, 49);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            tableLayoutPanel5.RowCount = 6;
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.Size = new Size(303, 413);
+            tableLayoutPanel5.TabIndex = 1;
+            // 
+            // newButton5
+            // 
+            newButton5.BackColor = Color.MediumSlateBlue;
+            newButton5.BackgroundColor = Color.MediumSlateBlue;
+            newButton5.BorderColor = Color.PaleVioletRed;
+            newButton5.BorderRadius = 0;
+            newButton5.BorderSize = 0;
+            newButton5.Dock = DockStyle.Fill;
+            newButton5.FlatAppearance.BorderSize = 0;
+            newButton5.FlatStyle = FlatStyle.Flat;
+            newButton5.ForeColor = Color.White;
+            newButton5.Location = new Point(184, 343);
+            newButton5.Name = "newButton5";
+            newButton5.Size = new Size(116, 67);
+            newButton5.TabIndex = 14;
+            newButton5.Text = "Podrobný popis Rolí";
+            newButton5.TextColor = Color.White;
+            newButton5.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(157, 40);
+            label4.TabIndex = 10;
+            label4.Text = "Klient. Může prohlížet své pojistky.";
+            // 
+            // newButtonEMULACE_r5
+            // 
+            newButtonEMULACE_r5.BackColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r5.BackgroundColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r5.BorderColor = Color.PaleVioletRed;
+            newButtonEMULACE_r5.BorderRadius = 0;
+            newButtonEMULACE_r5.BorderSize = 0;
+            newButtonEMULACE_r5.Dock = DockStyle.Fill;
+            newButtonEMULACE_r5.FlatAppearance.BorderSize = 0;
+            newButtonEMULACE_r5.FlatStyle = FlatStyle.Flat;
+            newButtonEMULACE_r5.ForeColor = Color.White;
+            newButtonEMULACE_r5.Location = new Point(184, 207);
+            newButtonEMULACE_r5.Name = "newButtonEMULACE_r5";
+            newButtonEMULACE_r5.Size = new Size(116, 62);
+            newButtonEMULACE_r5.TabIndex = 9;
+            newButtonEMULACE_r5.Text = "Emulovat R5";
+            newButtonEMULACE_r5.TextColor = Color.White;
+            newButtonEMULACE_r5.UseVisualStyleBackColor = false;
+            newButtonEMULACE_r5.Click += newButtonEMULACE_r5_Click;
+            // 
+            // newButtonEMULACE_r4
+            // 
+            newButtonEMULACE_r4.BackColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r4.BackgroundColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r4.BorderColor = Color.PaleVioletRed;
+            newButtonEMULACE_r4.BorderRadius = 0;
+            newButtonEMULACE_r4.BorderSize = 0;
+            newButtonEMULACE_r4.Dock = DockStyle.Fill;
+            newButtonEMULACE_r4.FlatAppearance.BorderSize = 0;
+            newButtonEMULACE_r4.FlatStyle = FlatStyle.Flat;
+            newButtonEMULACE_r4.ForeColor = Color.White;
+            newButtonEMULACE_r4.Location = new Point(184, 139);
+            newButtonEMULACE_r4.Name = "newButtonEMULACE_r4";
+            newButtonEMULACE_r4.Size = new Size(116, 62);
+            newButtonEMULACE_r4.TabIndex = 8;
+            newButtonEMULACE_r4.Text = "Emulovat R4";
+            newButtonEMULACE_r4.TextColor = Color.White;
+            newButtonEMULACE_r4.UseVisualStyleBackColor = false;
+            newButtonEMULACE_r4.Click += newButtonEMULACE_r4_Click;
+            // 
+            // newButtonEMULACE_r3
+            // 
+            newButtonEMULACE_r3.BackColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r3.BackgroundColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r3.BorderColor = Color.PaleVioletRed;
+            newButtonEMULACE_r3.BorderRadius = 0;
+            newButtonEMULACE_r3.BorderSize = 0;
+            newButtonEMULACE_r3.Dock = DockStyle.Fill;
+            newButtonEMULACE_r3.FlatAppearance.BorderSize = 0;
+            newButtonEMULACE_r3.FlatStyle = FlatStyle.Flat;
+            newButtonEMULACE_r3.ForeColor = Color.White;
+            newButtonEMULACE_r3.Location = new Point(184, 71);
+            newButtonEMULACE_r3.Name = "newButtonEMULACE_r3";
+            newButtonEMULACE_r3.Size = new Size(116, 62);
+            newButtonEMULACE_r3.TabIndex = 7;
+            newButtonEMULACE_r3.Text = "Emulovat R3";
+            newButtonEMULACE_r3.TextColor = Color.White;
+            newButtonEMULACE_r3.UseVisualStyleBackColor = false;
+            newButtonEMULACE_r3.Click += newButtonEMULACE_r3_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(3, 68);
+            label5.Name = "label5";
+            label5.Size = new Size(165, 60);
+            label5.TabIndex = 1;
+            label5.Text = "Zaměstnanec. Spravuje obsah pojistek, napříč Klienty";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(3, 136);
+            label6.Name = "label6";
+            label6.Size = new Size(174, 60);
+            label6.TabIndex = 2;
+            label6.Text = "Analytik. Může sledovat anonymizované statistiky a výstupy ze systému.";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(3, 204);
+            label7.Name = "label7";
+            label7.Size = new Size(169, 60);
+            label7.TabIndex = 3;
+            label7.Text = "Supervisor. Přiděluje jednotlivé zaměstnance ke klientům.";
+            // 
+            // newButtonEMULACE_r2
+            // 
+            newButtonEMULACE_r2.BackColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r2.BackgroundColor = Color.MediumSlateBlue;
+            newButtonEMULACE_r2.BorderColor = Color.PaleVioletRed;
+            newButtonEMULACE_r2.BorderRadius = 0;
+            newButtonEMULACE_r2.BorderSize = 0;
+            newButtonEMULACE_r2.Dock = DockStyle.Fill;
+            newButtonEMULACE_r2.FlatAppearance.BorderSize = 0;
+            newButtonEMULACE_r2.FlatStyle = FlatStyle.Flat;
+            newButtonEMULACE_r2.ForeColor = Color.White;
+            newButtonEMULACE_r2.Location = new Point(184, 3);
+            newButtonEMULACE_r2.Name = "newButtonEMULACE_r2";
+            newButtonEMULACE_r2.Size = new Size(116, 62);
+            newButtonEMULACE_r2.TabIndex = 6;
+            newButtonEMULACE_r2.Text = "Emulovat R2";
+            newButtonEMULACE_r2.TextColor = Color.White;
+            newButtonEMULACE_r2.UseVisualStyleBackColor = false;
+            newButtonEMULACE_r2.Click += newButtonEMULACE_r2_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(3, 340);
+            label8.Name = "label8";
+            label8.Size = new Size(149, 60);
+            label8.TabIndex = 15;
+            label8.Text = "Podrobný výpis rolí s permisemi přímo z databáze";
             // 
             // tableLayoutPanel3
             // 
@@ -175,186 +359,6 @@
             label2.TabIndex = 0;
             label2.Text = resources.GetString("label2.Text");
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Dock = DockStyle.Fill;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label3.Location = new Point(3, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(303, 46);
-            label3.TabIndex = 0;
-            label3.Text = "EMULACE ROLÍ";
-            label3.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // tableLayoutPanel5
-            // 
-            tableLayoutPanel5.ColumnCount = 2;
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tableLayoutPanel5.Controls.Add(newButton5, 1, 5);
-            tableLayoutPanel5.Controls.Add(label4, 0, 0);
-            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r5, 1, 3);
-            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r4, 1, 2);
-            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r3, 1, 1);
-            tableLayoutPanel5.Controls.Add(label5, 0, 1);
-            tableLayoutPanel5.Controls.Add(label6, 0, 2);
-            tableLayoutPanel5.Controls.Add(label7, 0, 3);
-            tableLayoutPanel5.Controls.Add(newButtonEMULACE_r2, 1, 0);
-            tableLayoutPanel5.Controls.Add(label8, 0, 5);
-            tableLayoutPanel5.Dock = DockStyle.Fill;
-            tableLayoutPanel5.Location = new Point(3, 49);
-            tableLayoutPanel5.Name = "tableLayoutPanel5";
-            tableLayoutPanel5.RowCount = 6;
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
-            tableLayoutPanel5.Size = new Size(303, 413);
-            tableLayoutPanel5.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(3, 68);
-            label5.Name = "label5";
-            label5.Size = new Size(165, 60);
-            label5.TabIndex = 1;
-            label5.Text = "Zaměstnanec. Spravuje obsah pojistek, napříč Klienty";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(3, 136);
-            label6.Name = "label6";
-            label6.Size = new Size(174, 60);
-            label6.TabIndex = 2;
-            label6.Text = "Analytik. Může sledovat anonymizované statistiky a výstupy ze systému.";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(3, 204);
-            label7.Name = "label7";
-            label7.Size = new Size(169, 60);
-            label7.TabIndex = 3;
-            label7.Text = "Supervisor. Přiděluje jednotlivé zaměstnance ke klientům.";
-            // 
-            // newButtonEMULACE_r2
-            // 
-            newButtonEMULACE_r2.BackColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r2.BackgroundColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r2.BorderColor = Color.PaleVioletRed;
-            newButtonEMULACE_r2.BorderRadius = 0;
-            newButtonEMULACE_r2.BorderSize = 0;
-            newButtonEMULACE_r2.Dock = DockStyle.Fill;
-            newButtonEMULACE_r2.FlatAppearance.BorderSize = 0;
-            newButtonEMULACE_r2.FlatStyle = FlatStyle.Flat;
-            newButtonEMULACE_r2.ForeColor = Color.White;
-            newButtonEMULACE_r2.Location = new Point(184, 3);
-            newButtonEMULACE_r2.Name = "newButtonEMULACE_r2";
-            newButtonEMULACE_r2.Size = new Size(116, 62);
-            newButtonEMULACE_r2.TabIndex = 6;
-            newButtonEMULACE_r2.Text = "Emulovat R2";
-            newButtonEMULACE_r2.TextColor = Color.White;
-            newButtonEMULACE_r2.UseVisualStyleBackColor = false;
-            // 
-            // newButtonEMULACE_r3
-            // 
-            newButtonEMULACE_r3.BackColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r3.BackgroundColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r3.BorderColor = Color.PaleVioletRed;
-            newButtonEMULACE_r3.BorderRadius = 0;
-            newButtonEMULACE_r3.BorderSize = 0;
-            newButtonEMULACE_r3.Dock = DockStyle.Fill;
-            newButtonEMULACE_r3.FlatAppearance.BorderSize = 0;
-            newButtonEMULACE_r3.FlatStyle = FlatStyle.Flat;
-            newButtonEMULACE_r3.ForeColor = Color.White;
-            newButtonEMULACE_r3.Location = new Point(184, 71);
-            newButtonEMULACE_r3.Name = "newButtonEMULACE_r3";
-            newButtonEMULACE_r3.Size = new Size(116, 62);
-            newButtonEMULACE_r3.TabIndex = 7;
-            newButtonEMULACE_r3.Text = "Emulovat R3";
-            newButtonEMULACE_r3.TextColor = Color.White;
-            newButtonEMULACE_r3.UseVisualStyleBackColor = false;
-            // 
-            // newButtonEMULACE_r4
-            // 
-            newButtonEMULACE_r4.BackColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r4.BackgroundColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r4.BorderColor = Color.PaleVioletRed;
-            newButtonEMULACE_r4.BorderRadius = 0;
-            newButtonEMULACE_r4.BorderSize = 0;
-            newButtonEMULACE_r4.Dock = DockStyle.Fill;
-            newButtonEMULACE_r4.FlatAppearance.BorderSize = 0;
-            newButtonEMULACE_r4.FlatStyle = FlatStyle.Flat;
-            newButtonEMULACE_r4.ForeColor = Color.White;
-            newButtonEMULACE_r4.Location = new Point(184, 139);
-            newButtonEMULACE_r4.Name = "newButtonEMULACE_r4";
-            newButtonEMULACE_r4.Size = new Size(116, 62);
-            newButtonEMULACE_r4.TabIndex = 8;
-            newButtonEMULACE_r4.Text = "Emulovat R4";
-            newButtonEMULACE_r4.TextColor = Color.White;
-            newButtonEMULACE_r4.UseVisualStyleBackColor = false;
-            // 
-            // newButtonEMULACE_r5
-            // 
-            newButtonEMULACE_r5.BackColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r5.BackgroundColor = Color.MediumSlateBlue;
-            newButtonEMULACE_r5.BorderColor = Color.PaleVioletRed;
-            newButtonEMULACE_r5.BorderRadius = 0;
-            newButtonEMULACE_r5.BorderSize = 0;
-            newButtonEMULACE_r5.Dock = DockStyle.Fill;
-            newButtonEMULACE_r5.FlatAppearance.BorderSize = 0;
-            newButtonEMULACE_r5.FlatStyle = FlatStyle.Flat;
-            newButtonEMULACE_r5.ForeColor = Color.White;
-            newButtonEMULACE_r5.Location = new Point(184, 207);
-            newButtonEMULACE_r5.Name = "newButtonEMULACE_r5";
-            newButtonEMULACE_r5.Size = new Size(116, 62);
-            newButtonEMULACE_r5.TabIndex = 9;
-            newButtonEMULACE_r5.Text = "Emulovat R5";
-            newButtonEMULACE_r5.TextColor = Color.White;
-            newButtonEMULACE_r5.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(3, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(157, 40);
-            label4.TabIndex = 10;
-            label4.Text = "Klient. Může prohlížet své pojistky.";
-            // 
-            // newButton5
-            // 
-            newButton5.BackColor = Color.MediumSlateBlue;
-            newButton5.BackgroundColor = Color.MediumSlateBlue;
-            newButton5.BorderColor = Color.PaleVioletRed;
-            newButton5.BorderRadius = 0;
-            newButton5.BorderSize = 0;
-            newButton5.Dock = DockStyle.Fill;
-            newButton5.FlatAppearance.BorderSize = 0;
-            newButton5.FlatStyle = FlatStyle.Flat;
-            newButton5.ForeColor = Color.White;
-            newButton5.Location = new Point(184, 343);
-            newButton5.Name = "newButton5";
-            newButton5.Size = new Size(116, 67);
-            newButton5.TabIndex = 14;
-            newButton5.Text = "Podrobný popis Rolí";
-            newButton5.TextColor = Color.White;
-            newButton5.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(3, 340);
-            label8.Name = "label8";
-            label8.Size = new Size(149, 60);
-            label8.TabIndex = 15;
-            label8.Text = "Podrobný výpis rolí s permisemi přímo z databáze";
-            // 
             // Role6_main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -366,12 +370,12 @@
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            tableLayoutPanel5.ResumeLayout(false);
+            tableLayoutPanel5.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             panel1.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
             tableLayoutPanel4.PerformLayout();
-            tableLayoutPanel5.ResumeLayout(false);
-            tableLayoutPanel5.PerformLayout();
             ResumeLayout(false);
         }
 
