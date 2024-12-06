@@ -16,7 +16,6 @@ namespace Aplikace_GUI_pojistovna
         }
 
 
-
         private void InitializeNavigationControl()
         {
 
@@ -51,10 +50,6 @@ namespace Aplikace_GUI_pojistovna
             //18 - vytvoritPojistku.cs
             //19 - zobrazitLog.cs
 
-
-            navigationControl1.Display(3); // = disply na main panelu ve Form1.cs
-
-
             // more to be addded, even if you never use them
             // idk it could be someday usefull...
             //----------------------------------------------------------------
@@ -62,11 +57,36 @@ namespace Aplikace_GUI_pojistovna
             List<UserControl> sideControlList = new List<UserControl>()
             { new Login(), new Role1_registrovanyUser(), new role3_zamestnanec(), new Role4_analytik(), new Role5_supervisor(), new Role6_admin()};
             navigationControl2 = new NavigationControl(sidePanel, sideControlList);
-            navigationControl2.Display(0);
-
-            //WARNING: role1_registrovanyUser.cs je vedena jako role1, ale vzhledem k tomu, ze se to nepropsalo a nechci riskovat nefunkènost a hrabani se v tom, tak jsem to nechal takto
+            
+            ShowInitial();
 
         }
+
+        public void ShowInitial() {
+
+            navigationControl2.Display(0); // sidePanel
+            navigationControl1.Display(0); // mainPanel
+
+        }
+
+        public void ShowMainScreenRoleBased(int role) {
+
+            //ukaze to mainPanel domovskou obrazovku danou roli
+            //dostava hodnotu 2-6 podle permise uzivatele
+            //je potreba nekde pri loginu zaznamenat roli uzivatele a podle ni zavolat tuto metodu
+            navigationControl1.Display(role);
+        }
+
+        public void ShowSideScreenRoleBased(int role)
+        {
+
+            //ukaze to sidePanel domovskou obrazovku danou roli
+            //dostava hodnotu 1-6 podle permise uzivatele
+            //je potreba nekde pri loginu zaznamenat roli uzivatele a podle ni zavolat tuto metodu
+            navigationControl2.Display(role);
+        }
+
+
 
         //---------------Methods for showing user controls-----------------
         // každá metoda zobrazí jiný panel, který je v seznamu mainControlList, se zobrazuje po kliknuti
