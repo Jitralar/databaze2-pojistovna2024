@@ -49,6 +49,8 @@
             panel1 = new Panel();
             tableLayoutPanel4 = new TableLayoutPanel();
             label2 = new Label();
+            label1 = new Label();
+            newButton1 = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
@@ -120,6 +122,7 @@
             tableLayoutPanel5.ColumnCount = 2;
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tableLayoutPanel5.Controls.Add(newButton1, 1, 4);
             tableLayoutPanel5.Controls.Add(newButton5, 1, 5);
             tableLayoutPanel5.Controls.Add(label4, 0, 0);
             tableLayoutPanel5.Controls.Add(newButtonEMULACE_r5, 1, 3);
@@ -130,6 +133,7 @@
             tableLayoutPanel5.Controls.Add(label7, 0, 3);
             tableLayoutPanel5.Controls.Add(newButtonEMULACE_r2, 1, 0);
             tableLayoutPanel5.Controls.Add(label8, 0, 5);
+            tableLayoutPanel5.Controls.Add(label1, 0, 4);
             tableLayoutPanel5.Dock = DockStyle.Fill;
             tableLayoutPanel5.Location = new Point(3, 49);
             tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -140,6 +144,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 16.666666F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel5.Size = new Size(303, 413);
             tableLayoutPanel5.TabIndex = 1;
             // 
@@ -359,6 +364,35 @@
             label2.TabIndex = 0;
             label2.Text = resources.GetString("label2.Text");
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 272);
+            label1.Name = "label1";
+            label1.Size = new Size(170, 60);
+            label1.TabIndex = 16;
+            label1.Text = "Admin. Spravuje systém OASIS. Eumalace rolí. Managment databáze.";
+            // 
+            // newButton1
+            // 
+            newButton1.BackColor = Color.LightGreen;
+            newButton1.BackgroundColor = Color.LightGreen;
+            newButton1.BorderColor = Color.PaleVioletRed;
+            newButton1.BorderRadius = 0;
+            newButton1.BorderSize = 0;
+            newButton1.Dock = DockStyle.Fill;
+            newButton1.FlatAppearance.BorderSize = 0;
+            newButton1.FlatStyle = FlatStyle.Flat;
+            newButton1.ForeColor = Color.Black;
+            newButton1.Location = new Point(184, 275);
+            newButton1.Name = "newButton1";
+            newButton1.Size = new Size(116, 62);
+            newButton1.TabIndex = 17;
+            newButton1.Text = "Vrátit původní nastavení";
+            newButton1.TextColor = Color.Black;
+            newButton1.UseVisualStyleBackColor = false;
+            newButton1.Click += newButton1_Click;
+            // 
             // Role6_main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -401,5 +435,7 @@
         private Label label4;
         private NewButton newButton5;
         private Label label8;
+        private NewButton newButton1;
+        private Label label1;
     }
 }

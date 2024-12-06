@@ -23,7 +23,7 @@ namespace Aplikace_GUI_pojistovna.MainForms
             if (sideForm != null)
             {
                 // Zavolej metodu pro zobrazení Role2
-                sideForm.EmulaceRole(2);
+                sideForm.EmulaceRole(1);
             }
 
         }
@@ -34,7 +34,7 @@ namespace Aplikace_GUI_pojistovna.MainForms
             if (sideForm != null)
             {
                 // Zavolej metodu pro zobrazení Role3
-                sideForm.EmulaceRole(3);
+                sideForm.EmulaceRole(2);
             }
         }
 
@@ -44,7 +44,7 @@ namespace Aplikace_GUI_pojistovna.MainForms
             if (sideForm != null)
             {
                 // Zavolej metodu pro zobrazení Role4
-                sideForm.EmulaceRole(4);
+                sideForm.EmulaceRole(3);
             }
         }
 
@@ -54,6 +54,16 @@ namespace Aplikace_GUI_pojistovna.MainForms
             if (sideForm != null)
             {
                 // Zavolej metodu pro zobrazení Role5
+                sideForm.EmulaceRole(4);
+            }
+        }
+
+        private void newButton1_Click(object sender, EventArgs e)
+        {
+            var sideForm = this.FindForm() as Form1;
+            if (sideForm != null)
+            {
+                // Zavolej metodu pro zobrazení Role1
                 sideForm.EmulaceRole(5);
             }
         }

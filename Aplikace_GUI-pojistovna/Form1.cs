@@ -65,7 +65,7 @@ namespace Aplikace_GUI_pojistovna
         public void ShowInitial() {
 
             navigationControl2.Display(0); // sidePanel
-            navigationControl1.Display(0); // mainPanel
+            navigationControl1.Display(0); // mainPanel //FIXME: change to 0
 
         }
 
