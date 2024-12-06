@@ -30,9 +30,9 @@ namespace Aplikace_GUI_pojistovna
 
             //-----------------Display the first user control-----------------
 
-            //1 - role2main.cs
-            //2 - role3main.cs
-            //3 - userRegister.cs
+            //1 - userRegister.cs
+            //2 - role2main.cs
+            //3 - role3main.cs
             //4 - role4main.cs
             //5 - role5main.cs
             //6 - role6main.cs
