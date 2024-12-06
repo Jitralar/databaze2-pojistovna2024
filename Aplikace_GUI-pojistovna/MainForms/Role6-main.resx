@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Připravili jsme pro Vás podrobný a přehledný manuál k systému OASIS, který Vám umožní snadno a rychle zobrazit veškeré informace o Vašich pojištěních. V tomto návodu naleznete krok za krokem vysvětleno, jak se přihlásit, orientovat v systému, spravovat Vaše smlouvy a využívat všechny dostupné funkce.</value>
+  </data>
 </root>

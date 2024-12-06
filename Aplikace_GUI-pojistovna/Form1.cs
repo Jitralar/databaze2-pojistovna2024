@@ -67,6 +67,10 @@ namespace Aplikace_GUI_pojistovna
 
         }
 
+        //---------------Methods for showing user controls-----------------
+        // každá metoda zobrazí jiný panel, který je v seznamu mainControlList, se zobrazuje po kliknuti
+        // danenoho tlaèítka v panelu roleÈÍSLO_NÁZEV.cs na sidePanelu
+
         public void ShowUserProfile()
         {
             // Pøedpokládáme, že UserProfil je na indexu 7 v seznamu mainControlList
@@ -173,6 +177,22 @@ namespace Aplikace_GUI_pojistovna
             // Zavolá se pøi kliknutí na tlaèítko r6log
             navigationControl.Display(19);
         }
+
+        public void EmulaceRole(int role)
+        {
+            // Emulace role uživatele
+            // Zavolá se pøi kliknutí na tlaèítko newButtonEMULACE_r2, newButtonEMULACE_r3, newButtonEMULACE_r4, newButtonEMULACE_r5
+            if (role > 6) {
+                navigationControl.Display(6);
+                MessageBox.Show("Role " + role + " je vìtší než poèet permisí a nebyla optimalizována ve FORM1", "Není optimalizováno", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+                 
+            navigationControl.Display(role);
+        }
+
+
+
+
 
 
     }
