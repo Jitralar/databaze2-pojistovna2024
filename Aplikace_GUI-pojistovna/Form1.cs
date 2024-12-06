@@ -57,6 +57,7 @@ namespace Aplikace_GUI_pojistovna
             List<UserControl> sideControlList = new List<UserControl>()
             { new Login(), new Role1_registrovanyUser(), new role3_zamestnanec(), new Role4_analytik(), new Role5_supervisor(), new Role6_admin()};
             navigationControl2 = new NavigationControl(sidePanel, sideControlList);
+
             
             ShowInitial();
 

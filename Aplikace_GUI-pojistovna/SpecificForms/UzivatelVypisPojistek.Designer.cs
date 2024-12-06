@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            databaseConnectionBindingSource = new BindingSource(components);
+            ((System.ComponentModel.ISupportInitialize)databaseConnectionBindingSource).BeginInit();
             SuspendLayout();
+            // 
+            // databaseConnectionBindingSource
+            // 
+            databaseConnectionBindingSource.DataSource = typeof(DatabaseConnection);
             // 
             // UzivatelVypisPojistek
             // 
@@ -36,9 +43,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             Name = "UzivatelVypisPojistek";
             Size = new Size(900, 523);
+            ((System.ComponentModel.ISupportInitialize)databaseConnectionBindingSource).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+        private BindingSource databaseConnectionBindingSource;
     }
 }

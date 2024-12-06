@@ -35,6 +35,32 @@ namespace Aplikace_GUI_pojistovna
             }
             return instance;
         }
+
+
+        private string connectionString = "User Id=st67053;Password=abcde;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=fei-sql3.upceucebny.cz)(PORT=1521))(CONNECT_DATA=(SID=BDAS)(SERVER=DEDICATED)))";
+
+        public async Task<bool> TestConnectionAsync()
+    {
+        using (OracleConnection connection = new OracleConnection(connectionString))
+        {
+            try
+            {
+                await connection.OpenAsync();
+                Console.WriteLine("Connection is OK");
+                    return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+    }
+
+        
+
+
+
+
     }
 }
 
