@@ -119,16 +119,21 @@ namespace Aplikace_GUI_pojistovna.SideForms
             {
                 command.CommandText = $"BEGIN :result := {functionName}(:p_email, :p_password); END;";
 
-                command.Parameters.Add("result", OracleDbType.Int32, ParameterDirection.ReturnValue);
+                // Nastavení parametrů
+                command.Parameters.Add("result", OracleDbType.Decimal, ParameterDirection.ReturnValue); // Změněno na Decimal
                 command.Parameters.Add("p_email", OracleDbType.Varchar2).Value = email;
                 command.Parameters.Add("p_password", OracleDbType.Varchar2).Value = password;
 
                 await command.ExecuteNonQueryAsync();
 
-                int validationResult = Convert.ToInt32(command.Parameters["result"].Value);
+                // Explicitní převod z OracleDecimal na int
+                var oracleDecimalResult = (Oracle.ManagedDataAccess.Types.OracleDecimal)command.Parameters["result"].Value;
+                int validationResult = oracleDecimalResult.ToInt32();
+
                 return validationResult == 1;
             }
         }
+
 
         private async Task<int> GetUserRoleAsync(string email, OracleConnection connection)
         {
@@ -138,9 +143,14 @@ namespace Aplikace_GUI_pojistovna.SideForms
                 command.Parameters.Add("email", OracleDbType.Varchar2).Value = email;
 
                 object result = await command.ExecuteScalarAsync();
-                return result != null ? Convert.ToInt32(result) : 0;
+                if (result is Oracle.ManagedDataAccess.Types.OracleDecimal oracleDecimalResult)
+                {
+                    return oracleDecimalResult.ToInt32(); // Převod OracleDecimal na int
+                }
+                return 0; // Pokud není nalezena role
             }
         }
+
 
 
 
