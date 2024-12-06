@@ -20,98 +20,117 @@ namespace Aplikace_GUI_pojistovna.SideForms
 
         private async void newButton2_Click(object sender, EventArgs e)
         {
-            // Získání přihlašovacích údajů z textových polí
-            string email = textBox2.Text; // Uživatelské jméno (e-mail)
-            string password = textBox1.Text; // Heslo
-
-            var sideForm = this.FindForm() as Form1;
-            var mainForm = this.FindForm() as Form1;
-
-            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
-            {
-                MessageBox.Show("E-mail a heslo jsou povinné!", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
+            OracleConnection connection = null;
             try
             {
+                var sideForm = this.FindForm() as Form1;
+                var mainForm = this.FindForm() as Form1;
+
                 // Inicializace připojení k databázi přes třídu DatabaseConnection
                 DatabaseConnection databaseConnection = new DatabaseConnection();
-                using (OracleConnection connection = databaseConnection.GetConnection())
+                connection = databaseConnection.GetConnection();
+
+                // Test připojení
+                if (connection.State != ConnectionState.Open)
                 {
                     await connection.OpenAsync();
+                }
 
-                    // Ověření přihlašovacích údajů pomocí PL/SQL funkce
-                    bool isValidUser = await ExecuteStoredValidateLoginFunctionAsync("validate_user", email, password, connection);
+                // Získání přihlašovacích údajů z textových polí
+                string email = textBox2.Text.Trim();
+                string inputPassword = textBox1.Text.Trim();
 
-                    if (isValidUser)
+                // PL/SQL příkaz pro ověření přihlašovacích údajů
+                string functionName = "validate_user";
+                bool isValidUser = await ExecuteStoredValidateLoginFunctionAsync(functionName, email, inputPassword, connection);
+
+                if (isValidUser)
+                {
+                    // SQL dotaz pro získání role uživatele
+                    string query = @"
+                SELECT p.id_permise 
+                FROM permise p
+                JOIN kontakt k ON p.id_permise = k.permise_id_permise
+                WHERE k.email = :email";
+
+                    OracleCommand command = new OracleCommand(query, connection);
+                    command.Parameters.Add(new OracleParameter(":email", email));
+
+                    object result = await command.ExecuteScalarAsync();
+                    if (result != null && int.TryParse(result.ToString(), out int role))
                     {
-                        // Získání role uživatele
-                        int userRole = await GetUserRoleAsync(email, connection);
-
                         // Přesměrování na odpovídající formulář podle role
-                        this.ParentForm.Hide();
-                        switch (userRole)
+                        switch (role)
                         {
                             case 2:
-                                
-                                if (sideForm != null || mainForm != null)
+                                if (sideForm != null && mainForm != null)
                                 {
-                                    // Zavolej metodu pro zobrazení Role2
+                                    sideForm.ShowMainScreenRoleBased(1);
+                                    mainForm.ShowSideScreenRoleBased(1);
+                                }
+                                break;
+                            case 3:
+                                if (sideForm != null && mainForm != null)
+                                {
                                     sideForm.ShowMainScreenRoleBased(2);
                                     mainForm.ShowSideScreenRoleBased(2);
                                 }
                                 break;
-                            case 3:
-                                
-                                if (sideForm != null || mainForm != null)
+                            case 4:
+                                if (sideForm != null && mainForm != null)
                                 {
-                                    // Zavolej metodu pro zobrazení Role3
                                     sideForm.ShowMainScreenRoleBased(3);
                                     mainForm.ShowSideScreenRoleBased(3);
                                 }
                                 break;
-                            case 4:
-                                if (sideForm != null || mainForm != null)
+                            case 5:
+                                if (sideForm != null && mainForm != null)
                                 {
-                                    // Zavolej metodu pro zobrazení Role4
                                     sideForm.ShowMainScreenRoleBased(4);
                                     mainForm.ShowSideScreenRoleBased(4);
                                 }
                                 break;
-                            case 5:
-                                if (sideForm != null || mainForm != null)
+                            case 6:
+                                if (sideForm != null && mainForm != null)
                                 {
-                                    // Zavolej metodu pro zobrazení Role5
                                     sideForm.ShowMainScreenRoleBased(5);
                                     mainForm.ShowSideScreenRoleBased(5);
                                 }
                                 break;
-                            case 6:
-                                if (sideForm != null || mainForm != null)
-                                {
-                                    // Zavolej metodu pro zobrazení Role6
-                                    sideForm.ShowMainScreenRoleBased(6);
-                                    mainForm.ShowSideScreenRoleBased(6);
-                                }
-                                break;                 
                             default:
                                 MessageBox.Show("Neznámá role uživatele.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                                this.ParentForm.Show();
                                 break;
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Neplatné přihlašovací údaje!", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Neznámá role uživatele.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Neplatné přihlašovací údaje!", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show("Chyba při připojení k databázi: " + ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Chyba při připojení nebo ověřování: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Neočekávaná chyba: " + ex.Message, "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                // Uzavření připojení
+                if (connection != null && connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
             }
         }
+
+
 
         private async Task<bool> ExecuteStoredValidateLoginFunctionAsync(string functionName, string email, string password, OracleConnection connection)
         {
