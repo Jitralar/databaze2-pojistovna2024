@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
@@ -101,6 +97,13 @@ namespace Aplikace_GUI_pojistovna.SideForms
                                 MessageBox.Show("Neznámá role uživatele.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 break;
                         }
+
+                        // Získání celého jména uživatele
+                        string userName = await GetFullNameAsync(email, connection);
+
+                        // Aktualizace labelů
+                        UpdateLabels(mainForm, userName);
+
                         ClearLoginFields();
                     }
                     else
@@ -131,12 +134,14 @@ namespace Aplikace_GUI_pojistovna.SideForms
             }
         }
 
+        // Funkce pro vymazání textových polí
         public void ClearLoginFields()
         {
             textBox1.Clear(); // Vymaže heslo
             textBox2.Clear(); // Vymaže email
         }
 
+        // Funkce pro ověření přihlašovacích údajů
         private async Task<bool> ExecuteStoredValidateLoginFunctionAsync(string functionName, string email, string password, OracleConnection connection)
         {
             using (OracleCommand command = new OracleCommand(null, connection))
@@ -158,29 +163,76 @@ namespace Aplikace_GUI_pojistovna.SideForms
             }
         }
 
-
-        private async Task<int> GetUserRoleAsync(string email, OracleConnection connection)
+        // Funkce pro zobrazení celého jména uživatele
+        public async Task<string> GetFullNameAsync(string email, OracleConnection connection)
         {
-            string query = "SELECT PERMISE_ID_PERMISE FROM Kontakt WHERE email = :email";
-            using (OracleCommand command = new OracleCommand(query, connection))
-            {
-                command.Parameters.Add("email", OracleDbType.Varchar2).Value = email;
+            const string query = @"
+        SELECT 
+            k.jmeno || 
+            CASE WHEN k.druhe_jmeno IS  NULL THEN ' ' || k.druhe_jmeno ELSE '' END || 
+            ' ' || k.prijmeni AS full_name
+        FROM 
+            kontakt c
+        JOIN 
+            klient k ON c.id_kontakt = k.kontakt_id_kontakt
+        WHERE 
+            c.email = :email
+        UNION
+        SELECT 
+            z.jmeno || 
+            CASE WHEN z.druhe_jmeno IS  NULL THEN ' ' || z.druhe_jmeno ELSE '' END || 
+            ' ' || z.prijmeni AS full_name
+        FROM 
+            kontakt c
+        JOIN 
+            zamestnanec z ON c.id_kontakt = z.kontakt_id_kontakt
+        WHERE 
+            c.email = :email";
 
-                object result = await command.ExecuteScalarAsync();
-                if (result is Oracle.ManagedDataAccess.Types.OracleDecimal oracleDecimalResult)
+            try
+            {
+                using (var command = new OracleCommand(query, connection))
                 {
-                    return oracleDecimalResult.ToInt32(); // Převod OracleDecimal na int
+                    command.Parameters.Add("email", OracleDbType.Varchar2).Value = email;
+
+                    // Spuštění dotazu
+                    var result = await command.ExecuteScalarAsync();
+                    if (result != null)
+                    {
+                        return result.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Dotaz nevrátil žádná data.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return "Neznámý uživatel";
+                    }
                 }
-                return 0; // Pokud není nalezena role
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Chyba při vykonávání dotazu: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return "Chyba";
             }
         }
 
+        // Funkce pro aktualizaci Labelů
+        private void UpdateLabels(Form1 mainForm, string userName)
+        {
+            if (mainForm != null)
+            {
+                // Seznam všech labelů, které je potřeba aktualizovat
+                var labels = new string[] { "r2label", "r3label", "r4label", "r5label", "r6label" };
 
-
-
-
-
-
-
+                foreach (var labelName in labels)
+                {
+                    var label = mainForm.Controls.Find(labelName, true).FirstOrDefault() as Label;
+                    if (label != null)
+                    {
+                        label.Text = $"Přihlášen jako uživatel:\n {userName}";
+                        label.Visible = true; // Zajistí, že je label viditelný
+                    }
+                }
+            }
+        }
     }
 }

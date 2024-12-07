@@ -12,7 +12,7 @@ namespace Aplikace_GUI_pojistovna
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
 
-            dbTest();
+            //dbTest();
 
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
