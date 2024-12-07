@@ -31,14 +31,13 @@
             panel1 = new Panel();
             urText = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
-            newButton13 = new NewButton();
             textBox21 = new TextBox();
             textBox17 = new TextBox();
             textBox15 = new TextBox();
             textBox13 = new TextBox();
             textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            textBox1 = new TextBox();
+            textBoxProstredniJmeno = new TextBox();
+            textBoxJmeno = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -91,14 +90,13 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel1.Controls.Add(newButton13, 3, 6);
             tableLayoutPanel1.Controls.Add(textBox21, 0, 5);
             tableLayoutPanel1.Controls.Add(textBox17, 0, 4);
             tableLayoutPanel1.Controls.Add(textBox15, 2, 3);
             tableLayoutPanel1.Controls.Add(textBox13, 0, 3);
             tableLayoutPanel1.Controls.Add(textBox7, 2, 1);
-            tableLayoutPanel1.Controls.Add(textBox6, 1, 1);
-            tableLayoutPanel1.Controls.Add(textBox1, 0, 1);
+            tableLayoutPanel1.Controls.Add(textBoxProstredniJmeno, 1, 1);
+            tableLayoutPanel1.Controls.Add(textBoxJmeno, 0, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 3);
             tableLayoutPanel1.Controls.Add(textBox4, 0, 6);
             tableLayoutPanel1.Controls.Add(label1, 1, 6);
@@ -126,25 +124,6 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
             tableLayoutPanel1.Size = new Size(900, 453);
             tableLayoutPanel1.TabIndex = 1;
-            // 
-            // newButton13
-            // 
-            newButton13.BackColor = Color.MediumSlateBlue;
-            newButton13.BackgroundColor = Color.MediumSlateBlue;
-            newButton13.BorderColor = Color.PaleVioletRed;
-            newButton13.BorderRadius = 0;
-            newButton13.BorderSize = 0;
-            newButton13.Dock = DockStyle.Fill;
-            newButton13.FlatAppearance.BorderSize = 0;
-            newButton13.FlatStyle = FlatStyle.Flat;
-            newButton13.ForeColor = Color.White;
-            newButton13.Location = new Point(678, 339);
-            newButton13.Name = "newButton13";
-            newButton13.Size = new Size(219, 50);
-            newButton13.TabIndex = 37;
-            newButton13.Text = "Registrovat se";
-            newButton13.TextColor = Color.White;
-            newButton13.UseVisualStyleBackColor = false;
             // 
             // textBox21
             // 
@@ -191,23 +170,24 @@
             textBox7.Size = new Size(219, 27);
             textBox7.TabIndex = 8;
             // 
-            // textBox6
+            // textBoxProstredniJmeno
             // 
-            textBox6.Dock = DockStyle.Fill;
-            textBox6.Location = new Point(228, 59);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "Prostřední jméno";
-            textBox6.Size = new Size(219, 27);
-            textBox6.TabIndex = 7;
+            textBoxProstredniJmeno.Dock = DockStyle.Fill;
+            textBoxProstredniJmeno.Location = new Point(228, 59);
+            textBoxProstredniJmeno.Name = "textBoxProstredniJmeno";
+            textBoxProstredniJmeno.PlaceholderText = "Prostřední jméno";
+            textBoxProstredniJmeno.Size = new Size(219, 27);
+            textBoxProstredniJmeno.TabIndex = 7;
             // 
-            // textBox1
+            // textBoxJmeno
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(3, 59);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Jméno";
-            textBox1.Size = new Size(219, 27);
-            textBox1.TabIndex = 2;
+            textBoxJmeno.Dock = DockStyle.Fill;
+            textBoxJmeno.Location = new Point(3, 59);
+            textBoxJmeno.Name = "textBoxJmeno";
+            textBoxJmeno.PlaceholderText = "Jméno";
+            textBoxJmeno.Size = new Size(219, 27);
+            textBoxJmeno.TabIndex = 2;
+            textBoxJmeno.TextChanged += textBoxJmeno_TextChanged;
             // 
             // tableLayoutPanel2
             // 
@@ -419,13 +399,13 @@
         private Label urText;
         private TableLayoutPanel tableLayoutPanel1;
         private NewButton urRegistrovat;
-        private TextBox textBox1;
+        private TextBox textBoxJmeno;
         private TextBox textBox21;
         private TextBox textBox17;
         private TextBox textBox15;
         private TextBox textBox13;
         private TextBox textBox7;
-        private TextBox textBox6;
+        private TextBox textBoxProstredniJmeno;
         private NewButton newButton13;
         private TableLayoutPanel tableLayoutPanel2;
         private TextBox textBox2;

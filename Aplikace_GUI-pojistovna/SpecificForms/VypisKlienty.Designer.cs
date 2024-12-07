@@ -28,17 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridViewKlienti = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewKlienti).BeginInit();
             SuspendLayout();
+            // 
+            // dataGridViewKlienti
+            // 
+            dataGridViewKlienti.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewKlienti.Location = new Point(-3, 0);
+            dataGridViewKlienti.Name = "dataGridViewKlienti";
+            dataGridViewKlienti.RowHeadersWidth = 51;
+            dataGridViewKlienti.Size = new Size(903, 523);
+            dataGridViewKlienti.TabIndex = 0;
+            dataGridViewKlienti.CellContentClick += dataGridViewKlienti_CellContentClick;
             // 
             // VypisKlienty
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGridViewKlienti);
             Name = "VypisKlienty";
             Size = new Size(900, 523);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewKlienti).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dataGridViewKlienti;
     }
 }

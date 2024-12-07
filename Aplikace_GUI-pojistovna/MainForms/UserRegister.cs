@@ -16,5 +16,10 @@ namespace Aplikace_GUI_pojistovna.MainForms
         {
             InitializeComponent();
         }
+
+        private void textBoxJmeno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

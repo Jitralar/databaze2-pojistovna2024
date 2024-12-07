@@ -8,20 +8,26 @@ namespace Aplikace_GUI_pojistovna
     {
         NavigationControl navigationControl1;
         NavigationControl navigationControl2;
+        private VypisKlienty vypisKlienty1;
 
         public Form1()
         {
             InitializeComponent();
             InitializeNavigationControl();
+            InitializeVypisKlienty();
         }
-
+        private void InitializeVypisKlienty()
+        {
+            // Inicializace instance UserControl
+            vypisKlienty1 = new VypisKlienty();
+        }
 
         private void InitializeNavigationControl()
         {
 
             List<UserControl> mainControlList = new List<UserControl>()
-            { 
-                new UserRegister(), new Role2_main(), new Role3_main(), new role4_main(), new Role5_main(), new Role6_main(), new UserProfil(), 
+            {
+                new UserRegister(), new Role2_main(), new Role3_main(), new role4_main(), new Role5_main(), new Role6_main(), new UserProfil(),
                 new PridelitKlientaZamestnanci(), new StatistikyKlientu(), new StatistikyPobocek(), new StatistikyPojistek(), new StatistikyZamestnancu(), new UpravitObsahTabulky(), new UzivatelVypisPojistek(), new VypisKlienty(), new VypisPojistky(), new VypisZamestnance(), new VytvoritPojistku(), new ZobrazitLog()
             }; //FIXME: add další jak budu pøidávat
 
@@ -58,19 +64,21 @@ namespace Aplikace_GUI_pojistovna
             { new Login(), new Role1_registrovanyUser(), new role3_zamestnanec(), new Role4_analytik(), new Role5_supervisor(), new Role6_admin()};
             navigationControl2 = new NavigationControl(sidePanel, sideControlList);
 
-            
+
             ShowInitial();
 
         }
 
-        public void ShowInitial() {
+        public void ShowInitial()
+        {
 
             navigationControl2.Display(0); // sidePanel
             navigationControl1.Display(0); // mainPanel //FIXME: change to 0
 
         }
 
-        public void ShowMainScreenRoleBased(int role) {
+        public void ShowMainScreenRoleBased(int role)
+        {
 
             //ukaze to mainPanel domovskou obrazovku danou roli
             //dostava hodnotu 2-6 podle permise uzivatele
@@ -114,10 +122,14 @@ namespace Aplikace_GUI_pojistovna
 
         public void ShowVypisKlienty()
         {
-            // Pøedpokládáme, že VypisKlienty je na indexu 15 v seznamu mainControlList
-            // používá se k zobrazení Panelu výpisu klientù
-            // Zavolá se pøi kliknutí na tlaèítko r3klienti
-            navigationControl1.Display(15);
+            // Zkontroluj, zda již panel VypisKlienty není zobrazený
+            if (!this.Controls.Contains(vypisKlienty1))
+            {
+                vypisKlienty1.Dock = DockStyle.Fill;  // Zajištìní, že panel vyplní celé okno
+                this.Controls.Add(vypisKlienty1);  // Pøidej kontrolku na Form1
+            }
+            vypisKlienty1.BringToFront();  // Ujisti se, že panel je na pøední stranì
+            navigationControl1.Display(15);  // Zobrazení panelu výpisu klientù
         }
 
         public void ShowVypisPojistky()
@@ -204,16 +216,17 @@ namespace Aplikace_GUI_pojistovna
         {
             // Emulace role uživatele
             // Zavolá se pøi kliknutí na tlaèítko newButtonEMULACE_r2, newButtonEMULACE_r3, newButtonEMULACE_r4, newButtonEMULACE_r5
-            if (role > 6) {
+            if (role > 6)
+            {
                 navigationControl2.Display(6);
                 MessageBox.Show("Role " + role + " je vìtší než poèet permisí a nebyla optimalizována ve FORM1", "Není optimalizováno", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-            navigationControl2.Display(role);
+                navigationControl2.Display(role);
 
             }
-                 
+
         }
 
 
