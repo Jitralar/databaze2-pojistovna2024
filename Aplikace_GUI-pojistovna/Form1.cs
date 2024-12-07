@@ -9,17 +9,24 @@ namespace Aplikace_GUI_pojistovna
         NavigationControl navigationControl1;
         NavigationControl navigationControl2;
         private VypisKlienty vypisKlienty1;
+        private VypisZamestnance vypisZamestnance1;
 
         public Form1()
         {
             InitializeComponent();
             InitializeNavigationControl();
             InitializeVypisKlienty();
+            InitializeVypisZamestnance();
         }
         private void InitializeVypisKlienty()
         {
             // Inicializace instance UserControl
             vypisKlienty1 = new VypisKlienty();
+        }
+        private void InitializeVypisZamestnance()
+        {
+            // Inicializace instance UserControl
+            vypisZamestnance1 = new VypisZamestnance();
         }
 
         private void InitializeNavigationControl()
@@ -182,9 +189,12 @@ namespace Aplikace_GUI_pojistovna
 
         public void ShowVypisZamestnance()
         {
-            // Pøedpokládáme, že VypisZamestnance je na indexu 17 v seznamu mainControlList
-            // používá se k zobrazení Panelu výpisu zamìstnancù
-            // Zavolá se pøi kliknutí na tlaèítko r5zamestnanci
+            if (!this.Controls.Contains(vypisZamestnance1))
+            {
+                vypisKlienty1.Dock = DockStyle.Fill;  // Zajištìní, že panel vyplní celé okno
+                this.Controls.Add(vypisZamestnance1);  // Pøidej kontrolku na Form1
+            }
+            vypisKlienty1.BringToFront();  // Ujisti se, že panel je na pøední stranì
             navigationControl1.Display(17);
         }
 
