@@ -211,6 +211,7 @@
             r5logout.Text = "logout";
             r5logout.TextColor = Color.White;
             r5logout.UseVisualStyleBackColor = false;
+            r5logout.Click += r5logout_Click;
             // 
             // r5profil
             // 

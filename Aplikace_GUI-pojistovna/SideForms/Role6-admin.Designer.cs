@@ -191,6 +191,7 @@
             r6logout.Text = "logout";
             r6logout.TextColor = Color.White;
             r6logout.UseVisualStyleBackColor = false;
+            r6logout.Click += r6logout_Click;
             // 
             // r6profil
             // 

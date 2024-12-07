@@ -168,6 +168,7 @@
             r4logout.Text = "logout";
             r4logout.TextColor = Color.White;
             r4logout.UseVisualStyleBackColor = false;
+            r4logout.Click += r4logout_Click;
             // 
             // r4profil
             // 
