@@ -66,5 +66,22 @@ namespace Aplikace_GUI_pojistovna.SideForms
                 mainForm.ShowStatistikyPobocek();
             }
         }
+
+        private void r4logout_Click(object sender, EventArgs e)
+        {
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                // Přepnutí na přihlašovací obrazovku
+                mainForm.ShowMainScreenRoleBased(0); // Hlavní panel na přihlašovací obrazovku
+                mainForm.ShowSideScreenRoleBased(0); // Vedlejší panel na přihlašovací obrazovku
+
+                var loginControl = mainForm.Controls.OfType<Login>().FirstOrDefault();
+                if (loginControl != null)
+                {
+                    loginControl.ClearLoginFields();
+                }
+            }
+        }
     }
 }

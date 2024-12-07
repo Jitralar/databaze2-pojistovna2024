@@ -101,6 +101,7 @@ namespace Aplikace_GUI_pojistovna.SideForms
                                 MessageBox.Show("Neznámá role uživatele.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 break;
                         }
+                        ClearLoginFields();
                     }
                     else
                     {
@@ -130,7 +131,11 @@ namespace Aplikace_GUI_pojistovna.SideForms
             }
         }
 
-
+        public void ClearLoginFields()
+        {
+            textBox1.Clear(); // Vymaže heslo
+            textBox2.Clear(); // Vymaže email
+        }
 
         private async Task<bool> ExecuteStoredValidateLoginFunctionAsync(string functionName, string email, string password, OracleConnection connection)
         {

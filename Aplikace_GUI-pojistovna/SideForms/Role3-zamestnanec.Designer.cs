@@ -319,6 +319,7 @@
             r3logout.Text = "logout";
             r3logout.TextColor = Color.White;
             r3logout.UseVisualStyleBackColor = false;
+            r3logout.Click += r3logout_Click;
             // 
             // r3profil
             // 

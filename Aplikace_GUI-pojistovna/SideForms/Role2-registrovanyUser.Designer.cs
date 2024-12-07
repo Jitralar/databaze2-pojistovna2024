@@ -111,6 +111,7 @@
             r2logout.Text = "logout";
             r2logout.TextColor = Color.White;
             r2logout.UseVisualStyleBackColor = false;
+            r2logout.Click += r2logout_Click;
             // 
             // r2profil
             // 
