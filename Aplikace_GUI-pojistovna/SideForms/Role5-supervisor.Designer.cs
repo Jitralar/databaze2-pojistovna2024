@@ -30,7 +30,6 @@
         {
             r5label = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
-            r5delegate = new NewButton();
             r5statspobocek = new NewButton();
             r5statspojistek = new NewButton();
             r5statszamestnanci = new NewButton();
@@ -39,6 +38,7 @@
             r5logout = new NewButton();
             r5profil = new NewButton();
             r5zamestnanci = new NewButton();
+            r5delegate = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -79,26 +79,6 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 12.499999F));
             tableLayoutPanel1.Size = new Size(212, 453);
             tableLayoutPanel1.TabIndex = 2;
-            // 
-            // r5delegate
-            // 
-            r5delegate.BackColor = Color.MediumAquamarine;
-            r5delegate.BackgroundColor = Color.MediumAquamarine;
-            r5delegate.BorderColor = Color.PaleVioletRed;
-            r5delegate.BorderRadius = 0;
-            r5delegate.BorderSize = 0;
-            r5delegate.Dock = DockStyle.Fill;
-            r5delegate.FlatAppearance.BorderSize = 0;
-            r5delegate.FlatStyle = FlatStyle.Flat;
-            r5delegate.ForeColor = Color.White;
-            r5delegate.Location = new Point(3, 283);
-            r5delegate.Name = "r5delegate";
-            r5delegate.Size = new Size(206, 50);
-            r5delegate.TabIndex = 10;
-            r5delegate.Text = "Přidělit Klienta Zaměstnanci";
-            r5delegate.TextColor = Color.White;
-            r5delegate.UseVisualStyleBackColor = false;
-            r5delegate.Click += r5delegate_Click;
             // 
             // r5statspobocek
             // 
@@ -251,6 +231,26 @@
             r5zamestnanci.TextColor = Color.White;
             r5zamestnanci.UseVisualStyleBackColor = false;
             r5zamestnanci.Click += r5zamestnanci_Click;
+            // 
+            // r5delegate
+            // 
+            r5delegate.BackColor = Color.MediumAquamarine;
+            r5delegate.BackgroundColor = Color.MediumAquamarine;
+            r5delegate.BorderColor = Color.PaleVioletRed;
+            r5delegate.BorderRadius = 0;
+            r5delegate.BorderSize = 0;
+            r5delegate.Dock = DockStyle.Fill;
+            r5delegate.FlatAppearance.BorderSize = 0;
+            r5delegate.FlatStyle = FlatStyle.Flat;
+            r5delegate.ForeColor = Color.White;
+            r5delegate.Location = new Point(3, 283);
+            r5delegate.Name = "r5delegate";
+            r5delegate.Size = new Size(206, 50);
+            r5delegate.TabIndex = 10;
+            r5delegate.Text = "Změnit Zaměstnance pro Klienta";
+            r5delegate.TextColor = Color.White;
+            r5delegate.UseVisualStyleBackColor = false;
+            r5delegate.Click += r5delegate_Click;
             // 
             // Role5_supervisor
             // 
