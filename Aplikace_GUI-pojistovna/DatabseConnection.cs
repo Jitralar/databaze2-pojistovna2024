@@ -29,7 +29,7 @@ namespace Aplikace_GUI_pojistovna
                         string port = "1521";
                         string sid = "BDAS";
 
-                        string oradb = "User Id=" + user + ";Password=" + password +";Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST="+ databasehost + ")(PORT=" + port + "))(CONNECT_DATA=(SID=" + sid + ")(SERVER=DEDICATED)))";
+                        string oradb = "User Id=" + user + ";Password=" + password + ";Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=" + databasehost + ")(PORT=" + port + "))(CONNECT_DATA=(SID=" + sid + ")(SERVER=DEDICATED)))";
                         instance = new OracleConnection(oradb);
                     }
                 }
@@ -41,29 +41,50 @@ namespace Aplikace_GUI_pojistovna
         private string connectionString = "User Id=st67053;Password=abcde;Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=fei-sql3.upceucebny.cz)(PORT=1521))(CONNECT_DATA=(SID=BDAS)(SERVER=DEDICATED)))";
 
         public async Task<bool> TestConnectionAsync()
-    {
-        using (OracleConnection connection = new OracleConnection(connectionString))
         {
-            try
+            using (OracleConnection connection = new OracleConnection(connectionString))
             {
-                await connection.OpenAsync();
-                Console.WriteLine("Connection is OK");
+                try
+                {
+                    await connection.OpenAsync();
+                    Console.WriteLine("Connection is OK");
                     return true;
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
             }
-            catch (Exception e)
+        }
+
+
+    public DataTable GetDataFromView(string viewName)
+    {
+        using (var connection = new OracleConnection(connectionString))
+        {
+            connection.Open();
+            string query = $"SELECT * FROM {viewName}";
+
+            using (var command = new OracleCommand(query, connection))
             {
-                return false;
+                using (var adapter = new OracleDataAdapter(command))
+                {
+                    var dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    return dataTable;
+                }
             }
         }
     }
-       
 
 
 
 
 
 
-    }
+
+
+}
 }
 
 
