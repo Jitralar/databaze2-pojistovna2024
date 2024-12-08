@@ -1,7 +1,11 @@
 using Aplikace_GUI_pojistovna.MainForms;
 using Aplikace_GUI_pojistovna.SideForms;
 using Aplikace_GUI_pojistovna.SpecificForms;
+<<<<<<< Updated upstream
 using static Aplikace_GUI_pojistovna.User;
+=======
+using System.Data;
+>>>>>>> Stashed changes
 
 namespace Aplikace_GUI_pojistovna
 {
@@ -11,6 +15,25 @@ namespace Aplikace_GUI_pojistovna
         NavigationControl navigationControl2;
         private VypisKlienty vypisKlienty1;
         private VypisZamestnance vypisZamestnance1;
+
+        private string _currentUserEmail; // Uložený e-mail pøihlášeného uživatele
+
+        public void SetCurrentUserEmail(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                MessageBox.Show("Chyba: E-mail je prázdný.", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            _currentUserEmail = email;
+            //MessageBox.Show($"Email byl nastaven na: {_currentUserEmail}", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        public string GetCurrentUserEmail()
+        {
+            return _currentUserEmail;
+        }
 
         public Form1()
         {
@@ -98,16 +121,26 @@ namespace Aplikace_GUI_pojistovna
         // každá metoda zobrazí jiný panel, který je v seznamu mainControlList, se zobrazuje po kliknuti
         // danenoho tlaèítka v panelu roleÈÍSLO_NÁZEV.cs na sidePanelu
 
-        public void ShowUserProfile()
+        public void ShowUserProfile(string email = null)
         {
-            // Pøedpokládáme, že UserProfil je na indexu 6 v seznamu mainControlList
-            // používá se k zobrazení Panelu profilu uživatele
-            // Zavolá se pøi kliknutí na tlaèítko r2profil, r3profil, r4profil, r5profil, r6profil
+            string userEmail = GetCurrentUserEmail();
 
-            //nutne predelavat pro daneho uzivatele, vsichni sdily stejny form
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                MessageBox.Show("E-mail uživatele není dostupný.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            //MessageBox.Show($"Naèítání profilu uživatele pro: {userEmail}", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            UserProfil userProfil = new UserProfil();
             navigationControl1.Display(6);
+            userProfil.LoadUserData(userEmail); // Naètení dat uživatele
         }
+
+
+
 
         public void ShowUzivatelVypisPojistky()
         {

@@ -102,6 +102,18 @@ namespace Aplikace_GUI_pojistovna.SideForms
                 {
                     MessageBox.Show("Neplatné přihlašovací údaje!", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+
+                if (isValidUser)
+                {
+                     mainForm.SetCurrentUserEmail(email); // Uložení e-mailu
+
+                }
+
+
+
+
+
+
             }
             catch (OracleException ex)
             {
