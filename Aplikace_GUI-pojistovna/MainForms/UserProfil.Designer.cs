@@ -871,7 +871,6 @@
         private Label label12;
         private NewButton newButton4;
         private NewButton newButton3;
-        private NewButton newButton1;
         private Panel panel2;
         private TableLayoutPanel tableLayoutPanel9;
         private TextBox textBox12;

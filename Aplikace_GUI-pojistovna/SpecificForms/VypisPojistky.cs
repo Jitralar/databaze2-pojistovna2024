@@ -50,26 +50,26 @@ namespace Aplikace_GUI_pojistovna.SpecificForms
         }
 
         // Event handler for the search button click
-        private void newButtonHledatPojistku_Click(object sender, EventArgs e)
-        {
-            string filterValue = textBox1.Text; // Text entered by the user
-            string filterColumn = GetSelectedFilterColumn();
+        //private void newButtonHledatPojistku_Click(object sender, EventArgs e)
+        //{
+        //    string filterValue = textBox1.Text; // Text entered by the user
+        //    string filterColumn = GetSelectedFilterColumn();
 
-            if (filterColumn == "POJ_ID_ARC" && comboBox1.SelectedValue != null)
-            {
-                // Use the selected ComboBox value for filtering
-                filterValue = comboBox1.SelectedValue.ToString();
-            }
+        //    if (filterColumn == "POJ_ID_ARC" && comboBox1.SelectedValue != null)
+        //    {
+        //        // Use the selected ComboBox value for filtering
+        //        filterValue = comboBox1.SelectedValue.ToString();
+        //    }
 
-            if (!string.IsNullOrEmpty(filterColumn) && !string.IsNullOrEmpty(filterValue))
-            {
-                LoadData(filterColumn, filterValue); // Apply filtering
-            }
-            else
-            {
-                MessageBox.Show("Please select a valid filter option or enter a value.");
-            }
-        }
+        //    if (!string.IsNullOrEmpty(filterColumn) && !string.IsNullOrEmpty(filterValue))
+        //    {
+        //        LoadData(filterColumn, filterValue); // Apply filtering
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Please select a valid filter option or enter a value.");
+        //    }
+        //}
 
         // Determine the selected filter column
         private string GetSelectedFilterColumn()
@@ -104,7 +104,23 @@ namespace Aplikace_GUI_pojistovna.SpecificForms
 
         private void newButtonHledatPojistku_Click_1(object sender, EventArgs e)
         {
-            newButtonHledatPojistku_Click(sender, e);
+            string filterValue = textBox1.Text; // Text entered by the user
+            string filterColumn = GetSelectedFilterColumn();
+
+            if (filterColumn == "POJ_ID_ARC" && comboBox1.SelectedValue != null)
+            {
+                // Use the selected ComboBox value for filtering
+                filterValue = comboBox1.SelectedValue.ToString();
+            }
+
+            if (!string.IsNullOrEmpty(filterColumn) && !string.IsNullOrEmpty(filterValue))
+            {
+                LoadData(filterColumn, filterValue); // Apply filtering
+            }
+            else
+            {
+                MessageBox.Show("Please select a valid filter option or enter a value.");
+            }
         }
     }
 }

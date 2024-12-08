@@ -37,8 +37,8 @@
             radioButton1 = new RadioButton();
             newButtonNULLFILTER = new NewButton();
             textBox1 = new TextBox();
-            dataGridViewVypisPojistky = new DataGridView();
             newButtonHledatPojistku = new NewButton();
+            dataGridViewVypisPojistky = new DataGridView();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -175,16 +175,6 @@
             textBox1.Size = new Size(703, 27);
             textBox1.TabIndex = 0;
             // 
-            // dataGridViewVypisPojistky
-            // 
-            dataGridViewVypisPojistky.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewVypisPojistky.Dock = DockStyle.Fill;
-            dataGridViewVypisPojistky.Location = new Point(3, 81);
-            dataGridViewVypisPojistky.Name = "dataGridViewVypisPojistky";
-            dataGridViewVypisPojistky.RowHeadersWidth = 51;
-            dataGridViewVypisPojistky.Size = new Size(894, 439);
-            dataGridViewVypisPojistky.TabIndex = 1;
-            // 
             // newButtonHledatPojistku
             // 
             newButtonHledatPojistku.BackColor = Color.MediumSlateBlue;
@@ -203,7 +193,17 @@
             newButtonHledatPojistku.Text = "Hledat Pojistku";
             newButtonHledatPojistku.TextColor = Color.White;
             newButtonHledatPojistku.UseVisualStyleBackColor = false;
-            newButtonHledatPojistku.Click += this.newButtonHledatPojistku_Click_1;
+            newButtonHledatPojistku.Click += newButtonHledatPojistku_Click_1;
+            // 
+            // dataGridViewVypisPojistky
+            // 
+            dataGridViewVypisPojistky.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewVypisPojistky.Dock = DockStyle.Fill;
+            dataGridViewVypisPojistky.Location = new Point(3, 81);
+            dataGridViewVypisPojistky.Name = "dataGridViewVypisPojistky";
+            dataGridViewVypisPojistky.RowHeadersWidth = 51;
+            dataGridViewVypisPojistky.Size = new Size(894, 439);
+            dataGridViewVypisPojistky.TabIndex = 1;
             // 
             // VypisPojistky
             // 
@@ -235,6 +235,5 @@
         private ComboBox comboBox1;
         private RadioButton radioButton1;
         private NewButton newButtonNULLFILTER;
-        private NewButton newButtonHledatPojistku;
     }
 }
