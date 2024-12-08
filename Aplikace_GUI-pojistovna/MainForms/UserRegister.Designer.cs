@@ -122,6 +122,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 12.5F));
             tableLayoutPanel1.Size = new Size(900, 453);
             tableLayoutPanel1.TabIndex = 1;
+            tableLayoutPanel1.TabStop = true;
             // 
             // label2
             // 
@@ -141,7 +142,7 @@
             textBox21.Name = "textBox21";
             textBox21.PlaceholderText = "Email (uživatelské jméno)";
             textBox21.Size = new Size(219, 27);
-            textBox21.TabIndex = 11;
+            textBox21.TabIndex = 12;
             // 
             // textBox17
             // 
@@ -150,7 +151,7 @@
             textBox17.Name = "textBox17";
             textBox17.PlaceholderText = "Město";
             textBox17.Size = new Size(219, 27);
-            textBox17.TabIndex = 9;
+            textBox17.TabIndex = 10;
             // 
             // textBox15
             // 
@@ -159,7 +160,7 @@
             textBox15.Name = "textBox15";
             textBox15.PlaceholderText = "PSČ";
             textBox15.Size = new Size(219, 27);
-            textBox15.TabIndex = 8;
+            textBox15.TabIndex = 9;
             // 
             // textBox13
             // 
@@ -200,7 +201,8 @@
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Size = new Size(219, 50);
-            tableLayoutPanel2.TabIndex = 24;
+            tableLayoutPanel2.TabIndex = 6;
+            tableLayoutPanel2.TabStop = true;
             // 
             // textBox2
             // 
@@ -209,7 +211,7 @@
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "číslo popisné";
             textBox2.Size = new Size(103, 27);
-            textBox2.TabIndex = 6;
+            textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
@@ -218,7 +220,7 @@
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "číslo orientační";
             textBox3.Size = new Size(104, 27);
-            textBox3.TabIndex = 7;
+            textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
@@ -228,7 +230,7 @@
             textBox4.PasswordChar = '*';
             textBox4.PlaceholderText = "Heslo";
             textBox4.Size = new Size(219, 27);
-            textBox4.TabIndex = 13;
+            textBox4.TabIndex = 16;
             // 
             // label1
             // 
@@ -253,7 +255,8 @@
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Size = new Size(219, 50);
-            tableLayoutPanel3.TabIndex = 40;
+            tableLayoutPanel3.TabIndex = 13;
+            tableLayoutPanel3.TabStop = true;
             // 
             // textBox5
             // 
@@ -263,7 +266,7 @@
             textBox5.Name = "textBox5";
             textBox5.PlaceholderText = "prefix";
             textBox5.Size = new Size(70, 27);
-            textBox5.TabIndex = 0;
+            textBox5.TabIndex = 14;
             textBox5.Text = "+420";
             // 
             // textBox8
@@ -274,7 +277,7 @@
             textBox8.Name = "textBox8";
             textBox8.PlaceholderText = "telefoní číslo";
             textBox8.Size = new Size(137, 27);
-            textBox8.TabIndex = 12;
+            textBox8.TabIndex = 15;
             // 
             // comboBox1
             // 
@@ -283,7 +286,7 @@
             comboBox1.Location = new Point(228, 227);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(219, 28);
-            comboBox1.TabIndex = 10;
+            comboBox1.TabIndex = 11;
             comboBox1.Text = "Vyberte Kraj";
             // 
             // label3
@@ -344,7 +347,7 @@
             newButtonRegister.Location = new Point(678, 395);
             newButtonRegister.Name = "newButtonRegister";
             newButtonRegister.Size = new Size(219, 55);
-            newButtonRegister.TabIndex = 14;
+            newButtonRegister.TabIndex = 17;
             newButtonRegister.Text = "Regisrovat se do systému";
             newButtonRegister.TextColor = Color.White;
             newButtonRegister.UseVisualStyleBackColor = false;
