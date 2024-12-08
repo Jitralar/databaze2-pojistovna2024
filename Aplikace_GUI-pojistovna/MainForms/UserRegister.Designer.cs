@@ -37,7 +37,6 @@
             textBox13 = new TextBox();
             textBox7 = new TextBox();
             textBoxProstredniJmeno = new TextBox();
-            textBoxJmeno = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -55,6 +54,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            newButtonRegister = new NewButton();
+            textBox1_jmeno = new TextBox();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -96,7 +97,6 @@
             tableLayoutPanel1.Controls.Add(textBox13, 0, 3);
             tableLayoutPanel1.Controls.Add(textBox7, 2, 1);
             tableLayoutPanel1.Controls.Add(textBoxProstredniJmeno, 1, 1);
-            tableLayoutPanel1.Controls.Add(textBoxJmeno, 0, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 3);
             tableLayoutPanel1.Controls.Add(textBox4, 0, 6);
             tableLayoutPanel1.Controls.Add(label1, 1, 6);
@@ -110,6 +110,8 @@
             tableLayoutPanel1.Controls.Add(label4, 3, 4);
             tableLayoutPanel1.Controls.Add(label5, 3, 5);
             tableLayoutPanel1.Controls.Add(label6, 0, 0);
+            tableLayoutPanel1.Controls.Add(newButtonRegister, 3, 7);
+            tableLayoutPanel1.Controls.Add(textBox1_jmeno, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 70);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -178,16 +180,6 @@
             textBoxProstredniJmeno.PlaceholderText = "Prostřední jméno";
             textBoxProstredniJmeno.Size = new Size(219, 27);
             textBoxProstredniJmeno.TabIndex = 7;
-            // 
-            // textBoxJmeno
-            // 
-            textBoxJmeno.Dock = DockStyle.Fill;
-            textBoxJmeno.Location = new Point(3, 59);
-            textBoxJmeno.Name = "textBoxJmeno";
-            textBoxJmeno.PlaceholderText = "Jméno";
-            textBoxJmeno.Size = new Size(219, 27);
-            textBoxJmeno.TabIndex = 2;
-            textBoxJmeno.TextChanged += textBoxJmeno_TextChanged;
             // 
             // tableLayoutPanel2
             // 
@@ -374,6 +366,34 @@
             label6.TabIndex = 49;
             label6.Text = "Registrací získáváte přístup k nejlepší pojišťovně a modernímu systému Oasis, který vám umožní snadno spravovat vaše pojistky, mít přehled o smlouvách a využívat výhodné služby na jednom místě.";
             // 
+            // newButtonRegister
+            // 
+            newButtonRegister.BackColor = Color.MediumSlateBlue;
+            newButtonRegister.BackgroundColor = Color.MediumSlateBlue;
+            newButtonRegister.BorderColor = Color.PaleVioletRed;
+            newButtonRegister.BorderRadius = 0;
+            newButtonRegister.BorderSize = 0;
+            newButtonRegister.Dock = DockStyle.Fill;
+            newButtonRegister.FlatAppearance.BorderSize = 0;
+            newButtonRegister.FlatStyle = FlatStyle.Flat;
+            newButtonRegister.ForeColor = Color.White;
+            newButtonRegister.Location = new Point(678, 395);
+            newButtonRegister.Name = "newButtonRegister";
+            newButtonRegister.Size = new Size(219, 55);
+            newButtonRegister.TabIndex = 50;
+            newButtonRegister.Text = "newButton1";
+            newButtonRegister.TextColor = Color.White;
+            newButtonRegister.UseVisualStyleBackColor = false;
+            newButtonRegister.Click += newButtonRegister_Click;
+            // 
+            // textBox1_jmeno
+            // 
+            textBox1_jmeno.Location = new Point(3, 59);
+            textBox1_jmeno.Name = "textBox1_jmeno";
+            textBox1_jmeno.PlaceholderText = "Jméno";
+            textBox1_jmeno.Size = new Size(219, 27);
+            textBox1_jmeno.TabIndex = 51;
+            // 
             // UserRegister
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -399,7 +419,6 @@
         private Label urText;
         private TableLayoutPanel tableLayoutPanel1;
         private NewButton urRegistrovat;
-        private TextBox textBoxJmeno;
         private TextBox textBox21;
         private TextBox textBox17;
         private TextBox textBox15;
@@ -424,5 +443,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
+        private NewButton newButtonRegister;
+        private TextBox textBox1_jmeno;
     }
 }
