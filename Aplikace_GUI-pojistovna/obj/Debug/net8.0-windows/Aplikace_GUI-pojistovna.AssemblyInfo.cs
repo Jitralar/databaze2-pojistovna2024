@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aplikace_GUI-pojistovna")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7e4c1deffc9dcbc176b2bf6fc344f35683c3682")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae1bfd0a5398df30f9f025db4345aa93708e8902")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aplikace_GUI-pojistovna")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aplikace_GUI-pojistovna")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

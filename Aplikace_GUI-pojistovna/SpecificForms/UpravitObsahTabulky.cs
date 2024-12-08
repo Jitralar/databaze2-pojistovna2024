@@ -184,5 +184,22 @@ namespace Aplikace_GUI_pojistovna.SpecificForms
             }
         }
 
+        private void newButton11_Click(object sender, EventArgs e)
+        {
+            string pohled = "log_via_view";
+            LoadDataToDataGridView(pohled);
+        }
+
+        private void newButton3_Click(object sender, EventArgs e)
+        {
+            string pohled = "hierarchie";
+            LoadDataToDataGridView(pohled);
+        }
+
+        private void newButton2_Click(object sender, EventArgs e)
+        {
+            string pohled = "SYSTEM_CATALOG";
+            LoadDataToDataGridView(pohled);
+        }
     }
 }

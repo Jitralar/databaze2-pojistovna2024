@@ -3,8 +3,10 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 using Oracle.ManagedDataAccess.Client;
 using static Aplikace_GUI_pojistovna.User;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Aplikace_GUI_pojistovna.SideForms
 {
@@ -51,6 +53,17 @@ namespace Aplikace_GUI_pojistovna.SideForms
 
                     OracleCommand command = new OracleCommand(query, connection);
                     command.Parameters.Add(new OracleParameter(":email", email));
+
+
+                    // SQL dotaz pro zápis do logu
+                    string logQuery = @"
+                        INSERT INTO LOG_TABLE (TABULKA, OPERACE, CAS, UZIVATEL, REPORT_HLASKA)
+                        VALUES('LOG_TABLE', 'LOGED IN', SYSTIMESTAMP, 'ST67053', 'Uživatel :email se přihlásil do systému.')";
+                    OracleCommand logQuery1 = new OracleCommand(logQuery, connection);
+                    logQuery1.Parameters.Add(new OracleParameter(":email", email));
+                    await logQuery1.ExecuteNonQueryAsync();
+
+
 
                     object result = await command.ExecuteScalarAsync();
                     if (result != null && int.TryParse(result.ToString(), out int role))
@@ -108,6 +121,7 @@ namespace Aplikace_GUI_pojistovna.SideForms
                      mainForm.SetCurrentUserEmail(email); // Uložení e-mailu
 
                 }
+                
 
 
 
