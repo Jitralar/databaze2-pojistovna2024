@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Aplikace_GUI_pojistovna
 {
@@ -72,15 +73,39 @@ namespace Aplikace_GUI_pojistovna
                     var dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     return dataTable;
+                    }
+                }
+        }
+        }
+
+        // Get filtered data from POJISTKA table
+        public DataTable GetPojistky(string filterColumn, string filterValue)
+        {
+            using (var connection = new OracleConnection(connectionString))
+            {
+                connection.Open();
+                string query = $"SELECT * FROM POJISTKA WHERE {filterColumn} LIKE :filterValue";
+
+                using (var command = new OracleCommand(query, connection))
+                {
+                    command.Parameters.Add(":filterValue", OracleDbType.Varchar2).Value = $"%{filterValue}%";
+
+                    using (var adapter = new OracleDataAdapter(command))
+                    {
+                        var dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        return dataTable;
+                    }
                 }
             }
         }
-    }
 
 
 
 
-        
+
+
+
 
 
 
