@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            newButton4 = new NewButton();
-            newButton3 = new NewButton();
             panelStats_klientiRokSjednani = new Panel();
             tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel10 = new TableLayoutPanel();
@@ -71,7 +69,6 @@
             label16 = new Label();
             textBox8 = new TextBox();
             label17 = new Label();
-            newButton1 = new NewButton();
             panel2 = new Panel();
             tableLayoutPanel9 = new TableLayoutPanel();
             textBox12 = new TextBox();
@@ -116,15 +113,12 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333359F));
-            tableLayoutPanel1.Controls.Add(newButton4, 2, 3);
-            tableLayoutPanel1.Controls.Add(newButton3, 1, 3);
             tableLayoutPanel1.Controls.Add(panelStats_klientiRokSjednani, 2, 1);
             tableLayoutPanel1.Controls.Add(panelStats_klientiPodlePojisteni, 1, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel5, 2, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel4, 1, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
             tableLayoutPanel1.Controls.Add(panel1, 2, 2);
-            tableLayoutPanel1.Controls.Add(newButton1, 0, 3);
             tableLayoutPanel1.Controls.Add(panel2, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
@@ -137,46 +131,6 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel1.Size = new Size(900, 523);
             tableLayoutPanel1.TabIndex = 1;
-            // 
-            // newButton4
-            // 
-            newButton4.BackColor = Color.MediumSlateBlue;
-            newButton4.BackgroundColor = Color.MediumSlateBlue;
-            newButton4.BorderColor = Color.PaleVioletRed;
-            newButton4.BorderRadius = 0;
-            newButton4.BorderSize = 0;
-            newButton4.Dock = DockStyle.Fill;
-            newButton4.FlatAppearance.BorderSize = 0;
-            newButton4.FlatStyle = FlatStyle.Flat;
-            newButton4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            newButton4.ForeColor = Color.White;
-            newButton4.Location = new Point(602, 430);
-            newButton4.Name = "newButton4";
-            newButton4.Size = new Size(295, 90);
-            newButton4.TabIndex = 10;
-            newButton4.Text = "Upravit Přihlašovací Údaje";
-            newButton4.TextColor = Color.White;
-            newButton4.UseVisualStyleBackColor = false;
-            // 
-            // newButton3
-            // 
-            newButton3.BackColor = Color.MediumSlateBlue;
-            newButton3.BackgroundColor = Color.MediumSlateBlue;
-            newButton3.BorderColor = Color.PaleVioletRed;
-            newButton3.BorderRadius = 0;
-            newButton3.BorderSize = 0;
-            newButton3.Dock = DockStyle.Fill;
-            newButton3.FlatAppearance.BorderSize = 0;
-            newButton3.FlatStyle = FlatStyle.Flat;
-            newButton3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            newButton3.ForeColor = Color.White;
-            newButton3.Location = new Point(302, 430);
-            newButton3.Name = "newButton3";
-            newButton3.Size = new Size(294, 90);
-            newButton3.TabIndex = 9;
-            newButton3.Text = "Upravit Adresu";
-            newButton3.TextColor = Color.White;
-            newButton3.UseVisualStyleBackColor = false;
             // 
             // panelStats_klientiRokSjednani
             // 
@@ -627,26 +581,6 @@
             label17.Size = new Size(48, 20);
             label17.TabIndex = 8;
             label17.Text = "Mobil";
-            // 
-            // newButton1
-            // 
-            newButton1.BackColor = Color.MediumSlateBlue;
-            newButton1.BackgroundColor = Color.MediumSlateBlue;
-            newButton1.BorderColor = Color.PaleVioletRed;
-            newButton1.BorderRadius = 0;
-            newButton1.BorderSize = 0;
-            newButton1.Dock = DockStyle.Fill;
-            newButton1.FlatAppearance.BorderSize = 0;
-            newButton1.FlatStyle = FlatStyle.Flat;
-            newButton1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            newButton1.ForeColor = Color.White;
-            newButton1.Location = new Point(3, 430);
-            newButton1.Name = "newButton1";
-            newButton1.Size = new Size(293, 90);
-            newButton1.TabIndex = 7;
-            newButton1.Text = "Upravit Uživatelské Údaje";
-            newButton1.TextColor = Color.White;
-            newButton1.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 

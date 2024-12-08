@@ -32,12 +32,10 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
             tableLayoutPanel5 = new TableLayoutPanel();
-            newButtonNULLFILTER = new NewButton();
             comboBox1 = new ComboBox();
             radioButton2_podlePoznamky = new RadioButton();
             radioButton1 = new RadioButton();
             textBox1 = new TextBox();
-            newButtonHledatPojistku = new NewButton();
             dataGridViewVypisPojistky = new DataGridView();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -67,7 +65,6 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 0);
-            tableLayoutPanel2.Controls.Add(newButtonHledatPojistku, 1, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(3, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -99,7 +96,6 @@
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
             tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tableLayoutPanel5.Controls.Add(newButtonNULLFILTER, 4, 0);
             tableLayoutPanel5.Controls.Add(comboBox1, 2, 0);
             tableLayoutPanel5.Controls.Add(radioButton2_podlePoznamky, 1, 0);
             tableLayoutPanel5.Controls.Add(radioButton1, 0, 0);
@@ -110,27 +106,6 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel5.Size = new Size(703, 27);
             tableLayoutPanel5.TabIndex = 2;
-            // 
-            // newButtonNULLFILTER
-            // 
-            newButtonNULLFILTER.BackColor = Color.LightCoral;
-            newButtonNULLFILTER.BackgroundColor = Color.LightCoral;
-            newButtonNULLFILTER.BorderColor = Color.PaleVioletRed;
-            newButtonNULLFILTER.BorderRadius = 0;
-            newButtonNULLFILTER.BorderSize = 0;
-            newButtonNULLFILTER.Dock = DockStyle.Fill;
-            newButtonNULLFILTER.FlatAppearance.BorderSize = 0;
-            newButtonNULLFILTER.FlatStyle = FlatStyle.Flat;
-            newButtonNULLFILTER.Font = new Font("Segoe UI", 6F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            newButtonNULLFILTER.ForeColor = Color.White;
-            newButtonNULLFILTER.Location = new Point(563, 3);
-            newButtonNULLFILTER.Name = "newButtonNULLFILTER";
-            newButtonNULLFILTER.Size = new Size(137, 21);
-            newButtonNULLFILTER.TabIndex = 3;
-            newButtonNULLFILTER.Text = "vynulovat filtr";
-            newButtonNULLFILTER.TextColor = Color.White;
-            newButtonNULLFILTER.UseVisualStyleBackColor = false;
-            newButtonNULLFILTER.Click += newButtonNULLFILTER_Click_1;
             // 
             // comboBox1
             // 
@@ -174,26 +149,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(703, 27);
             textBox1.TabIndex = 0;
-            // 
-            // newButtonHledatPojistku
-            // 
-            newButtonHledatPojistku.BackColor = Color.MediumSlateBlue;
-            newButtonHledatPojistku.BackgroundColor = Color.MediumSlateBlue;
-            newButtonHledatPojistku.BorderColor = Color.PaleVioletRed;
-            newButtonHledatPojistku.BorderRadius = 0;
-            newButtonHledatPojistku.BorderSize = 0;
-            newButtonHledatPojistku.Dock = DockStyle.Fill;
-            newButtonHledatPojistku.FlatAppearance.BorderSize = 0;
-            newButtonHledatPojistku.FlatStyle = FlatStyle.Flat;
-            newButtonHledatPojistku.ForeColor = Color.White;
-            newButtonHledatPojistku.Location = new Point(718, 3);
-            newButtonHledatPojistku.Name = "newButtonHledatPojistku";
-            newButtonHledatPojistku.Size = new Size(173, 66);
-            newButtonHledatPojistku.TabIndex = 1;
-            newButtonHledatPojistku.Text = "Hledat Pojistku";
-            newButtonHledatPojistku.TextColor = Color.White;
-            newButtonHledatPojistku.UseVisualStyleBackColor = false;
-            newButtonHledatPojistku.Click += newButtonHledatPojistku_Click;
             // 
             // dataGridViewVypisPojistky
             // 

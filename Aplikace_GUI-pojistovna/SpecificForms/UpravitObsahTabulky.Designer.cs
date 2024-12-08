@@ -31,14 +31,10 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             dataGridView1 = new DataGridView();
             tableLayoutPanel2 = new TableLayoutPanel();
-            newButtonSysCatalog = new NewButton();
-            newButtonLogovacitabulka = new NewButton();
             tableLayoutPanel3 = new TableLayoutPanel();
             comboBox1 = new ComboBox();
-            newButtonCommit = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
             SuspendLayout();
             // 
@@ -76,8 +72,6 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel2.Controls.Add(newButtonSysCatalog, 3, 0);
-            tableLayoutPanel2.Controls.Add(newButtonLogovacitabulka, 2, 0);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(273, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -86,50 +80,11 @@
             tableLayoutPanel2.Size = new Size(624, 72);
             tableLayoutPanel2.TabIndex = 1;
             // 
-            // newButtonSysCatalog
-            // 
-            newButtonSysCatalog.BackColor = Color.MediumSlateBlue;
-            newButtonSysCatalog.BackgroundColor = Color.MediumSlateBlue;
-            newButtonSysCatalog.BorderColor = Color.PaleVioletRed;
-            newButtonSysCatalog.BorderRadius = 0;
-            newButtonSysCatalog.BorderSize = 0;
-            newButtonSysCatalog.Dock = DockStyle.Fill;
-            newButtonSysCatalog.FlatAppearance.BorderSize = 0;
-            newButtonSysCatalog.FlatStyle = FlatStyle.Flat;
-            newButtonSysCatalog.ForeColor = Color.White;
-            newButtonSysCatalog.Location = new Point(471, 3);
-            newButtonSysCatalog.Name = "newButtonSysCatalog";
-            newButtonSysCatalog.Size = new Size(150, 66);
-            newButtonSysCatalog.TabIndex = 0;
-            newButtonSysCatalog.Text = "Systemovy Katalog";
-            newButtonSysCatalog.TextColor = Color.White;
-            newButtonSysCatalog.UseVisualStyleBackColor = false;
-            // 
-            // newButtonLogovacitabulka
-            // 
-            newButtonLogovacitabulka.BackColor = Color.MediumSlateBlue;
-            newButtonLogovacitabulka.BackgroundColor = Color.MediumSlateBlue;
-            newButtonLogovacitabulka.BorderColor = Color.PaleVioletRed;
-            newButtonLogovacitabulka.BorderRadius = 0;
-            newButtonLogovacitabulka.BorderSize = 0;
-            newButtonLogovacitabulka.Dock = DockStyle.Fill;
-            newButtonLogovacitabulka.FlatAppearance.BorderSize = 0;
-            newButtonLogovacitabulka.FlatStyle = FlatStyle.Flat;
-            newButtonLogovacitabulka.ForeColor = Color.White;
-            newButtonLogovacitabulka.Location = new Point(315, 3);
-            newButtonLogovacitabulka.Name = "newButtonLogovacitabulka";
-            newButtonLogovacitabulka.Size = new Size(150, 66);
-            newButtonLogovacitabulka.TabIndex = 1;
-            newButtonLogovacitabulka.Text = "Logovací Tabulka";
-            newButtonLogovacitabulka.TextColor = Color.White;
-            newButtonLogovacitabulka.UseVisualStyleBackColor = false;
-            // 
             // tableLayoutPanel3
             // 
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Controls.Add(comboBox1, 0, 0);
-            tableLayoutPanel3.Controls.Add(newButtonCommit, 0, 2);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 81);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -150,26 +105,6 @@
             comboBox1.TabIndex = 0;
             comboBox1.Text = "Vyberte tabulku k zobrazeni a uprave";
             // 
-            // newButtonCommit
-            // 
-            newButtonCommit.BackColor = Color.MediumSlateBlue;
-            newButtonCommit.BackgroundColor = Color.MediumSlateBlue;
-            newButtonCommit.BorderColor = Color.PaleVioletRed;
-            newButtonCommit.BorderRadius = 0;
-            newButtonCommit.BorderSize = 0;
-            newButtonCommit.Dock = DockStyle.Fill;
-            newButtonCommit.FlatAppearance.BorderSize = 0;
-            newButtonCommit.FlatStyle = FlatStyle.Flat;
-            newButtonCommit.ForeColor = Color.White;
-            newButtonCommit.Location = new Point(3, 376);
-            newButtonCommit.Name = "newButtonCommit";
-            newButtonCommit.Size = new Size(258, 60);
-            newButtonCommit.TabIndex = 1;
-            newButtonCommit.Text = "Commit dat do datbáze";
-            newButtonCommit.TextColor = Color.White;
-            newButtonCommit.UseVisualStyleBackColor = false;
-            newButtonCommit.Click += newButtonCommit_Click;
-            // 
             // UpravitObsahTabulky
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -179,7 +114,6 @@
             Size = new Size(900, 523);
             tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             ResumeLayout(false);
         }

@@ -51,7 +51,6 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            newButtonRegister = new NewButton();
             textBox1_jmeno = new TextBox();
             dateTimePicker1 = new DateTimePicker();
             panel1.SuspendLayout();
@@ -105,7 +104,6 @@
             tableLayoutPanel1.Controls.Add(label4, 3, 4);
             tableLayoutPanel1.Controls.Add(label5, 3, 5);
             tableLayoutPanel1.Controls.Add(label6, 0, 0);
-            tableLayoutPanel1.Controls.Add(newButtonRegister, 3, 7);
             tableLayoutPanel1.Controls.Add(textBox1_jmeno, 0, 1);
             tableLayoutPanel1.Controls.Add(dateTimePicker1, 0, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
@@ -331,27 +329,6 @@
             label6.Size = new Size(883, 40);
             label6.TabIndex = 49;
             label6.Text = "Registrací získáváte přístup k nejlepší pojišťovně a modernímu systému Oasis, který vám umožní snadno spravovat vaše pojistky, mít přehled o smlouvách a využívat výhodné služby na jednom místě.";
-            // 
-            // newButtonRegister
-            // 
-            newButtonRegister.BackColor = Color.MediumSlateBlue;
-            newButtonRegister.BackgroundColor = Color.MediumSlateBlue;
-            newButtonRegister.BorderColor = Color.PaleVioletRed;
-            newButtonRegister.BorderRadius = 0;
-            newButtonRegister.BorderSize = 0;
-            newButtonRegister.Dock = DockStyle.Fill;
-            newButtonRegister.FlatAppearance.BorderSize = 0;
-            newButtonRegister.FlatStyle = FlatStyle.Flat;
-            newButtonRegister.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            newButtonRegister.ForeColor = Color.White;
-            newButtonRegister.Location = new Point(678, 395);
-            newButtonRegister.Name = "newButtonRegister";
-            newButtonRegister.Size = new Size(219, 55);
-            newButtonRegister.TabIndex = 17;
-            newButtonRegister.Text = "Regisrovat se do systému";
-            newButtonRegister.TextColor = Color.White;
-            newButtonRegister.UseVisualStyleBackColor = false;
-            newButtonRegister.Click += newButtonRegister_Click;
             // 
             // textBox1_jmeno
             // 
