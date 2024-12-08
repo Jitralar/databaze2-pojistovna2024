@@ -35,6 +35,7 @@
             newButtonLogovacitabulka = new NewButton();
             tableLayoutPanel3 = new TableLayoutPanel();
             comboBox1 = new ComboBox();
+            newButtonCommit = new NewButton();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tableLayoutPanel2.SuspendLayout();
@@ -128,6 +129,7 @@
             tableLayoutPanel3.ColumnCount = 1;
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.Controls.Add(comboBox1, 0, 0);
+            tableLayoutPanel3.Controls.Add(newButtonCommit, 0, 2);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(3, 81);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -147,6 +149,26 @@
             comboBox1.Size = new Size(258, 28);
             comboBox1.TabIndex = 0;
             comboBox1.Text = "Vyberte tabulku k zobrazeni a uprave";
+            // 
+            // newButtonCommit
+            // 
+            newButtonCommit.BackColor = Color.MediumSlateBlue;
+            newButtonCommit.BackgroundColor = Color.MediumSlateBlue;
+            newButtonCommit.BorderColor = Color.PaleVioletRed;
+            newButtonCommit.BorderRadius = 0;
+            newButtonCommit.BorderSize = 0;
+            newButtonCommit.Dock = DockStyle.Fill;
+            newButtonCommit.FlatAppearance.BorderSize = 0;
+            newButtonCommit.FlatStyle = FlatStyle.Flat;
+            newButtonCommit.ForeColor = Color.White;
+            newButtonCommit.Location = new Point(3, 376);
+            newButtonCommit.Name = "newButtonCommit";
+            newButtonCommit.Size = new Size(258, 60);
+            newButtonCommit.TabIndex = 1;
+            newButtonCommit.Text = "Commit dat do datbáze";
+            newButtonCommit.TextColor = Color.White;
+            newButtonCommit.UseVisualStyleBackColor = false;
+            newButtonCommit.Click += newButtonCommit_Click;
             // 
             // UpravitObsahTabulky
             // 
@@ -171,5 +193,6 @@
         private NewButton newButtonLogovacitabulka;
         private TableLayoutPanel tableLayoutPanel3;
         private ComboBox comboBox1;
+        private NewButton newButtonCommit;
     }
 }
