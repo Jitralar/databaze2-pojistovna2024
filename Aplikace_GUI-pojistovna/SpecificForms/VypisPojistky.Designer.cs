@@ -31,13 +31,13 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
             tableLayoutPanel3 = new TableLayoutPanel();
-            newButton1 = new NewButton();
             textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
+            newButton1 = new NewButton();
+            dataGridViewVypisPojistky = new DataGridView();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVypisPojistky).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -45,7 +45,7 @@
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
-            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 1);
+            tableLayoutPanel1.Controls.Add(dataGridViewVypisPojistky, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -84,6 +84,14 @@
             tableLayoutPanel3.Size = new Size(709, 66);
             tableLayoutPanel3.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Location = new Point(3, 3);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(703, 27);
+            textBox1.TabIndex = 0;
+            // 
             // newButton1
             // 
             newButton1.BackColor = Color.MediumSlateBlue;
@@ -103,23 +111,15 @@
             newButton1.TextColor = Color.White;
             newButton1.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // dataGridViewVypisPojistky
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(3, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(703, 27);
-            textBox1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 81);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(894, 439);
-            dataGridView1.TabIndex = 1;
+            dataGridViewVypisPojistky.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewVypisPojistky.Dock = DockStyle.Fill;
+            dataGridViewVypisPojistky.Location = new Point(3, 81);
+            dataGridViewVypisPojistky.Name = "dataGridViewVypisPojistky";
+            dataGridViewVypisPojistky.RowHeadersWidth = 51;
+            dataGridViewVypisPojistky.Size = new Size(894, 439);
+            dataGridViewVypisPojistky.TabIndex = 1;
             // 
             // VypisPojistky
             // 
@@ -132,7 +132,7 @@
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewVypisPojistky).EndInit();
             ResumeLayout(false);
         }
 
@@ -143,6 +143,6 @@
         private TableLayoutPanel tableLayoutPanel3;
         private NewButton newButton1;
         private TextBox textBox1;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewVypisPojistky;
     }
 }
