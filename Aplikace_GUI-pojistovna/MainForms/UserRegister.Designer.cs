@@ -53,6 +53,7 @@
             label6 = new Label();
             textBox1_jmeno = new TextBox();
             dateTimePicker1 = new DateTimePicker();
+            newButton1 = new NewButton();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -106,6 +107,7 @@
             tableLayoutPanel1.Controls.Add(label6, 0, 0);
             tableLayoutPanel1.Controls.Add(textBox1_jmeno, 0, 1);
             tableLayoutPanel1.Controls.Add(dateTimePicker1, 0, 2);
+            tableLayoutPanel1.Controls.Add(newButton1, 3, 7);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 70);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -347,6 +349,26 @@
             dateTimePicker1.Size = new Size(219, 27);
             dateTimePicker1.TabIndex = 4;
             // 
+            // newButton1
+            // 
+            newButton1.BackColor = Color.MediumSlateBlue;
+            newButton1.BackgroundColor = Color.MediumSlateBlue;
+            newButton1.BorderColor = Color.PaleVioletRed;
+            newButton1.BorderRadius = 0;
+            newButton1.BorderSize = 0;
+            newButton1.Dock = DockStyle.Fill;
+            newButton1.FlatAppearance.BorderSize = 0;
+            newButton1.FlatStyle = FlatStyle.Flat;
+            newButton1.ForeColor = Color.White;
+            newButton1.Location = new Point(678, 395);
+            newButton1.Name = "newButton1";
+            newButton1.Size = new Size(219, 55);
+            newButton1.TabIndex = 54;
+            newButton1.Text = "registrovat se";
+            newButton1.TextColor = Color.White;
+            newButton1.UseVisualStyleBackColor = false;
+            newButton1.Click += newButton1_Click;
+            // 
             // UserRegister
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -396,5 +418,6 @@
         private TextBox textBox1_jmeno;
         private Label label2;
         private DateTimePicker dateTimePicker1;
+        private NewButton newButton1;
     }
 }

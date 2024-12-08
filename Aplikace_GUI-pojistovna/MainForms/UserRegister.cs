@@ -51,6 +51,30 @@ namespace Aplikace_GUI_pojistovna.MainForms
 
         private void newButtonRegister_Click(object sender, EventArgs e)
         {
+            
+        }
+
+
+        private void vymazatBunky()
+        {
+
+            textBox1_jmeno.Text = "";
+            textBoxProstredniJmeno.Text = "";
+            textBox7.Text = "";
+            textBox4.Text = "";
+            textBox13.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox17.Text = "";
+            textBox15.Text = "";
+            comboBox1.SelectedIndex = -1;
+            textBox21.Text = "";
+            textBox8.Text = "";
+
+        }
+
+        private void newButton1_Click(object sender, EventArgs e)
+        {
             string jmeno = textBox1_jmeno.Text.Trim();
             string druheJmeno = textBoxProstredniJmeno.Text.Trim();
             string prijmeni = textBox7.Text.Trim();
@@ -176,30 +200,5 @@ namespace Aplikace_GUI_pojistovna.MainForms
                 MessageBox.Show($"Chyba při připojení k databázi: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-        private void vymazatBunky() {
-
-            textBox1_jmeno.Text = "";
-            textBoxProstredniJmeno.Text = "";
-            textBox7.Text = "";
-            textBox4.Text = "";
-            textBox13.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
-            textBox17.Text = "";
-            textBox15.Text = "";
-            comboBox1.SelectedIndex = -1;
-            textBox21.Text = "";
-            textBox8.Text = "";
-
-        }
-
-
-
-
-
-
-
     }
 }
