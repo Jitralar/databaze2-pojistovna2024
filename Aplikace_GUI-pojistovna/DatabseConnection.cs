@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Aplikace_GUI_pojistovna
 {

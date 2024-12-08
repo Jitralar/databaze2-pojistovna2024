@@ -31,6 +31,7 @@
             panel1 = new Panel();
             urText = new Label();
             tableLayoutPanel1 = new TableLayoutPanel();
+            label2 = new Label();
             textBox21 = new TextBox();
             textBox17 = new TextBox();
             textBox15 = new TextBox();
@@ -46,16 +47,13 @@
             textBox5 = new TextBox();
             textBox8 = new TextBox();
             comboBox1 = new ComboBox();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             newButtonRegister = new NewButton();
             textBox1_jmeno = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
             panel1.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -91,6 +89,7 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel1.Controls.Add(label2, 3, 1);
             tableLayoutPanel1.Controls.Add(textBox21, 0, 5);
             tableLayoutPanel1.Controls.Add(textBox17, 0, 4);
             tableLayoutPanel1.Controls.Add(textBox15, 2, 3);
@@ -102,16 +101,13 @@
             tableLayoutPanel1.Controls.Add(label1, 1, 6);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel3, 1, 5);
             tableLayoutPanel1.Controls.Add(comboBox1, 1, 4);
-            tableLayoutPanel1.Controls.Add(checkBox1, 0, 2);
-            tableLayoutPanel1.Controls.Add(checkBox2, 1, 2);
-            tableLayoutPanel1.Controls.Add(checkBox3, 2, 2);
-            tableLayoutPanel1.Controls.Add(label2, 3, 1);
             tableLayoutPanel1.Controls.Add(label3, 3, 2);
             tableLayoutPanel1.Controls.Add(label4, 3, 4);
             tableLayoutPanel1.Controls.Add(label5, 3, 5);
             tableLayoutPanel1.Controls.Add(label6, 0, 0);
             tableLayoutPanel1.Controls.Add(newButtonRegister, 3, 7);
             tableLayoutPanel1.Controls.Add(textBox1_jmeno, 0, 1);
+            tableLayoutPanel1.Controls.Add(dateTimePicker1, 0, 2);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 70);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -127,6 +123,17 @@
             tableLayoutPanel1.Size = new Size(900, 453);
             tableLayoutPanel1.TabIndex = 1;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Dock = DockStyle.Bottom;
+            label2.Font = new Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            label2.Location = new Point(678, 95);
+            label2.Name = "label2";
+            label2.Size = new Size(219, 17);
+            label2.TabIndex = 53;
+            label2.Text = "Osobní údaje";
+            // 
             // textBox21
             // 
             textBox21.Dock = DockStyle.Fill;
@@ -134,7 +141,7 @@
             textBox21.Name = "textBox21";
             textBox21.PlaceholderText = "Email (uživatelské jméno)";
             textBox21.Size = new Size(219, 27);
-            textBox21.TabIndex = 22;
+            textBox21.TabIndex = 11;
             // 
             // textBox17
             // 
@@ -143,7 +150,7 @@
             textBox17.Name = "textBox17";
             textBox17.PlaceholderText = "Město";
             textBox17.Size = new Size(219, 27);
-            textBox17.TabIndex = 18;
+            textBox17.TabIndex = 9;
             // 
             // textBox15
             // 
@@ -152,7 +159,7 @@
             textBox15.Name = "textBox15";
             textBox15.PlaceholderText = "PSČ";
             textBox15.Size = new Size(219, 27);
-            textBox15.TabIndex = 16;
+            textBox15.TabIndex = 8;
             // 
             // textBox13
             // 
@@ -161,7 +168,7 @@
             textBox13.Name = "textBox13";
             textBox13.PlaceholderText = "Ulice";
             textBox13.Size = new Size(219, 27);
-            textBox13.TabIndex = 14;
+            textBox13.TabIndex = 5;
             // 
             // textBox7
             // 
@@ -170,7 +177,7 @@
             textBox7.Name = "textBox7";
             textBox7.PlaceholderText = "Příjmení";
             textBox7.Size = new Size(219, 27);
-            textBox7.TabIndex = 8;
+            textBox7.TabIndex = 3;
             // 
             // textBoxProstredniJmeno
             // 
@@ -179,7 +186,7 @@
             textBoxProstredniJmeno.Name = "textBoxProstredniJmeno";
             textBoxProstredniJmeno.PlaceholderText = "Prostřední jméno";
             textBoxProstredniJmeno.Size = new Size(219, 27);
-            textBoxProstredniJmeno.TabIndex = 7;
+            textBoxProstredniJmeno.TabIndex = 2;
             // 
             // tableLayoutPanel2
             // 
@@ -202,7 +209,7 @@
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "číslo popisné";
             textBox2.Size = new Size(103, 27);
-            textBox2.TabIndex = 0;
+            textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
@@ -211,7 +218,7 @@
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "číslo orientační";
             textBox3.Size = new Size(104, 27);
-            textBox3.TabIndex = 1;
+            textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
@@ -221,7 +228,7 @@
             textBox4.PasswordChar = '*';
             textBox4.PlaceholderText = "Heslo";
             textBox4.Size = new Size(219, 27);
-            textBox4.TabIndex = 38;
+            textBox4.TabIndex = 13;
             // 
             // label1
             // 
@@ -267,7 +274,7 @@
             textBox8.Name = "textBox8";
             textBox8.PlaceholderText = "telefoní číslo";
             textBox8.Size = new Size(137, 27);
-            textBox8.TabIndex = 1;
+            textBox8.TabIndex = 12;
             // 
             // comboBox1
             // 
@@ -276,52 +283,8 @@
             comboBox1.Location = new Point(228, 227);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(219, 28);
-            comboBox1.TabIndex = 41;
+            comboBox1.TabIndex = 10;
             comboBox1.Text = "Vyberte Kraj";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Dock = DockStyle.Fill;
-            checkBox1.Location = new Point(3, 115);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(219, 50);
-            checkBox1.TabIndex = 42;
-            checkBox1.Text = "Četl(a) jsem podmínky používání aplikace";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Dock = DockStyle.Fill;
-            checkBox2.Location = new Point(228, 115);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(219, 50);
-            checkBox2.TabIndex = 43;
-            checkBox2.Text = "Souhlasím se zpracováním osobních údajů";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Dock = DockStyle.Fill;
-            checkBox3.Location = new Point(453, 115);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(219, 50);
-            checkBox3.TabIndex = 44;
-            checkBox3.Text = "Prohlašuji, že všechny mnou zadané údaje jsou pravdivé";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Dock = DockStyle.Bottom;
-            label2.Font = new Font("Segoe UI", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label2.Location = new Point(678, 95);
-            label2.Name = "label2";
-            label2.Size = new Size(219, 17);
-            label2.TabIndex = 45;
-            label2.Text = "Jméno a příjmení";
             // 
             // label3
             // 
@@ -332,7 +295,7 @@
             label3.Name = "label3";
             label3.Size = new Size(219, 17);
             label3.TabIndex = 46;
-            label3.Text = "Podmínky využívání";
+            label3.Text = "Datum narození";
             // 
             // label4
             // 
@@ -376,12 +339,13 @@
             newButtonRegister.Dock = DockStyle.Fill;
             newButtonRegister.FlatAppearance.BorderSize = 0;
             newButtonRegister.FlatStyle = FlatStyle.Flat;
+            newButtonRegister.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
             newButtonRegister.ForeColor = Color.White;
             newButtonRegister.Location = new Point(678, 395);
             newButtonRegister.Name = "newButtonRegister";
             newButtonRegister.Size = new Size(219, 55);
-            newButtonRegister.TabIndex = 50;
-            newButtonRegister.Text = "newButton1";
+            newButtonRegister.TabIndex = 14;
+            newButtonRegister.Text = "Regisrovat se do systému";
             newButtonRegister.TextColor = Color.White;
             newButtonRegister.UseVisualStyleBackColor = false;
             newButtonRegister.Click += newButtonRegister_Click;
@@ -392,7 +356,16 @@
             textBox1_jmeno.Name = "textBox1_jmeno";
             textBox1_jmeno.PlaceholderText = "Jméno";
             textBox1_jmeno.Size = new Size(219, 27);
-            textBox1_jmeno.TabIndex = 51;
+            textBox1_jmeno.TabIndex = 1;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Dock = DockStyle.Fill;
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(3, 115);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(219, 27);
+            dateTimePicker1.TabIndex = 4;
             // 
             // UserRegister
             // 
@@ -435,15 +408,13 @@
         private TextBox textBox5;
         private TextBox textBox8;
         private ComboBox comboBox1;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private NewButton newButtonRegister;
         private TextBox textBox1_jmeno;
+        private Label label2;
+        private DateTimePicker dateTimePicker1;
     }
 }
