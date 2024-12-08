@@ -87,7 +87,9 @@ namespace Aplikace_GUI_pojistovna.SpecificForms
             LoadData();                  // Reload all data
         }
 
-        private void newButtonNULLFILTER_Click_1(object sender, EventArgs e)
+
+
+        private void newButtonNULLFILTER_Click_2(object sender, EventArgs e)
         {
             // Reset the ComboBox selection
             comboBox1.SelectedIndex = -1;
@@ -97,6 +99,12 @@ namespace Aplikace_GUI_pojistovna.SpecificForms
 
             // Reload all data from the database
             LoadData();
+
+        }
+
+        private void newButtonHledatPojistku_Click_1(object sender, EventArgs e)
+        {
+            newButtonHledatPojistku_Click(sender, e);
         }
     }
 }
