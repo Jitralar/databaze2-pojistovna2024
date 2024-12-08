@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\mainforms\\userregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -212,7 +212,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -228,25 +228,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserRegister.cs [N\u00E1vrh]",
               "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs",
               "RelativeDocumentMoniker": "MainForms\\UserRegister.cs",
-              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs [N\u00E1vrh]",
-              "RelativeToolTip": "MainForms\\UserRegister.cs [N\u00E1vrh]",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs [N\u00E1vrh]*",
+              "RelativeToolTip": "MainForms\\UserRegister.cs [N\u00E1vrh]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T12:15:05.773Z",
               "EditorCaption": " [N\u00E1vrh]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserRegister.cs",
               "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs",
               "RelativeDocumentMoniker": "MainForms\\UserRegister.cs",
-              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs",
-              "RelativeToolTip": "MainForms\\UserRegister.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAwwJoAAAAcAAAA",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs*",
+              "RelativeToolTip": "MainForms\\UserRegister.cs*",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAowEsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T12:13:50.5Z",
               "EditorCaption": ""
@@ -283,9 +283,9 @@
               "Title": "UserRegister.Designer.cs",
               "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.Designer.cs",
               "RelativeDocumentMoniker": "MainForms\\UserRegister.Designer.cs",
-              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.Designer.cs",
-              "RelativeToolTip": "MainForms\\UserRegister.Designer.cs",
-              "ViewState": "AQIAAIoBAAAAAAAAAAAwwKMBAAAAAAAA",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.Designer.cs*",
+              "RelativeToolTip": "MainForms\\UserRegister.Designer.cs*",
+              "ViewState": "AQIAAI4BAAAAAAAAAAAwwKcBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T17:42:39.099Z",
               "EditorCaption": ""
@@ -771,8 +771,8 @@
               "Title": "UserRegister.resx",
               "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.resx",
               "RelativeDocumentMoniker": "MainForms\\UserRegister.resx",
-              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.resx",
-              "RelativeToolTip": "MainForms\\UserRegister.resx",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.resx*",
+              "RelativeToolTip": "MainForms\\UserRegister.resx*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-12-06T19:43:08.077Z",
               "EditorCaption": ""
