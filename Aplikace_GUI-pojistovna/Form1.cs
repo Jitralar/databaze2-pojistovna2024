@@ -1,6 +1,7 @@
 using Aplikace_GUI_pojistovna.MainForms;
 using Aplikace_GUI_pojistovna.SideForms;
 using Aplikace_GUI_pojistovna.SpecificForms;
+using static Aplikace_GUI_pojistovna.User;
 
 namespace Aplikace_GUI_pojistovna
 {
@@ -53,10 +54,10 @@ namespace Aplikace_GUI_pojistovna
                 new VypisZamestnance(),             //16 - vypisZamestnance.cs
                 new VytvoritPojistku(),             //17 - vytvoritPojistku.cs
                 new ZobrazitLog()                   //18 - zobrazitLog.cs
-            }; 
+            };
 
             navigationControl1 = new NavigationControl(mainPanel, mainControlList);
-           
+
             List<UserControl> sideControlList = new List<UserControl>()
             { new Login(), new Role1_registrovanyUser(), new role3_zamestnanec(), new Role4_analytik(), new Role5_supervisor(), new Role6_admin()};
             navigationControl2 = new NavigationControl(sidePanel, sideControlList);
@@ -118,7 +119,7 @@ namespace Aplikace_GUI_pojistovna
 
         public void ShowVypisKlienty()
         {
-            
+
             navigationControl1.Display(14);  // Zobrazení panelu výpisu klientù
         }
 
@@ -215,12 +216,48 @@ namespace Aplikace_GUI_pojistovna
             }
 
         }
+        public static User currentUser;
+        private void f1HOME_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser.Role == 0)
+            {
+                MessageBox.Show("Uživatel není pøihlášen!", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-
-
-
-
+            var mainForm = this.FindForm() as Form1;
+            if (mainForm != null)
+            {
+                switch (CurrentUser.Role)
+                {
+                    case 2:
+                        mainForm.ShowMainScreenRoleBased(1);
+                        mainForm.ShowSideScreenRoleBased(1);
+                        break;
+                    case 3:
+                        mainForm.ShowMainScreenRoleBased(2);
+                        mainForm.ShowSideScreenRoleBased(2);
+                        break;
+                    case 4:
+                        mainForm.ShowMainScreenRoleBased(3);
+                        mainForm.ShowSideScreenRoleBased(3);
+                        break;
+                    case 5:
+                        mainForm.ShowMainScreenRoleBased(4);
+                        mainForm.ShowSideScreenRoleBased(4);
+                        break;
+                    case 6:
+                        mainForm.ShowMainScreenRoleBased(5);
+                        mainForm.ShowSideScreenRoleBased(5);
+                        break;
+                    default:
+                        MessageBox.Show("Neznámá role uživatele.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        break;
+                }
+            }
+        }
 
     }
-
 }
+
+

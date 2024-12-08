@@ -178,7 +178,8 @@ namespace Aplikace_GUI_pojistovna.MainForms
         }
 
 
-        private void vymazatBunky() {
+        private void vymazatBunky()
+        {
 
             textBox1_jmeno.Text = "";
             textBoxProstredniJmeno.Text = "";

@@ -98,6 +98,7 @@ namespace Aplikace_GUI_pojistovna
             f1HOME.Text = "logo / home";
             f1HOME.TextColor = Color.White;
             f1HOME.UseVisualStyleBackColor = false;
+            f1HOME.Click += f1HOME_Click;
             // 
             // mainPanel
             // 

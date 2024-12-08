@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Oracle.ManagedDataAccess.Client;
+using static Aplikace_GUI_pojistovna.User;
 
 namespace Aplikace_GUI_pojistovna.SideForms
 {
@@ -22,17 +23,16 @@ namespace Aplikace_GUI_pojistovna.SideForms
                 var sideForm = this.FindForm() as Form1;
                 var mainForm = this.FindForm() as Form1;
 
-                // Inicializace připojení k databázi přes třídu DatabaseConnection
+                // Inicializace připojení k databázi
                 DatabaseConnection databaseConnection = new DatabaseConnection();
                 connection = databaseConnection.GetConnection();
 
-                // Test připojení
                 if (connection.State != ConnectionState.Open)
                 {
                     await connection.OpenAsync();
                 }
 
-                // Získání přihlašovacích údajů z textových polí
+                // Získání přihlašovacích údajů
                 string email = textBox2.Text.Trim();
                 string inputPassword = textBox1.Text.Trim();
 
@@ -44,10 +44,10 @@ namespace Aplikace_GUI_pojistovna.SideForms
                 {
                     // SQL dotaz pro získání role uživatele
                     string query = @"
-                SELECT p.id_permise 
-                FROM permise p
-                JOIN kontakt k ON p.id_permise = k.permise_id_permise
-                WHERE k.email = :email";
+                        SELECT p.id_permise 
+                        FROM permise p
+                        JOIN kontakt k ON p.id_permise = k.permise_id_permise
+                        WHERE k.email = :email";
 
                     OracleCommand command = new OracleCommand(query, connection);
                     command.Parameters.Add(new OracleParameter(":email", email));
@@ -55,54 +55,41 @@ namespace Aplikace_GUI_pojistovna.SideForms
                     object result = await command.ExecuteScalarAsync();
                     if (result != null && int.TryParse(result.ToString(), out int role))
                     {
+                        // Uložení aktuálního uživatele do statické třídy CurrentUser
+                        CurrentUser.Email = email;
+                        CurrentUser.Role = role;
+                        CurrentUser.FullName = await GetFullNameAsync(email, connection);  // Získání jména uživatele
+
                         // Přesměrování na odpovídající formulář podle role
-                        switch (role)
+                        switch (CurrentUser.Role)
                         {
                             case 2:
-                                if (sideForm != null && mainForm != null)
-                                {
-                                    sideForm.ShowMainScreenRoleBased(1);
-                                    mainForm.ShowSideScreenRoleBased(1);
-                                }
+                                sideForm.ShowMainScreenRoleBased(1);
+                                mainForm.ShowSideScreenRoleBased(1);
                                 break;
                             case 3:
-                                if (sideForm != null && mainForm != null)
-                                {
-                                    sideForm.ShowMainScreenRoleBased(2);
-                                    mainForm.ShowSideScreenRoleBased(2);
-                                }
+                                sideForm.ShowMainScreenRoleBased(2);
+                                mainForm.ShowSideScreenRoleBased(2);
                                 break;
                             case 4:
-                                if (sideForm != null && mainForm != null)
-                                {
-                                    sideForm.ShowMainScreenRoleBased(3);
-                                    mainForm.ShowSideScreenRoleBased(3);
-                                }
+                                sideForm.ShowMainScreenRoleBased(3);
+                                mainForm.ShowSideScreenRoleBased(3);
                                 break;
                             case 5:
-                                if (sideForm != null && mainForm != null)
-                                {
-                                    sideForm.ShowMainScreenRoleBased(4);
-                                    mainForm.ShowSideScreenRoleBased(4);
-                                }
+                                sideForm.ShowMainScreenRoleBased(4);
+                                mainForm.ShowSideScreenRoleBased(4);
                                 break;
                             case 6:
-                                if (sideForm != null && mainForm != null)
-                                {
-                                    sideForm.ShowMainScreenRoleBased(5);
-                                    mainForm.ShowSideScreenRoleBased(5);
-                                }
+                                sideForm.ShowMainScreenRoleBased(5);
+                                mainForm.ShowSideScreenRoleBased(5);
                                 break;
                             default:
                                 MessageBox.Show("Neznámá role uživatele.", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                 break;
                         }
 
-                        // Získání celého jména uživatele
-                        string userName = await GetFullNameAsync(email, connection);
-
                         // Aktualizace labelů
-                        UpdateLabels(mainForm, userName);
+                        UpdateLabels(mainForm, CurrentUser.FullName);
 
                         ClearLoginFields();
                     }
@@ -167,27 +154,27 @@ namespace Aplikace_GUI_pojistovna.SideForms
         public async Task<string> GetFullNameAsync(string email, OracleConnection connection)
         {
             const string query = @"
-        SELECT 
-            k.jmeno || 
-            CASE WHEN k.druhe_jmeno IS  NULL THEN ' ' || k.druhe_jmeno ELSE '' END || 
-            ' ' || k.prijmeni AS full_name
-        FROM 
-            kontakt c
-        JOIN 
-            klient k ON c.id_kontakt = k.kontakt_id_kontakt
-        WHERE 
-            c.email = :email
-        UNION
-        SELECT 
-            z.jmeno || 
-            CASE WHEN z.druhe_jmeno IS  NULL THEN ' ' || z.druhe_jmeno ELSE '' END || 
-            ' ' || z.prijmeni AS full_name
-        FROM 
-            kontakt c
-        JOIN 
-            zamestnanec z ON c.id_kontakt = z.kontakt_id_kontakt
-        WHERE 
-            c.email = :email";
+                SELECT 
+                    k.jmeno || 
+                    CASE WHEN k.druhe_jmeno IS NULL THEN ' ' || k.druhe_jmeno ELSE '' END || 
+                    ' ' || k.prijmeni AS full_name
+                FROM 
+                    kontakt c
+                JOIN 
+                    klient k ON c.id_kontakt = k.kontakt_id_kontakt
+                WHERE 
+                    c.email = :email
+                UNION
+                SELECT 
+                    z.jmeno || 
+                    CASE WHEN z.druhe_jmeno IS NULL THEN ' ' || z.druhe_jmeno ELSE '' END || 
+                    ' ' || z.prijmeni AS full_name
+                FROM 
+                    kontakt c
+                JOIN 
+                    zamestnanec z ON c.id_kontakt = z.kontakt_id_kontakt
+                WHERE 
+                    c.email = :email";
 
             try
             {
