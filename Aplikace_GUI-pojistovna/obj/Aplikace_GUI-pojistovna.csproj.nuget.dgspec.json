@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj": {}
+    "C:\\Users\\misaj\\source\\repos\\databaze2-pojistovna202430\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj": {
+    "C:\\Users\\misaj\\source\\repos\\databaze2-pojistovna202430\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj",
+        "projectUniqueName": "C:\\Users\\misaj\\source\\repos\\databaze2-pojistovna202430\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj",
         "projectName": "Aplikace_GUI-pojistovna",
-        "projectPath": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj",
-        "packagesPath": "C:\\Users\\jirco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\obj\\",
+        "projectPath": "C:\\Users\\misaj\\source\\repos\\databaze2-pojistovna202430\\Aplikace_GUI-pojistovna\\Aplikace_GUI-pojistovna.csproj",
+        "packagesPath": "C:\\Users\\misaj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\misaj\\Source\\Repos\\databaze2-pojistovna202430\\Aplikace_GUI-pojistovna\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jirco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\misaj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -94,7 +88,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
