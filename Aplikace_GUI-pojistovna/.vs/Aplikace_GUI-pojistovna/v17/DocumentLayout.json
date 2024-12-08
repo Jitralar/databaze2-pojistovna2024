@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\mainforms\\userprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:databseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userprofil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\mainforms\\userprofil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userprofil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:sideforms\\role6-admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -59,15 +59,15 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:navigationcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\statistikyklientu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\statistikyklientu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\statistikyklientu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -79,7 +79,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\statistikyklientu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\vypispojistky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\vypispojistky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\vypispojistky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -87,11 +87,11 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\vypispojistky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\vypisklienty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\vypisklienty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\vypisklienty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\vypispojistky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\vypispojistky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\vypispojistky.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -99,7 +99,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\vypisklienty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\vypisklienty.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\vypisklienty.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\vypisklienty.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -127,7 +127,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:mainforms\\role2-main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\zobrazitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\zobrazitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\zobrazitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -135,7 +135,7 @@
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\upravitobsahtabulky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|c:\\users\\jirco\\documents\\github\\databaze2-pojistovna2024\\aplikace_gui-pojistovna\\specificforms\\upravitobsahtabulky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\specificforms\\upravitobsahtabulky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{35F8D37C-DE04-4A09-BAF9-EAD335552F9C}|Aplikace_GUI-pojistovna.csproj|solutionrelative:specificforms\\upravitobsahtabulky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -248,8 +248,7 @@
               "RelativeToolTip": "User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:50:54.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:50:54.613Z"
             },
             {
               "$type": "Document",
@@ -261,8 +260,7 @@
               "RelativeToolTip": "SideForms\\Login.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:19:31.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:19:31.164Z"
             },
             {
               "$type": "Document",
@@ -274,8 +272,7 @@
               "RelativeToolTip": "MainForms\\UserProfil.Designer.cs",
               "ViewState": "AQIAAF4DAAAAAAAAAAAwwHkDAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:39:42.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T15:39:42.966Z"
             },
             {
               "$type": "Document",
@@ -286,8 +283,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserProfil.cs [N\u00E1vrh]",
               "RelativeToolTip": "MainForms\\UserProfil.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:35:22.131Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T16:35:22.131Z"
             },
             {
               "$type": "Document",
@@ -299,8 +295,7 @@
               "RelativeToolTip": "MainForms\\UserProfil.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:22:08.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T15:22:08.61Z"
             },
             {
               "$type": "Document",
@@ -308,9 +303,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
+              "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T12:48:28.703Z",
               "EditorCaption": ""
@@ -325,8 +320,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:56:12.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:56:12.524Z"
             },
             {
               "$type": "Document",
@@ -338,8 +332,7 @@
               "RelativeToolTip": "DatabseConnection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:19:54.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:19:54.869Z"
             },
             {
               "$type": "Document",
@@ -350,8 +343,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SideForms\\Login.cs [N\u00E1vrh]",
               "RelativeToolTip": "SideForms\\Login.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:18:03.339Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T16:18:03.339Z"
             },
             {
               "$type": "Document",
@@ -362,8 +354,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.cs [N\u00E1vrh]",
               "RelativeToolTip": "Form1.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T15:31:24.082Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-08T15:31:24.082Z"
             },
             {
               "$type": "Document",
@@ -375,8 +366,7 @@
               "RelativeToolTip": "SideForms\\Role6-admin.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAIAwwBkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:12:14.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T13:12:14.199Z"
             },
             {
               "$type": "Document",
@@ -387,8 +377,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SideForms\\Role6-admin.cs [N\u00E1vrh]",
               "RelativeToolTip": "SideForms\\Role6-admin.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:12:08.619Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T13:12:08.619Z"
             },
             {
               "$type": "Document",
@@ -399,8 +388,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\Role6-main.cs [N\u00E1vrh]",
               "RelativeToolTip": "MainForms\\Role6-main.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:25:59.008Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T13:25:59.008Z"
             },
             {
               "$type": "Document",
@@ -412,8 +400,7 @@
               "RelativeToolTip": "NavigationControl.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T15:46:01.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T15:46:01.222Z"
             },
             {
               "$type": "Document",
@@ -425,8 +412,7 @@
               "RelativeToolTip": "MainForms\\UserRegister.cs",
               "ViewState": "AQIAAJsAAAAAAAAAAAAgwEsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:13:50.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T12:13:50.5Z"
             },
             {
               "$type": "Document",
@@ -437,8 +423,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.cs [N\u00E1vrh]",
               "RelativeToolTip": "MainForms\\UserRegister.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:15:05.773Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-08T12:15:05.773Z"
             },
             {
               "$type": "Document",
@@ -449,8 +434,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\StatistikyKlientu.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\StatistikyKlientu.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T00:05:41.051Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-08T00:05:41.051Z"
             },
             {
               "$type": "Document",
@@ -462,8 +446,7 @@
               "RelativeToolTip": "MainForms\\UserRegister.Designer.cs",
               "ViewState": "AQIAAHcBAAAAAAAAAAAwwJABAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T17:42:39.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T17:42:39.099Z"
             },
             {
               "$type": "Document",
@@ -475,8 +458,7 @@
               "RelativeToolTip": "SpecificForms\\StatistikyKlientu.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwCAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T07:41:40.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T07:41:40.079Z"
             },
             {
               "$type": "Document",
@@ -487,8 +469,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\VypisPojistky.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\VypisPojistky.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T09:32:17.487Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T09:32:17.487Z"
             },
             {
               "$type": "Document",
@@ -500,8 +481,7 @@
               "RelativeToolTip": "SpecificForms\\VypisKlienty.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAYwGMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T02:20:20.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T02:20:20.715Z"
             },
             {
               "$type": "Document",
@@ -513,8 +493,7 @@
               "RelativeToolTip": "SpecificForms\\VypisPojistky.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAAApwFkAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T03:21:19.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T03:21:19.173Z"
             },
             {
               "$type": "Document",
@@ -526,8 +505,7 @@
               "RelativeToolTip": "SpecificForms\\VypisPojistky.Designer.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAswMIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T03:21:27.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T03:21:27.85Z"
             },
             {
               "$type": "Document",
@@ -539,8 +517,7 @@
               "RelativeToolTip": "SpecificForms\\VypisKlienty.Designer.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAswAcBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T02:29:16.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T02:29:16.006Z"
             },
             {
               "$type": "Document",
@@ -551,8 +528,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\VypisKlienty.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\VypisKlienty.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T23:56:21.844Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T23:56:21.844Z"
             },
             {
               "$type": "Document",
@@ -563,8 +539,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\StatistikyPobocek.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\StatistikyPobocek.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:58:19.64Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T11:58:19.64Z"
             },
             {
               "$type": "Document",
@@ -575,8 +550,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SideForms\\role3-zamestnanec.cs [N\u00E1vrh]",
               "RelativeToolTip": "SideForms\\role3-zamestnanec.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:09:18.47Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T13:09:18.47Z"
             },
             {
               "$type": "Document",
@@ -587,8 +561,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\StatistikyPojistek.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\StatistikyPojistek.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T17:28:42.541Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T17:28:42.541Z"
             },
             {
               "$type": "Document",
@@ -599,8 +572,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SideForms\\Role5-supervisor.cs [N\u00E1vrh]",
               "RelativeToolTip": "SideForms\\Role5-supervisor.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:01:52.65Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T13:01:52.65Z"
             },
             {
               "$type": "Document",
@@ -611,8 +583,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SideForms\\Role2-registrovanyUser.cs [N\u00E1vrh]",
               "RelativeToolTip": "SideForms\\Role2-registrovanyUser.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:47:35.325Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T12:47:35.325Z"
             },
             {
               "$type": "Document",
@@ -623,8 +594,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\Role2-main.cs [N\u00E1vrh]",
               "RelativeToolTip": "MainForms\\Role2-main.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T08:53:48.228Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T08:53:48.228Z"
             },
             {
               "$type": "Document",
@@ -635,8 +605,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\ZobrazitLog.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\ZobrazitLog.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:24:04.099Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T23:24:04.099Z"
             },
             {
               "$type": "Document",
@@ -647,8 +616,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\UpravitObsahTabulky.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\UpravitObsahTabulky.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:27:08.026Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T19:27:08.026Z"
             },
             {
               "$type": "Document",
@@ -660,8 +628,7 @@
               "RelativeToolTip": "SpecificForms\\UpravitObsahTabulky.cs",
               "ViewState": "AQIAAEYAAAAA0MzMzIwmwEoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:43:05.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T19:43:05.051Z"
             },
             {
               "$type": "Document",
@@ -672,8 +639,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\PridelitKlientaZamestnanci.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\PridelitKlientaZamestnanci.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T10:51:35.385Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T10:51:35.385Z"
             },
             {
               "$type": "Document",
@@ -685,8 +651,7 @@
               "RelativeToolTip": "SpecificForms\\UpravitObsahTabulky.Designer.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAswBQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:42:18.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T19:42:18.247Z"
             },
             {
               "$type": "Document",
@@ -697,8 +662,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\VytvoritPojistku.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\VytvoritPojistku.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:23:58.799Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T19:23:58.799Z"
             },
             {
               "$type": "Document",
@@ -710,8 +674,7 @@
               "RelativeToolTip": "SideForms\\Role4-analytik.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAD4vyMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:58:43.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T12:58:43.891Z"
             },
             {
               "$type": "Document",
@@ -722,8 +685,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SideForms\\Role4-analytik.cs [N\u00E1vrh]",
               "RelativeToolTip": "SideForms\\Role4-analytik.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T08:54:20.185Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-07T08:54:20.185Z"
             },
             {
               "$type": "Document",
@@ -735,8 +697,7 @@
               "RelativeToolTip": "SpecificForms\\StatistikyPobocek.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:58:22.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:58:22.892Z"
             },
             {
               "$type": "Document",
@@ -748,8 +709,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\livecharts\\0.9.7\\readme.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-07T11:44:28.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:44:28.848Z"
             },
             {
               "$type": "Document",
@@ -761,8 +721,7 @@
               "RelativeToolTip": "SideForms\\Role5-supervisor.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAApwBUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:02:02.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T13:02:02.43Z"
             },
             {
               "$type": "Document",
@@ -774,8 +733,7 @@
               "RelativeToolTip": "SideForms\\role3-zamestnanec.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAApwBUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T13:09:22.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T13:09:22.317Z"
             },
             {
               "$type": "Document",
@@ -787,8 +745,7 @@
               "RelativeToolTip": "MainForms\\Role6-main.cs",
               "ViewState": "AQIAAAsAAAAABgAAAAD8vxUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T15:50:19.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T15:50:19.966Z"
             },
             {
               "$type": "Document",
@@ -800,8 +757,7 @@
               "RelativeToolTip": "SideForms\\Login.Designer.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwBAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:13:48.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T21:13:48.961Z"
             },
             {
               "$type": "Document",
@@ -813,8 +769,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\dcb2a0a1aef3f80a9ce8d8e6c9bf9c2b36a9b6e9\\ApplicationConfiguration.g.cs [Jen pro \u010Dten\u00ED]",
               "ViewState": "AQIAAAoAAAAANjMzMzPrvw8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T20:08:12.569Z",
-              "EditorCaption": " [Jen pro \u010Dten\u00ED]"
+              "WhenOpened": "2024-12-06T20:08:12.569Z"
             },
             {
               "$type": "Document",
@@ -825,8 +780,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\Form1.resx",
               "RelativeToolTip": "Form1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-06T19:54:49.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:54:49.69Z"
             },
             {
               "$type": "Document",
@@ -837,8 +791,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\UserRegister.resx",
               "RelativeToolTip": "MainForms\\UserRegister.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-06T19:43:08.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:43:08.077Z"
             },
             {
               "$type": "Document",
@@ -849,8 +802,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\UzivatelVypisPojistek.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\UzivatelVypisPojistek.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:38:43.39Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T19:38:43.39Z"
             },
             {
               "$type": "Document",
@@ -862,8 +814,7 @@
               "RelativeToolTip": "SpecificForms\\UzivatelVypisPojistek.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAWwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:39:36.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T19:39:36.432Z"
             },
             {
               "$type": "Document",
@@ -874,8 +825,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\SpecificForms\\VypisZamestnance.cs [N\u00E1vrh]",
               "RelativeToolTip": "SpecificForms\\VypisZamestnance.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T19:30:48.491Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T19:30:48.491Z"
             },
             {
               "$type": "Document",
@@ -886,8 +836,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\Role4-main.cs [N\u00E1vrh]",
               "RelativeToolTip": "MainForms\\Role4-main.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:39:58.854Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T16:39:58.854Z"
             },
             {
               "$type": "Document",
@@ -898,8 +847,7 @@
               "ToolTip": "C:\\Users\\jirco\\Documents\\GitHub\\databaze2-pojistovna2024\\Aplikace_GUI-pojistovna\\MainForms\\Role3-main.cs [N\u00E1vrh]",
               "RelativeToolTip": "MainForms\\Role3-main.cs [N\u00E1vrh]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T17:30:13.379Z",
-              "EditorCaption": " [N\u00E1vrh]"
+              "WhenOpened": "2024-12-06T17:30:13.379Z"
             },
             {
               "$type": "Document",
@@ -911,8 +859,7 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AQIAABAAAADAzMzMzMwvwH8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T12:48:23.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T12:48:23.661Z"
             }
           ]
         }

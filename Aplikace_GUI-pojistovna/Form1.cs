@@ -1,11 +1,9 @@
 using Aplikace_GUI_pojistovna.MainForms;
 using Aplikace_GUI_pojistovna.SideForms;
 using Aplikace_GUI_pojistovna.SpecificForms;
-<<<<<<< Updated upstream
 using static Aplikace_GUI_pojistovna.User;
-=======
+
 using System.Data;
->>>>>>> Stashed changes
 
 namespace Aplikace_GUI_pojistovna
 {
