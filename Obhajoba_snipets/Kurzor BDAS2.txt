@@ -20,3 +20,22 @@ BEGIN
     -- Zavření kurzoru
     CLOSE c_klienti;
 END;
+
+
+
+
+
+-- C) Implicitiní kurzor:
+DECLARE
+    v_adresa VARCHAR2(4000);
+BEGIN
+    -- Implicitní kurzor
+    SELECT a.ulice  ' '  a.cislo_popisne  ', '  a.mesto  ' '  a.psc
+    INTO v_adresa
+    FROM adresa a
+    JOIN klient k ON a.id_adresa = k.adresa_id_adresa
+    WHERE k.id_klient = 1;  -- Specifikujte ID klienta
+
+    DBMS_OUTPUT.PUT_LINE('Adresa klienta: ' || v_adresa);
+END;
+/
