@@ -1,0 +1,27 @@
+CREATE OR REPLACE FUNCTION ziskej_adresu_klienta(p_klient_id NUMBER)
+RETURN VARCHAR2
+IS
+    v_adresa VARCHAR2(4000);
+    v_pocet NUMBER;
+BEGIN
+    -- Kontrola, zda klient existuje
+    SELECT COUNT(*)
+    INTO v_pocet
+    FROM klient
+    WHERE id_klient = p_klient_id;
+
+    IF v_pocet = 0 THEN
+        RETURN 'Klient neexistuje';
+    END IF;
+
+    -- Získání adresy klienta bez historie adres
+    SELECT NVL(a.ulice, 'Neznámá ulice')  ' '  NVL(a.cislo_popisne, 'Neznámé číslo')  ', ' 
+           NVL(a.mesto, 'Neznámé město')  ' '  NVL(a.psc, 'Neznámý PSČ')
+    INTO v_adresa
+    FROM klient k
+    JOIN adresa a ON k.adresa_id_adresa = a.id_adresa
+    WHERE k.id_klient = p_klient_id;
+
+    RETURN NVL(v_adresa, 'Adresa není k dispozici');
+END;
+/
