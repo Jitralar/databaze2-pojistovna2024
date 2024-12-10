@@ -1,0 +1,51 @@
+CREATE OR REPLACE TRIGGER zamestnanec_pobocka_check
+BEFORE INSERT OR UPDATE ON zamestnanec_pobocka
+FOR EACH ROW
+DECLARE
+    l_count NUMBER;
+BEGIN
+    -- Zkontrolovat, zda není zaměstnanec přiřazen více než k jedné pobočce
+    SELECT COUNT(*)
+    INTO l_count
+    FROM zamestnanec_pobocka
+    WHERE zam_id_zam = :new.zam_id_zam;
+
+    IF l_count > 1 THEN
+        RAISE_APPLICATION_ERROR(-20004, 'Zaměstnanec může být přiřazen pouze k jedné pobočce');
+    END IF;
+END;
+/
+CREATE OR REPLACE TRIGGER klient_datum_narozeni
+BEFORE INSERT ON klient
+FOR EACH ROW
+BEGIN
+    -- Nastavit výchozí datum narození na 1.1.2000, pokud není zadáno
+    IF :new.datum_narozeni IS NULL THEN
+        :new.datum_narozeni := TO_DATE('2000-01-01', 'YYYY-MM-DD');
+    END IF;
+END;
+/
+CREATE OR REPLACE TRIGGER KONTROLA_EMAIL
+BEFORE INSERT OR UPDATE ON kontakt
+FOR EACH ROW
+DECLARE
+    v_pocet INTEGER;
+BEGIN
+    -- Ověření, zda email odpovídá základnímu vzoru
+    IF :NEW.EMAIL IS NOT NULL THEN
+        IF NOT REGEXP_LIKE(:NEW.EMAIL, '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$') THEN
+            RAISE_APPLICATION_ERROR(-20001, 'Neplatná emailová adresa.');
+        END IF;
+
+        -- Ověření jedinečnosti emailu v tabulce kontakt
+        SELECT COUNT(*) INTO v_pocet
+        FROM kontakt
+        WHERE email = :NEW.EMAIL
+          AND id_kontakt != NVL(:NEW.ID_KONTAKT, -1); -- Ignorovat aktuální záznam při UPDATE
+
+        IF v_pocet > 0 THEN
+            RAISE_APPLICATION_ERROR(-20002, 'Emailová adresa již existuje.');
+        END IF;
+    END IF;
+END;
+/

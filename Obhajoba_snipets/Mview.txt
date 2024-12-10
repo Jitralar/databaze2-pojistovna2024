@@ -1,0 +1,52 @@
+CREATE OR REPLACE VIEW banky_adresy AS
+SELECT 
+    b.id_banka,
+    b.nazev AS banka,
+    a.ulice,
+    a.cislo_orientacni,
+    a.cislo_popisne,
+    a.mesto,
+    a.psc
+FROM 
+    banka b
+    JOIN adresa a ON b.adresa_id_adresa = a.id_adresa;
+/
+CREATE OR REPLACE VIEW pohledavky_zavazky AS
+SELECT 
+    p.id_pov_povinosti AS povinnost_id,
+    p.pov_datum_vytvoreni AS datum_vytvoreni,
+    p.pov_datum_zplatnosti AS datum_splatnosti,
+    poh.poh_popis AS popis_pohledavka,
+    zav.zav_popis AS popis_zavazek
+FROM 
+    povinosti p
+    LEFT JOIN pohledavka poh ON p.id_pov_povinosti = poh.id_pov_povinosti
+    LEFT JOIN zavazek zav ON p.id_pov_povinosti = zav.id_pov_povinosti;
+/
+CREATE OR REPLACE VIEW splatne_povinnosti AS
+SELECT 
+    id_pov_povinosti AS povinnost_id,
+    pov_datum_vytvoreni AS datum_vytvoreni,
+    pov_datum_zplatnosti AS datum_splatnosti,
+    CASE 
+        WHEN pov_datum_zplatnosti < SYSDATE THEN 'Ano'
+        ELSE 'Ne'
+    END AS je_splatne
+FROM 
+    povinosti
+WHERE 
+    pov_datum_zplatnosti < SYSDATE;
+/
+CREATE OR REPLACE VIEW zamestnanci_pobocky AS
+SELECT 
+    z.id_zam,
+    z.jmeno,
+    z.prijmeni,
+    po.nazev AS pozice,
+    pb.nazev AS pobocka,
+    pb.pocet_zamestnancu
+FROM 
+    zamestnanec z
+    JOIN pozice po ON z.pozice_id_pozice = po.id_pozice
+    JOIN zamestnanec_pobocka zp ON z.id_zam = zp.zam_id_zam
+    JOIN pobocka pb ON zp.pob_id_pobocka = pb.id_pobocka;
