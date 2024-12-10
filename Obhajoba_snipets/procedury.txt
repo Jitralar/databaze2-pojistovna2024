@@ -1,0 +1,69 @@
+CREATE OR REPLACE PROCEDURE zvys_prijem_davkove(p_procenta IN NUMBER) IS
+BEGIN
+    FOR klient IN (SELECT id_klient, prijem FROM klient) LOOP
+        UPDATE klient
+        SET prijem = prijem + prijem * (p_procenta / 100)
+        WHERE id_klient = klient.id_klient;
+    END LOOP;
+    COMMIT;
+    DBMS_OUTPUT.PUT_LINE('Příjmy byly zvýšeny o ' || p_procenta || '% pro všechny klienty.');
+END;
+/
+CREATE OR REPLACE PROCEDURE ZMENIT_KONTAKT_KLIENTA(
+    p_id_klient IN klient.id_klient%TYPE,
+    p_novy_kontakt IN kontakt.email%TYPE
+)
+AS
+    v_pocet NUMBER;
+BEGIN
+    -- Zkontroluj, zda email již není použit
+    SELECT COUNT(*) INTO v_pocet
+    FROM kontakt
+    WHERE email = p_novy_kontakt;
+
+    IF v_pocet > 0 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Email již existuje v databázi.');
+    ELSE
+        -- Aktualizuj kontakt klienta
+        UPDATE klient
+        SET kontakt_id_kontakt = (SELECT id_kontakt FROM kontakt WHERE email = p_novy_kontakt)
+        WHERE id_klient = p_id_klient;
+    END IF;
+END;
+/
+CREATE OR REPLACE PROCEDURE GENEROVAT_STATISTIKY_PRIJMU AS
+BEGIN
+    FOR vek_skupina IN (
+        SELECT CASE
+                WHEN FLOOR(MONTHS_BETWEEN(SYSDATE, datum_narozeni) / 12) BETWEEN 18 AND 30 THEN '18-30'
+                WHEN FLOOR(MONTHS_BETWEEN(SYSDATE, datum_narozeni) / 12) BETWEEN 31 AND 50 THEN '31-50'
+                ELSE '51+'
+               END AS vek_skupina,
+               AVG(prijem) AS prumerny_prijem
+        FROM klient
+        GROUP BY CASE
+                   WHEN FLOOR(MONTHS_BETWEEN(SYSDATE, datum_narozeni) / 12) BETWEEN 18 AND 30 THEN '18-30'
+                   WHEN FLOOR(MONTHS_BETWEEN(SYSDATE, datum_narozeni) / 12) BETWEEN 31 AND 50 THEN '31-50'
+                   ELSE '51+'
+                 END
+    ) LOOP
+        DBMS_OUTPUT.PUT_LINE('Věková skupina: ' || vek_skupina.vek_skupina || ' Průměrný příjem: ' || vek_skupina.prumerny_prijem);
+    END LOOP;
+END;
+/
+CREATE OR REPLACE PROCEDURE VYHLEDAT_KLIENTY_V_REGIONU(
+    p_kraj_id IN NUMBER
+) AS
+BEGIN
+    FOR klient IN (
+        SELECT k.id_klient, k.jmeno, k.prijmeni
+        FROM klient k
+        JOIN adresa a ON k.adresa_id_adresa = a.id_adresa
+        JOIN kraj kr ON a.kraj_id_kraj = kr.id_kraj  -- Připojení tabulky kraj
+        WHERE a.kraj_id_kraj = p_kraj_id  -- Hledání podle ID kraje
+    ) LOOP
+        -- Výstup klientů s odpovídajícím regionem
+        DBMS_OUTPUT.PUT_LINE('Klient ID: ' || klient.id_klient || ' Jméno: ' || klient.jmeno || ' ' || klient.prijmeni);
+    END LOOP;
+END;
+/

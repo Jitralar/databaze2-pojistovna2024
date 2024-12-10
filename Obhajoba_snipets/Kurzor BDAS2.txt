@@ -1,0 +1,22 @@
+DECLARE
+    CURSOR c_klienti IS
+        SELECT k.jmeno || ' ' || k.prijmeni || ' - ' || a.ulice || ' ' || a.cislo_popisne || ', ' || a.mesto || ' ' || a.psc AS adresa
+        FROM klient k
+        JOIN adresa a ON k.adresa_id_adresa = a.id_adresa;
+    
+    v_adresa VARCHAR2(4000);
+BEGIN
+    -- Otevření explicitního kurzoru
+    OPEN c_klienti;
+    
+    -- Získání a zobrazení všech řádků
+    LOOP
+        FETCH c_klienti INTO v_adresa;
+        EXIT WHEN c_klienti%NOTFOUND;  -- Ukončení cyklu, pokud nejsou žádné řádky
+        
+        DBMS_OUTPUT.PUT_LINE('Adresa klienta: ' || v_adresa);
+    END LOOP;
+    
+    -- Zavření kurzoru
+    CLOSE c_klienti;
+END;

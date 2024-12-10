@@ -1,0 +1,56 @@
+CREATE OR REPLACE FUNCTION historie_bydliste(p_id_klient NUMBER)
+RETURN VARCHAR2
+IS
+    v_historie VARCHAR2(4000);
+BEGIN
+    SELECT LISTAGG(a.mesto, ', ') WITHIN GROUP (ORDER BY a.id_adresa)
+    INTO v_historie
+    FROM adresa a
+    JOIN klient k ON k.adresa_id_adresa = a.id_adresa
+    WHERE k.id_klient = p_id_klient;
+
+    RETURN NVL(v_historie, 'Žádná historie');
+END;
+/
+
+CREATE OR REPLACE FUNCTION ziskej_adresu_klienta(p_klient_id NUMBER)
+RETURN VARCHAR2
+IS
+    v_adresa VARCHAR2(255);
+BEGIN
+    SELECT k.jmeno || ' ' || k.prijmeni || ', ' || a.ulice || ' ' || a.cislo_popisne || ', ' || a.mesto
+    INTO v_adresa
+    FROM klient k
+    JOIN adresa a ON k.adresa_id_adresa = a.id_adresa
+    WHERE k.id_klient = p_klient_id;
+
+    RETURN v_adresa;
+END;
+/
+CREATE OR REPLACE FUNCTION zvys_prijem(p_klient_id NUMBER, p_procenta NUMBER)
+RETURN NUMBER
+IS
+    v_novy_prijem NUMBER;
+BEGIN
+    UPDATE klient
+    SET prijem = prijem + prijem * (p_procenta / 100)
+    WHERE id_klient = p_klient_id
+    RETURNING prijem INTO v_novy_prijem;
+
+    RETURN v_novy_prijem;
+END;
+/
+CREATE OR REPLACE FUNCTION prumer_prijmu_v_meste(p_mesto VARCHAR2)
+RETURN NUMBER
+IS
+    v_prumer_prijmu NUMBER;
+BEGIN
+    SELECT AVG(prijem)
+    INTO v_prumer_prijmu
+    FROM klient k
+    JOIN adresa a ON k.adresa_id_adresa = a.id_adresa
+    WHERE a.mesto = p_mesto;
+
+    RETURN v_prumer_prijmu;
+END;
+
